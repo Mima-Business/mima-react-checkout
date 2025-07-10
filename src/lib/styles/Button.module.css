@@ -1,0 +1,63 @@
+:root {
+  --primary-normal: #0070f3;
+  --primary-hover: #0058c9;
+
+  --grey-200: #e5e7eb;
+  --dark-700: #414651;
+  --dark-900: #1f2937;
+}
+
+.button-base {
+  height: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.button-base:disabled {
+  background-color: #ccc; /* light grey */
+  cursor: not-allowed;
+}
+
+.button-base:disabled:hover {
+  background-color: #ccc;
+}
+
+.button-default {
+  background-color: var(--primary-normal);
+  color: white;
+}
+
+.button-default:hover {
+  background-color: var(--primary-hover);
+}
+
+.button-outlined {
+  background-color: transparent;
+  border: 1px solid var(--grey-200);
+  color: var(--dark-700);
+}
+
+.button-outlined:hover {
+  border-color: var(--dark-700);
+  color: var(--dark-900);
+  background-color: var(--grey-200);
+}
+
+.button-text {
+  background-color: transparent;
+  color: var(--primary-normal);
+}
+
+.button-text:hover {
+  color: var(--primary-hover);
+}
