@@ -1,20 +1,9 @@
 import type { CurrencyCode } from "./currency";
 
-export interface InternalOrderItem {
-  item: string;
-  style: string;
-  quantity: number;
-  unitPrice: number;
-  color?: string;
-  accessories?: string[];
-  variant?: string;
-}
-
 export interface OrderItem {
   name: string;
   quantity: number;
   unitPrice: number;
-  id: string;
 }
 
 export interface BookingInfo {
@@ -41,6 +30,7 @@ export type InvoicePayload = {
   invoice: {
     orders: OrderItem[];
     orderId: string;
+    shippingFee?: number;
     currencyCode: CurrencyCode;
   };
 };
@@ -88,8 +78,21 @@ export type CheckoutProps = {
   mimaKey: string;
   orders?: OrderItem[];
   currency: CurrencyCode;
+  orderId: string;
+  shippingFee?: number;
   bookings?: BookingInfo[];
   checkoutFor?: CheckoutType;
   onSuccess?: () => void;
   onClose?: () => void;
+};
+
+export type MimaButtonProps = CheckoutProps & {
+  fullWidth?: boolean;
+  title?: string;
+  className?: string;
+};
+
+export type PayWithProps = CheckoutProps & {
+  selected: boolean;
+  onSelect: () => void;
 };

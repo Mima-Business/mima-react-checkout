@@ -1,13 +1,8 @@
 import { mimaLogo } from "../assets/img";
 import { showCheckout } from "../helpers/showCheckout";
 import styles from "../styles/PayWithMima.module.css";
-import { CheckoutProps } from "../types";
+import { PayWithProps } from "../types";
 import Button from "./Button";
-
-type Props = CheckoutProps & {
-  selected: boolean;
-  onSelect: () => void;
-};
 
 export const PayWithMima = ({
   selected,
@@ -15,7 +10,7 @@ export const PayWithMima = ({
   onSuccess,
   onClose,
   ...checkoutProps
-}: Props) => {
+}: PayWithProps) => {
   const handleClick = () => {
     showCheckout({
       ...checkoutProps,

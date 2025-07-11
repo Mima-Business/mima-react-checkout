@@ -10,8 +10,10 @@ import type {
 type Config = {
   customer: CustomerInfo;
   mimaKey: string;
+  orderId: string;
   orders?: OrderItem[];
   currency: CurrencyCode;
+  shippingFee?: number;
   bookings?: BookingInfo[];
   checkoutFor?: CheckoutType;
 };

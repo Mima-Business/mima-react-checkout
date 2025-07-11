@@ -3,17 +3,23 @@ import { PaymentElement } from "@stripe/react-stripe-js";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
 import styles from "../styles/CheckoutPortal.module.css";
 import Button from "./Button";
+import PoweredBy from "./PoweredBy";
+import { CurrencyCode } from "../types";
 
 type Props = {
   onSuccess: () => void;
   onClose: () => void;
   goBack: () => void;
+  currencyCode: CurrencyCode;
+  transactionAmount: number;
 };
 
 const StripeCheckoutForm: React.FC<Props> = ({
   onSuccess,
   onClose,
   goBack,
+  currencyCode,
+  transactionAmount,
 }) => {
   const stripe = useStripe();
   const elements = useElements();
@@ -44,16 +50,24 @@ const StripeCheckoutForm: React.FC<Props> = ({
   };
 
   return (
-    <form className={styles.checkout__form} onSubmit={handleSubmit}>
-      <h4>Payment</h4>
-      <p>All transactions are secure and encrypted.</p>
-
+    <form className={styles.checkoutForm} onSubmit={handleSubmit}>
+      <div className={styles.checkoutTop}>
+        <p style={{ color: "#464646" }}>
+          Pay{" "}
+          <span className={styles.checkoutTopSpan}>
+            {currencyCode} {transactionAmount}
+          </span>
+        </p>
+        <p className={styles.checkoutTopFirst}>
+          All transactions are secure and encrypted.
+        </p>
+      </div>
       <PaymentElement />
 
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "15rem 1fr",
+          gridTemplateColumns: "150px 1fr",
           gap: "1rem",
           width: "100%",
         }}
@@ -68,7 +82,7 @@ const StripeCheckoutForm: React.FC<Props> = ({
         <Button title="Pay now" type="submit" fullWidth loading={loading} />
       </div>
 
-      {/* <PoweredBy /> */}
+      <PoweredBy />
     </form>
   );
 };

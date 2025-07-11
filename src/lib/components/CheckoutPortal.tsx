@@ -22,10 +22,12 @@ type Props = {
   closeCheckout: () => void;
   customer: CustomerInfo;
   mimaKey: string;
+  orderId: string;
   orders?: OrderItem[];
   currency: CurrencyCode;
   bookings?: BookingInfo[];
   checkoutFor?: CheckoutType;
+  shippingFee?: number;
 };
 
 export const CheckoutPortal = ({
@@ -37,16 +39,17 @@ export const CheckoutPortal = ({
   mimaKey,
   orders,
   currency,
+  shippingFee,
   bookings,
   checkoutFor = "PRODUCT",
+  orderId,
 }: Props) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const remapOrders = (orders: OrderItem[]) => {
-    const mappedOrders = orders?.map(({ name, id, ...rest }) => {
+    const mappedOrders = orders?.map(({ name, ...rest }) => {
       return {
         item: name,
-        style: id,
         ...rest,
       };
     });
@@ -67,14 +70,15 @@ export const CheckoutPortal = ({
   const productPayload = useMemo(
     () => ({
       customer,
-      isFash: false,
       publicKey: mimaKey,
       invoice: {
         orders: remapOrders(orders as OrderItem[]),
+        orderId,
         currencyCode: currency,
+        shipping: shippingFee ?? 0,
       },
     }),
-    [customer, mimaKey, orders, currency]
+    [customer, mimaKey, orders, currency, shippingFee, orderId]
   );
 
   const bookingPayload = useMemo(
@@ -272,6 +276,8 @@ export const CheckoutPortal = ({
             onSuccess={handleSuccess}
             onClose={handleClose}
             goBack={goBack}
+            currencyCode={invoice?.currencyCode}
+            transactionAmount={invoice?.transactionAmount as number}
           />
         </Elements>
       </ModalWrapper>

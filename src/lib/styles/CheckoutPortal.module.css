@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: inherit;
 }
 
 .backdrop {
@@ -22,7 +23,7 @@
 
 .loading {
   background: #ffffff;
-  padding: 2rem;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -31,7 +32,7 @@
   background-color: #ffffff;
   color: #d32f2f;
   font-weight: 500;
-  padding: 2rem;
+  padding: 20px;
   border-radius: 10px;
   border: 1px solid #d32f2f;
   text-align: center;
@@ -50,18 +51,44 @@
 
 .modalContent {
   background-color: #fff;
-  padding: 2rem;
-  border-radius: 0.75rem;
+  padding: 30px 20px;
+  border-radius: 12px;
   position: relative;
   z-index: 10000;
   animation: modalFadeIn 0.25s ease-out;
 }
 
-.checkout__form {
+.checkoutForm {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 40px;
-  min-height: 100vh;
-  width: 100%;
+  width: 500px;
+  max-width: 100%;
+}
+
+@media (max-width: 520px) {
+  .checkoutForm {
+    width: 100%;
+  }
+
+  .modalContent {
+    padding: 20px 12px;
+    max-width: 98%;
+  }
+}
+
+.checkoutTop {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.checkoutTopFirst {
+  font-size: 14px;
+  color: #464646;
+}
+
+.checkoutTopSpan {
+  color: #136e13;
+  font-weight: 600;
 }
