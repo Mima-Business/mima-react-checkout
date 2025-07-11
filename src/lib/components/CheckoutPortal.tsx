@@ -12,7 +12,7 @@ import type {
 import { usePaystackPayment } from "react-paystack";
 import StripeCheckoutForm from "./StripeCheckoutForm";
 import Spinner from "./Spinner";
-import styles from "../styles/ CheckoutPortal.module.css";
+import styles from "../styles/CheckoutPortal.module.css";
 import ModalWrapper from "./ModalWrapper";
 
 type Props = {

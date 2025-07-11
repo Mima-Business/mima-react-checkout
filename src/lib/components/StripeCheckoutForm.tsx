@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PaymentElement } from "@stripe/react-stripe-js";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
-import styles from "../../assets/styles/PaymentLink/PaymentLinkCheckout.module.scss";
+import styles from "../styles/CheckoutPortal.module.css";
 import Button from "./Button";
 
 type Props = {

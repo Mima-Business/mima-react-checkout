@@ -62,11 +62,6 @@ export type BookingPayload = {
   }[];
 };
 
-export type CheckoutProps = {
-  onSuccess?: () => void;
-  onClose?: () => void;
-};
-
 export type CheckoutData = {
   payload: InvoicePayload | BookingPayload;
   type: CheckoutType;
@@ -86,4 +81,15 @@ export type InvoiceResponse = {
   transactionAmount: number;
   currencyCode: CurrencyCode;
   stripeSessionId?: string;
+};
+
+export type CheckoutProps = {
+  customer: CustomerInfo;
+  mimaKey: string;
+  orders?: OrderItem[];
+  currency: CurrencyCode;
+  bookings?: BookingInfo[];
+  checkoutFor?: CheckoutType;
+  onSuccess?: () => void;
+  onClose?: () => void;
 };

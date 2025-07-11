@@ -40,14 +40,18 @@ const Button: React.FC<ButtonProps> = ({
   }
 
   const mergedClassName = clsx(
-    styles["button-base"],
-    styles[`button-${variant}`],
-    {
-      [styles["button-full"]]: fullWidth,
-      [styles["button-disabled"]]: disabled,
-    },
+    styles.buttonBase,
+    variant === "outlined" && styles.buttonOutlined,
+    variant === "text" && styles.buttonText,
+    variant === "default" && styles.buttonDefault,
+    fullWidth && styles.buttonFull,
+    disabled && styles.buttonDisabled,
     className
   );
+
+  console.log("styles object", styles);
+
+  console.log("mergedClassName", mergedClassName);
 
   return (
     <button
