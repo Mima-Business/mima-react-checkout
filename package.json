@@ -2,16 +2,38 @@
   "name": "mima-react-checkout",
   "private": false,
   "version": "1.0.0",
+  "description": "Official React Package for Mima payment APIs",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mima-Business/mima-react-checkout"
+  },
+  "author": "Mima Developers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mima-Business/mima-react-checkout/issues"
+  },
+  "homepage": "https://github.com/Mima-Business/mima-react-checkout#readme",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "tsc -b && vite build"
   },
+  "keywords": [
+    "javaScript",
+    "typeScript",
+    "github",
+    "react",
+    "open source",
+    "payments",
+    "mima",
+    "Mima business",
+    "mimapay",
+    "collections",
+    "Gateway"
+  ],
   "dependencies": {
     "@stripe/react-stripe-js": "^3.7.0",
     "@stripe/stripe-js": "^7.4.0",
