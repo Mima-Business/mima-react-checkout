@@ -11,7 +11,7 @@ type Config = {
   customer: CustomerInfo;
   mimaKey: string;
   orderId: string;
-  orders?: OrderItem[];
+  orders: OrderItem[];
   currency: CurrencyCode;
   shippingFee?: number;
   bookings?: BookingInfo[];

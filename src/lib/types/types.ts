@@ -79,7 +79,7 @@ export type InvoiceResponse = {
 export type CheckoutProps = {
   customer: CustomerInfo;
   mimaKey: string;
-  orders?: OrderItem[];
+  orders: OrderItem[];
   currency: CurrencyCode;
   orderId: string;
   shippingFee?: number;
