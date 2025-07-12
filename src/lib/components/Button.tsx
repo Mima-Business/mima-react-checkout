@@ -49,10 +49,6 @@ const Button: React.FC<ButtonProps> = ({
     className
   );
 
-  console.log("styles object", styles);
-
-  console.log("mergedClassName", mergedClassName);
-
   return (
     <button
       type={type}

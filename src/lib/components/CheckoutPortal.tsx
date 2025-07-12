@@ -140,8 +140,12 @@ export const CheckoutPortal = ({
         if (data?.stripeSessionId) {
           setClientSessionId(data?.stripeSessionId);
         }
+
+        if (data?.error && data?.message) {
+          setError(data?.message);
+        }
       } catch (err) {
-        console.error("Checkout error:", err);
+        console.log("err", err);
         setError("Something went wrong. Please try again.");
         closeCheckout();
       } finally {
@@ -244,7 +248,7 @@ export const CheckoutPortal = ({
   if (!stripePromise && invoice?.currencyCode !== "NGN") {
     return (
       <ModalWrapper onClose={handleClose}>
-        <div className={styles.errorMessage}>Stripe is not available.</div>
+        <div className={styles.errorMessage}>FX Payment is not available.</div>
       </ModalWrapper>
     );
   }

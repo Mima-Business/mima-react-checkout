@@ -67,7 +67,7 @@ Add Mima pay to your projects as a component or function:
 Include the **selected** and **onSelect** props to ensure the user can select mima as the preferred payment option
 
 ```javascript
-import React from "react";
+import React, { useState } from "react";
 import { PayWithMima } from "mima-react-checkout";
 
 export default function App() {

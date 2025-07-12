@@ -71,6 +71,9 @@ export type InvoiceResponse = {
   transactionAmount: number;
   currencyCode: CurrencyCode;
   stripeSessionId?: string;
+  error?: string;
+  message?: string;
+  statusCode?: number;
 };
 
 export type CheckoutProps = {
