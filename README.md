@@ -81,26 +81,35 @@ export default function App() {
     state: "Lagos",
   };
 
-  const orders = [
+  const items = [
     {
-      name: "T-shirt",
-      unitPrice: 100,
+      item: "T-shirt",
+      unitPrice: 2000,
       quantity: 2,
     },
   ];
 
+  const payload = {
+    customer,
+    publicKey: "fd86a********************4",
+    order: {
+      items,
+      currencyCode: "NGN",
+      shipping: 200,
+      orderId: "ORDER123456",
+    },
+    callBackUrl: "www.google.com",
+  };
+
   const [method, setMethod] = useState("mima");
 
   const mimaConfig = {
-    mimaKey: "fd86a********************4",
-    customer,
-    orderId: "ORDER123456",
-    orders: orders,
-    currency: "NGN",
+    payload,
     selected: method === "mima",
     onSelect: () => setMethod("mima"),
     onSuccess: () => alert("Payment Successful"),
     onClose: () => console.log("Closed"),
+    signature: "2341abc********************4",
   };
 
   return (
@@ -129,22 +138,31 @@ export default function App() {
     state: "Lagos",
   };
 
-  const orders = [
+  const items = [
     {
-      name: "T-shirt",
-      unitPrice: 100,
+      item: "T-shirt",
+      unitPrice: 2000,
       quantity: 2,
     },
   ];
 
-  const mimaButtonConfig = {
-    mimaKey: "fd86a********************4",
+  const payload = {
     customer,
-    orders,
-    orderId: "ORDER123456",
-    currency: "NGN",
+    publicKey: "fd86a********************4",
+    order: {
+      items,
+      currencyCode: "NGN",
+      shipping: 200,
+      orderId: "ORDER123456",
+    },
+    callBackUrl: "www.google.com",
+  };
+
+  const mimaButtonConfig = {
+    payload,
     onSuccess: () => alert("Payment Successful"),
     onClose: () => console.log("Closed"),
+    signature: "2341abc********************4",
   };
 
   return (
@@ -173,20 +191,29 @@ export default function App() {
     state: "Lagos",
   };
 
-  const orders = [
+  const items = [
     {
-      name: "T-shirt",
-      unitPrice: 100,
+      item: "T-shirt",
+      unitPrice: 2000,
       quantity: 2,
     },
   ];
 
-  const mimaConfig = {
-    mimaKey: "fd86a********************4",
+  const payload = {
     customer,
-    orders,
-    orderId: "ORDER123456",
-    currency: "NGN",
+    publicKey: "fd86a********************4",
+    order: {
+      items,
+      currencyCode: "NGN",
+      shipping: 200,
+      orderId: "ORDER123456",
+    },
+    callBackUrl: "www.google.com",
+  };
+
+  const mimaConfig = {
+    payload,
+    signature: "2341abc********************4",
     onSuccess: () => alert("Payment Successful"),
     onClose: () => console.log("Closed"),
   };
@@ -210,16 +237,21 @@ export default function App() {
 
 Read about our parameters and how they can be used
 
-| Parameter   | Always Required ? | Description                                                                                                                      |
-| ----------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| mimaKey     | True              | Your API public key                                                                                                              |
-| orderId     | True              | Your order Id. This MUST be unique for every order so you can be able to receive information on the order related to the payment |
-| orders      | True              | An array of order items.                                                                                                         |
-| currency    | True              | currency to charge in.                                                                                                           |
-| customer    | True              | Customer information                                                                                                             |
-| shippingFee | False             | This specifies the cost of shipping. Defaults to 0 when not added.                                                               |
-| onSuccess   | False             | A function of your desired action once a payment is successful                                                                   |
-| onClose     | False             | A function of your desired action once a payment is canceled                                                                     |
+| Parameter | Always Required ? | Description                                                                                                                                                                           |
+| --------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| payload   | Yes               | An object containing order and customer information                                                                                                                                   |
+| signature | Yes               | A SHA-512 HMAC hash of the payload, generated using your Secret Key. This ensures the integrity and authenticity of the request. The payload must be JSON-stringified before hashing. |
+| onSuccess | No                | A function of your desired action once a payment is successful                                                                                                                        |
+| onClose   | No                | A function of your desired action once a payment is canceled                                                                                                                          |
+
+### Payload Parameters
+
+| Parameter   | Always Required? | Description                      |
+| ----------- | ---------------- | -------------------------------- |
+| customer    | Yes              | Customer Information             |
+| order       | Yes              | Order Information                |
+| publicKey   | Yes              | Your API public key              |
+| callBackUrl | No               | Your webhook to send information |
 
 ### Customer Parameters
 
@@ -236,11 +268,20 @@ Read about our parameters and how they can be used
 
 ### Order Parameters
 
-Orders is an array of objects with these properties
+| Parameter    | Always Required? | Description                                                                                                                      |
+| ------------ | ---------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| items        | Yes              | Array of order items                                                                                                             |
+| currencyCode | Yes              | Currency to charge in.                                                                                                           |
+| orderId      | Yes              | Your order Id. This MUST be unique for every order so you can be able to receive information on the order related to the payment |
+| shipping     | No               | This specifies the cost of shipping. Defaults to 0 when not added.                                                               |
+
+### Items Parameters
+
+Items is an array of objects with these properties
 
 | Parameter | Always Required? | Description                           |
 | --------- | ---------------- | ------------------------------------- |
-| name      | Yes              | Name of the product or service        |
+| item      | Yes              | Name of the product or service        |
 | quantity  | Yes              | Number of units being purchased       |
 | unitPrice | Yes              | Price per unit (in selected currency) |
 

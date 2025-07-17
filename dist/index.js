@@ -19,7 +19,7 @@ function gt() {
   if (te) return R;
   te = 1;
   var t = typeof Symbol == "function" && Symbol.for, e = t ? Symbol.for("react.element") : 60103, n = t ? Symbol.for("react.portal") : 60106, r = t ? Symbol.for("react.fragment") : 60107, a = t ? Symbol.for("react.strict_mode") : 60108, o = t ? Symbol.for("react.profiler") : 60114, s = t ? Symbol.for("react.provider") : 60109, c = t ? Symbol.for("react.context") : 60110, i = t ? Symbol.for("react.async_mode") : 60111, l = t ? Symbol.for("react.concurrent_mode") : 60111, d = t ? Symbol.for("react.forward_ref") : 60112, h = t ? Symbol.for("react.suspense") : 60113, u = t ? Symbol.for("react.suspense_list") : 60120, k = t ? Symbol.for("react.memo") : 60115, m = t ? Symbol.for("react.lazy") : 60116, C = t ? Symbol.for("react.block") : 60121, g = t ? Symbol.for("react.fundamental") : 60117, w = t ? Symbol.for("react.responder") : 60118, L = t ? Symbol.for("react.scope") : 60119;
-  function M(f) {
+  function I(f) {
     if (typeof f == "object" && f !== null) {
       var F = f.$$typeof;
       switch (F) {
@@ -50,35 +50,35 @@ function gt() {
     }
   }
   function V(f) {
-    return M(f) === l;
+    return I(f) === l;
   }
   return R.AsyncMode = i, R.ConcurrentMode = l, R.ContextConsumer = c, R.ContextProvider = s, R.Element = e, R.ForwardRef = d, R.Fragment = r, R.Lazy = m, R.Memo = k, R.Portal = n, R.Profiler = o, R.StrictMode = a, R.Suspense = h, R.isAsyncMode = function(f) {
-    return V(f) || M(f) === i;
+    return V(f) || I(f) === i;
   }, R.isConcurrentMode = V, R.isContextConsumer = function(f) {
-    return M(f) === c;
+    return I(f) === c;
   }, R.isContextProvider = function(f) {
-    return M(f) === s;
+    return I(f) === s;
   }, R.isElement = function(f) {
     return typeof f == "object" && f !== null && f.$$typeof === e;
   }, R.isForwardRef = function(f) {
-    return M(f) === d;
+    return I(f) === d;
   }, R.isFragment = function(f) {
-    return M(f) === r;
+    return I(f) === r;
   }, R.isLazy = function(f) {
-    return M(f) === m;
+    return I(f) === m;
   }, R.isMemo = function(f) {
-    return M(f) === k;
+    return I(f) === k;
   }, R.isPortal = function(f) {
-    return M(f) === n;
+    return I(f) === n;
   }, R.isProfiler = function(f) {
-    return M(f) === o;
+    return I(f) === o;
   }, R.isStrictMode = function(f) {
-    return M(f) === a;
+    return I(f) === a;
   }, R.isSuspense = function(f) {
-    return M(f) === h;
+    return I(f) === h;
   }, R.isValidElementType = function(f) {
     return typeof f == "string" || typeof f == "function" || f === r || f === l || f === o || f === a || f === h || f === u || typeof f == "object" && f !== null && (f.$$typeof === m || f.$$typeof === k || f.$$typeof === s || f.$$typeof === c || f.$$typeof === d || f.$$typeof === g || f.$$typeof === w || f.$$typeof === L || f.$$typeof === C);
-  }, R.typeOf = M, R;
+  }, R.typeOf = I, R;
 }
 var N = {};
 /** @license React v16.13.1
@@ -93,7 +93,7 @@ var ne;
 function kt() {
   return ne || (ne = 1, process.env.NODE_ENV !== "production" && function() {
     var t = typeof Symbol == "function" && Symbol.for, e = t ? Symbol.for("react.element") : 60103, n = t ? Symbol.for("react.portal") : 60106, r = t ? Symbol.for("react.fragment") : 60107, a = t ? Symbol.for("react.strict_mode") : 60108, o = t ? Symbol.for("react.profiler") : 60114, s = t ? Symbol.for("react.provider") : 60109, c = t ? Symbol.for("react.context") : 60110, i = t ? Symbol.for("react.async_mode") : 60111, l = t ? Symbol.for("react.concurrent_mode") : 60111, d = t ? Symbol.for("react.forward_ref") : 60112, h = t ? Symbol.for("react.suspense") : 60113, u = t ? Symbol.for("react.suspense_list") : 60120, k = t ? Symbol.for("react.memo") : 60115, m = t ? Symbol.for("react.lazy") : 60116, C = t ? Symbol.for("react.block") : 60121, g = t ? Symbol.for("react.fundamental") : 60117, w = t ? Symbol.for("react.responder") : 60118, L = t ? Symbol.for("react.scope") : 60119;
-    function M(b) {
+    function I(b) {
       return typeof b == "string" || typeof b == "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
       b === r || b === l || b === o || b === a || b === h || b === u || typeof b == "object" && b !== null && (b.$$typeof === m || b.$$typeof === k || b.$$typeof === s || b.$$typeof === c || b.$$typeof === d || b.$$typeof === g || b.$$typeof === w || b.$$typeof === L || b.$$typeof === C);
     }
@@ -154,7 +154,7 @@ function kt() {
     function T(b) {
       return V(b) === m;
     }
-    function I(b) {
+    function M(b) {
       return V(b) === k;
     }
     function O(b) {
@@ -169,7 +169,7 @@ function kt() {
     function _(b) {
       return V(b) === h;
     }
-    N.AsyncMode = f, N.ConcurrentMode = F, N.ContextConsumer = q, N.ContextProvider = K, N.Element = t1, N.ForwardRef = B, N.Fragment = n1, N.Lazy = X, N.Memo = l1, N.Portal = o1, N.Profiler = J, N.StrictMode = r1, N.Suspense = Q, N.isAsyncMode = u1, N.isConcurrentMode = p, N.isContextConsumer = y, N.isContextProvider = P, N.isElement = x, N.isForwardRef = E, N.isFragment = A, N.isLazy = T, N.isMemo = I, N.isPortal = O, N.isProfiler = G, N.isStrictMode = j, N.isSuspense = _, N.isValidElementType = M, N.typeOf = V;
+    N.AsyncMode = f, N.ConcurrentMode = F, N.ContextConsumer = q, N.ContextProvider = K, N.Element = t1, N.ForwardRef = B, N.Fragment = n1, N.Lazy = X, N.Memo = l1, N.Portal = o1, N.Profiler = J, N.StrictMode = r1, N.Suspense = Q, N.isAsyncMode = u1, N.isConcurrentMode = p, N.isContextConsumer = y, N.isContextProvider = P, N.isElement = x, N.isForwardRef = E, N.isFragment = A, N.isLazy = T, N.isMemo = M, N.isPortal = O, N.isProfiler = G, N.isStrictMode = j, N.isSuspense = _, N.isValidElementType = I, N.typeOf = V;
   }()), N;
 }
 var re;
@@ -321,7 +321,7 @@ function Et() {
       string: w("string"),
       symbol: w("symbol"),
       any: L(),
-      arrayOf: M,
+      arrayOf: I,
       element: V(),
       elementType: f(),
       instanceOf: F,
@@ -342,28 +342,28 @@ function Et() {
     function g(p) {
       if (process.env.NODE_ENV !== "production")
         var y = {}, P = 0;
-      function x(A, T, I, O, G, j, _) {
-        if (O = O || u, j = j || I, _ !== n) {
+      function x(A, T, M, O, G, j, _) {
+        if (O = O || u, j = j || M, _ !== n) {
           if (i) {
             var b = new Error(
               "Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types"
             );
             throw b.name = "Invariant Violation", b;
           } else if (process.env.NODE_ENV !== "production" && typeof console < "u") {
-            var a1 = O + ":" + I;
+            var a1 = O + ":" + M;
             !y[a1] && // Avoid spamming the console because they are often not actionable except for lib authors
             P < 3 && (o(
               "You are manually calling a React.PropTypes validation function for the `" + j + "` prop on `" + O + "`. This is deprecated and will throw in the standalone `prop-types` package. You may be seeing this warning due to a third-party PropTypes library. See https://fb.me/react-warning-dont-call-proptypes for details."
             ), y[a1] = !0, P++);
           }
         }
-        return T[I] == null ? A ? T[I] === null ? new C("The " + G + " `" + j + "` is marked as required " + ("in `" + O + "`, but its value is `null`.")) : new C("The " + G + " `" + j + "` is marked as required in " + ("`" + O + "`, but its value is `undefined`.")) : null : p(T, I, O, G, j);
+        return T[M] == null ? A ? T[M] === null ? new C("The " + G + " `" + j + "` is marked as required " + ("in `" + O + "`, but its value is `null`.")) : new C("The " + G + " `" + j + "` is marked as required in " + ("`" + O + "`, but its value is `undefined`.")) : null : p(T, M, O, G, j);
       }
       var E = x.bind(null, !1);
       return E.isRequired = x.bind(null, !0), E;
     }
     function w(p) {
-      function y(P, x, E, A, T, I) {
+      function y(P, x, E, A, T, M) {
         var O = P[x], G = r1(O);
         if (G !== p) {
           var j = Q(O);
@@ -379,17 +379,17 @@ function Et() {
     function L() {
       return g(s);
     }
-    function M(p) {
+    function I(p) {
       function y(P, x, E, A, T) {
         if (typeof p != "function")
           return new C("Property `" + T + "` of component `" + E + "` has invalid PropType notation inside arrayOf.");
-        var I = P[x];
-        if (!Array.isArray(I)) {
-          var O = r1(I);
+        var M = P[x];
+        if (!Array.isArray(M)) {
+          var O = r1(M);
           return new C("Invalid " + A + " `" + T + "` of type " + ("`" + O + "` supplied to `" + E + "`, expected an array."));
         }
-        for (var G = 0; G < I.length; G++) {
-          var j = p(I, G, E, A, T + "[" + G + "]", n);
+        for (var G = 0; G < M.length; G++) {
+          var j = p(M, G, E, A, T + "[" + G + "]", n);
           if (j instanceof Error)
             return j;
         }
@@ -401,8 +401,8 @@ function Et() {
       function p(y, P, x, E, A) {
         var T = y[P];
         if (!c(T)) {
-          var I = r1(T);
-          return new C("Invalid " + E + " `" + A + "` of type " + ("`" + I + "` supplied to `" + x + "`, expected a single ReactElement."));
+          var M = r1(T);
+          return new C("Invalid " + E + " `" + A + "` of type " + ("`" + M + "` supplied to `" + x + "`, expected a single ReactElement."));
         }
         return null;
       }
@@ -412,8 +412,8 @@ function Et() {
       function p(y, P, x, E, A) {
         var T = y[P];
         if (!t.isValidElementType(T)) {
-          var I = r1(T);
-          return new C("Invalid " + E + " `" + A + "` of type " + ("`" + I + "` supplied to `" + x + "`, expected a single ReactElement type."));
+          var M = r1(T);
+          return new C("Invalid " + E + " `" + A + "` of type " + ("`" + M + "` supplied to `" + x + "`, expected a single ReactElement type."));
         }
         return null;
       }
@@ -422,8 +422,8 @@ function Et() {
     function F(p) {
       function y(P, x, E, A, T) {
         if (!(P[x] instanceof p)) {
-          var I = p.name || u, O = u1(P[x]);
-          return new C("Invalid " + A + " `" + T + "` of type " + ("`" + O + "` supplied to `" + E + "`, expected ") + ("instance of `" + I + "`."));
+          var M = p.name || u, O = u1(P[x]);
+          return new C("Invalid " + A + " `" + T + "` of type " + ("`" + O + "` supplied to `" + E + "`, expected ") + ("instance of `" + M + "`."));
         }
         return null;
       }
@@ -435,14 +435,14 @@ function Et() {
           "Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z])."
         ) : o("Invalid argument supplied to oneOf, expected an array.")), s;
       function y(P, x, E, A, T) {
-        for (var I = P[x], O = 0; O < p.length; O++)
-          if (m(I, p[O]))
+        for (var M = P[x], O = 0; O < p.length; O++)
+          if (m(M, p[O]))
             return null;
         var G = JSON.stringify(p, function(_, b) {
           var a1 = Q(b);
           return a1 === "symbol" ? String(b) : b;
         });
-        return new C("Invalid " + A + " `" + T + "` of value `" + String(I) + "` " + ("supplied to `" + E + "`, expected one of " + G + "."));
+        return new C("Invalid " + A + " `" + T + "` of value `" + String(M) + "` " + ("supplied to `" + E + "`, expected one of " + G + "."));
       }
       return g(y);
     }
@@ -450,12 +450,12 @@ function Et() {
       function y(P, x, E, A, T) {
         if (typeof p != "function")
           return new C("Property `" + T + "` of component `" + E + "` has invalid PropType notation inside objectOf.");
-        var I = P[x], O = r1(I);
+        var M = P[x], O = r1(M);
         if (O !== "object")
           return new C("Invalid " + A + " `" + T + "` of type " + ("`" + O + "` supplied to `" + E + "`, expected an object."));
-        for (var G in I)
-          if (r(I, G)) {
-            var j = p(I, G, E, A, T + "." + G, n);
+        for (var G in M)
+          if (r(M, G)) {
+            var j = p(M, G, E, A, T + "." + G, n);
             if (j instanceof Error)
               return j;
           }
@@ -473,15 +473,15 @@ function Et() {
             "Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + c1(P) + " at index " + y + "."
           ), s;
       }
-      function x(E, A, T, I, O) {
+      function x(E, A, T, M, O) {
         for (var G = [], j = 0; j < p.length; j++) {
-          var _ = p[j], b = _(E, A, T, I, O, n);
+          var _ = p[j], b = _(E, A, T, M, O, n);
           if (b == null)
             return null;
           b.data && r(b.data, "expectedType") && G.push(b.data.expectedType);
         }
         var a1 = G.length > 0 ? ", expected one of type [" + G.join(", ") + "]" : "";
-        return new C("Invalid " + I + " `" + O + "` supplied to " + ("`" + T + "`" + a1 + "."));
+        return new C("Invalid " + M + " `" + O + "` supplied to " + ("`" + T + "`" + a1 + "."));
       }
       return g(x);
     }
@@ -498,14 +498,14 @@ function Et() {
     }
     function X(p) {
       function y(P, x, E, A, T) {
-        var I = P[x], O = r1(I);
+        var M = P[x], O = r1(M);
         if (O !== "object")
           return new C("Invalid " + A + " `" + T + "` of type `" + O + "` " + ("supplied to `" + E + "`, expected `object`."));
         for (var G in p) {
           var j = p[G];
           if (typeof j != "function")
             return n1(E, A, T, G, Q(j));
-          var _ = j(I, G, E, A, T + "." + G, n);
+          var _ = j(M, G, E, A, T + "." + G, n);
           if (_)
             return _;
         }
@@ -515,7 +515,7 @@ function Et() {
     }
     function l1(p) {
       function y(P, x, E, A, T) {
-        var I = P[x], O = r1(I);
+        var M = P[x], O = r1(M);
         if (O !== "object")
           return new C("Invalid " + A + " `" + T + "` of type `" + O + "` " + ("supplied to `" + E + "`, expected `object`."));
         var G = e({}, P[x], p);
@@ -528,7 +528,7 @@ function Et() {
               "Invalid " + A + " `" + T + "` key `" + j + "` supplied to `" + E + "`.\nBad object: " + JSON.stringify(P[x], null, "  ") + `
 Valid keys: ` + JSON.stringify(Object.keys(p), null, "  ")
             );
-          var b = _(I, j, E, A, T + "." + j, n);
+          var b = _(M, j, E, A, T + "." + j, n);
           if (b)
             return b;
         }
@@ -689,13 +689,13 @@ function de(t) {
   }
   return t;
 }
-function M1(t) {
+function I1(t) {
   "@babel/helpers - typeof";
-  return typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? M1 = function(e) {
+  return typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? I1 = function(e) {
     return typeof e;
-  } : M1 = function(e) {
+  } : I1 = function(e) {
     return e && typeof Symbol == "function" && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e;
-  }, M1(t);
+  }, I1(t);
 }
 function Le(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
@@ -705,16 +705,16 @@ function Le(t, e, n) {
     writable: !0
   }) : t[e] = n, t;
 }
-function Mt(t, e) {
+function It(t, e) {
   if (t == null) return {};
   var n = {}, r = Object.keys(t), a, o;
   for (o = 0; o < r.length; o++)
     a = r[o], !(e.indexOf(a) >= 0) && (n[a] = t[a]);
   return n;
 }
-function It(t, e) {
+function Mt(t, e) {
   if (t == null) return {};
-  var n = Mt(t, e), r, a;
+  var n = It(t, e), r, a;
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(t);
     for (a = 0; a < o.length; a++)
@@ -779,13 +779,13 @@ var e1 = function(e, n, r) {
       e.off(n, s);
     };
   }, [a, n, e, o]);
-}, H1 = function(e) {
+}, D1 = function(e) {
   var n = W.useRef(e);
   return W.useEffect(function() {
     n.current = e;
   }, [e]), n.current;
 }, y1 = function(e) {
-  return e !== null && M1(e) === "object";
+  return e !== null && I1(e) === "object";
 }, Lt = function(e) {
   return y1(e) && typeof e.then == "function";
 }, Rt = function(e) {
@@ -876,11 +876,11 @@ var Ge = function(e, n) {
       u = !1;
     };
   }, [o, i, r]);
-  var d = H1(n);
+  var d = D1(n);
   W.useEffect(function() {
     d !== null && d !== n && console.warn("Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.");
   }, [d, n]);
-  var h = H1(r);
+  var h = D1(r);
   return W.useEffect(function() {
     if (i.elements) {
       var u = Ne(r, h, ["clientSecret", "fonts"]);
@@ -921,12 +921,12 @@ var Z1 = function(e) {
   if (n && r)
     throw new Error("You cannot wrap the part of your app that ".concat(e, " in both <CheckoutProvider> and <Elements> providers."));
   return n ? Ut(n, e) : Ge(r, e);
-}, Ft = ["mode"], Dt = function(e) {
+}, Ft = ["mode"], Ht = function(e) {
   return e.charAt(0).toUpperCase() + e.slice(1);
-}, H = function(e, n) {
-  var r = "".concat(Dt(e), "Element"), a = function(i) {
-    var l = i.id, d = i.className, h = i.options, u = h === void 0 ? {} : h, k = i.onBlur, m = i.onFocus, C = i.onReady, g = i.onChange, w = i.onEscape, L = i.onClick, M = i.onLoadError, V = i.onLoaderStart, f = i.onNetworksChange, F = i.onConfirm, q = i.onCancel, K = i.onShippingAddressChange, t1 = i.onShippingRateChange, B = Z1("mounts <".concat(r, ">")), n1 = "elements" in B ? B.elements : null, X = "checkoutSdk" in B ? B.checkoutSdk : null, l1 = W.useState(null), o1 = Re(l1, 2), J = o1[0], r1 = o1[1], Q = W.useRef(null), c1 = W.useRef(null);
-    e1(J, "blur", k), e1(J, "focus", m), e1(J, "escape", w), e1(J, "click", L), e1(J, "loaderror", M), e1(J, "loaderstart", V), e1(J, "networkschange", f), e1(J, "confirm", F), e1(J, "cancel", q), e1(J, "shippingaddresschange", K), e1(J, "shippingratechange", t1), e1(J, "change", g);
+}, D = function(e, n) {
+  var r = "".concat(Ht(e), "Element"), a = function(i) {
+    var l = i.id, d = i.className, h = i.options, u = h === void 0 ? {} : h, k = i.onBlur, m = i.onFocus, C = i.onReady, g = i.onChange, w = i.onEscape, L = i.onClick, I = i.onLoadError, V = i.onLoaderStart, f = i.onNetworksChange, F = i.onConfirm, q = i.onCancel, K = i.onShippingAddressChange, t1 = i.onShippingRateChange, B = Z1("mounts <".concat(r, ">")), n1 = "elements" in B ? B.elements : null, X = "checkoutSdk" in B ? B.checkoutSdk : null, l1 = W.useState(null), o1 = Re(l1, 2), J = o1[0], r1 = o1[1], Q = W.useRef(null), c1 = W.useRef(null);
+    e1(J, "blur", k), e1(J, "focus", m), e1(J, "escape", w), e1(J, "click", L), e1(J, "loaderror", I), e1(J, "loaderstart", V), e1(J, "networkschange", f), e1(J, "confirm", F), e1(J, "cancel", q), e1(J, "shippingaddresschange", K), e1(J, "shippingratechange", t1), e1(J, "change", g);
     var u1;
     C && (e === "expressCheckout" ? u1 = C : u1 = function() {
       C(J);
@@ -940,7 +940,7 @@ var Z1 = function(e) {
               break;
             case "address":
               if ("mode" in u) {
-                var P = u.mode, x = It(u, Ft);
+                var P = u.mode, x = Mt(u, Ft);
                 if (P === "shipping")
                   y = X.createShippingAddressElement(x);
                 else if (P === "billing")
@@ -963,7 +963,7 @@ var Z1 = function(e) {
         Q.current = y, r1(y), y && y.mount(c1.current);
       }
     }, [n1, X, u]);
-    var p = H1(u);
+    var p = D1(u);
     return W.useEffect(function() {
       if (Q.current) {
         var y = Ne(u, p, ["paymentRequest"]);
@@ -1008,32 +1008,32 @@ var Z1 = function(e) {
     onShippingRateChange: Y.func,
     options: Y.object
   }, s.displayName = r, s.__elementType = e, s;
-}, Z = typeof window > "u", Ht = /* @__PURE__ */ W.createContext(null);
-Ht.displayName = "EmbeddedCheckoutProviderContext";
+}, Z = typeof window > "u", Dt = /* @__PURE__ */ W.createContext(null);
+Dt.displayName = "EmbeddedCheckoutProviderContext";
 var Zt = function() {
   var e = Z1("calls useStripe()"), n = e.stripe;
   return n;
 };
-H("auBankAccount", Z);
-H("card", Z);
-H("cardNumber", Z);
-H("cardExpiry", Z);
-H("cardCvc", Z);
-H("fpxBank", Z);
-H("iban", Z);
-H("idealBank", Z);
-H("p24Bank", Z);
-H("epsBank", Z);
-var Bt = H("payment", Z);
-H("expressCheckout", Z);
-H("currencySelector", Z);
-H("paymentRequestButton", Z);
-H("linkAuthentication", Z);
-H("address", Z);
-H("shippingAddress", Z);
-H("paymentMethodMessaging", Z);
-H("affirmMessage", Z);
-H("afterpayClearpayMessage", Z);
+D("auBankAccount", Z);
+D("card", Z);
+D("cardNumber", Z);
+D("cardExpiry", Z);
+D("cardCvc", Z);
+D("fpxBank", Z);
+D("iban", Z);
+D("idealBank", Z);
+D("p24Bank", Z);
+D("epsBank", Z);
+var Bt = D("payment", Z);
+D("expressCheckout", Z);
+D("currencySelector", Z);
+D("paymentRequestButton", Z);
+D("linkAuthentication", Z);
+D("address", Z);
+D("shippingAddress", Z);
+D("paymentMethodMessaging", Z);
+D("affirmMessage", Z);
+D("afterpayClearpayMessage", Z);
 var Ue = "basil", Jt = function(e) {
   return e === 3 ? "v3" : e;
 }, Ye = "https://js.stripe.com", Qt = "".concat(Ye, "/").concat(Ue, "/stripe.js"), Kt = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/, Xt = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
@@ -1104,13 +1104,13 @@ var _t = function(e) {
   o && s !== c && console.warn("Stripe.js@".concat(s, " was loaded on the page, but @stripe/stripe-js@").concat("7.4.0", " expected Stripe.js@").concat(c, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
   var i = e.apply(void 0, n);
   return en(i, r), i;
-}, v1, Fe = !1, De = function() {
+}, v1, Fe = !1, He = function() {
   return v1 || (v1 = rn(null).catch(function(e) {
     return v1 = null, Promise.reject(e);
   }), v1);
 };
 Promise.resolve().then(function() {
-  return De();
+  return He();
 }).catch(function(t) {
   Fe || console.warn(t);
 });
@@ -1119,7 +1119,7 @@ var on = function() {
     n[r] = arguments[r];
   Fe = !0;
   var a = Date.now();
-  return De().then(function(o) {
+  return He().then(function(o) {
     return an(o, n, a);
   });
 }, U = function() {
@@ -1131,7 +1131,7 @@ var on = function() {
     return e;
   }, U.apply(this, arguments);
 };
-function He(t, e) {
+function De(t, e) {
   var n = {};
   for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && e.indexOf(r) < 0 && (n[r] = t[r]);
   if (t != null && typeof Object.getOwnPropertySymbols == "function")
@@ -1149,7 +1149,7 @@ function Ce(t, e) {
   }
   return n;
 }
-function D(t) {
+function H(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = arguments[e] != null ? arguments[e] : {};
     e % 2 ? Ce(Object(n), !0).forEach(function(r) {
@@ -1247,8 +1247,8 @@ var X1 = { cookieTestUrl: "https://legacy-staging.paystack.co/test-iframe/start.
 MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALhZs/7hP0g0+hrqTq0hFyGVxgco0NMx\r
 ZD8nPS6ihxap0yNFjzdyUuZED6P4/aK9Ezl5ajEI9pcx5/1BrEE+F3kCAwEAAQ==\r
 -----END PUBLIC KEY-----`, applePayVersion: 6, applePayValidateSessionPath: "applepay/validate-session/", applePayChargePath: "applepay/charge" };
-D(D({}, X1), {}, { checkoutUrl: "http://localhost:8081/", paymentBaseUrl: "https://legacy-staging.paystack.co/", paystackApiUrl: "https://studio-api.paystack.co/", siteUrl: "https://paystack.com", pusherKey: "1c7b262ee18455815893", pusherUrl: "http://localhost:8081/static/vendor/pusher.min.js" });
-var ln = D(D({}, X1), {}, { checkoutUrl: "https://checkout-studio.paystack.com/", paymentBaseUrl: "https://legacy-staging.paystack.co/", paystackApiUrl: "https://studio-api.paystack.co/", siteUrl: "https://beta.paystack.com", pusherKey: "1c7b262ee18455815893", pusherUrl: "https://checkout-studio.paystack.com/static/vendor/pusher.min.js" }), $ = { production: D(D({}, X1), {}, { checkoutUrl: "https://checkout.paystack.com/", paymentBaseUrl: "https://standard.paystack.co/", paystackApiUrl: "https://api.paystack.co/", siteUrl: "https://paystack.com", pusherKey: "8e4b9b7ca3418bd5cdc8", pusherUrl: "https://checkout.paystack.com/static/vendor/pusher.min.js" }) }.production || ln;
+H(H({}, X1), {}, { checkoutUrl: "http://localhost:8081/", paymentBaseUrl: "https://legacy-staging.paystack.co/", paystackApiUrl: "https://studio-api.paystack.co/", siteUrl: "https://paystack.com", pusherKey: "1c7b262ee18455815893", pusherUrl: "http://localhost:8081/static/vendor/pusher.min.js" });
+var ln = H(H({}, X1), {}, { checkoutUrl: "https://checkout-studio.paystack.com/", paymentBaseUrl: "https://legacy-staging.paystack.co/", paystackApiUrl: "https://studio-api.paystack.co/", siteUrl: "https://beta.paystack.com", pusherKey: "1c7b262ee18455815893", pusherUrl: "https://checkout-studio.paystack.com/static/vendor/pusher.min.js" }), $ = { production: H(H({}, X1), {}, { checkoutUrl: "https://checkout.paystack.com/", paymentBaseUrl: "https://standard.paystack.co/", paystackApiUrl: "https://api.paystack.co/", siteUrl: "https://paystack.com", pusherKey: "8e4b9b7ca3418bd5cdc8", pusherUrl: "https://checkout.paystack.com/static/vendor/pusher.min.js" }) }.production || ln;
 function Ke(t, e) {
   var n = [];
   return Object.keys(t).forEach(function(r) {
@@ -1324,7 +1324,7 @@ var Xe = `
 </svg>
 `, G1 = { height: "50px", width: "auto", borderRadius: "3px", padding: "10px", locale: "en", type: "pay" }, ge = function(t) {
   return t && d1(t) === "object" ? Object.keys(G1).reduce(function(e, n) {
-    return D(D({}, e), {}, Je({}, n, t[n] || G1[n]));
+    return H(H({}, e), {}, Je({}, n, t[n] || G1[n]));
   }, {}) : G1;
 }, fn = `
   .pre-checkout-modal {
@@ -1666,7 +1666,7 @@ function z1(t) {
   var e = document.createElement("iframe");
   return e.setAttribute("frameBorder", "0"), e.setAttribute("allowtransparency", "true"), e.id = t, e.style.display = "none", e;
 }
-function I1(t) {
+function M1(t) {
   return t.querySelector("apple-pay-button") || t.querySelector("#apple-pay-button");
 }
 function x1(t) {
@@ -1676,7 +1676,7 @@ function Ee(t, e, n) {
   var r = e.channels, a = r === void 0 ? [] : r, o = e.styles, s = o === void 0 ? {} : o, c = { applePay: !1 };
   return new Promise(function(i, l) {
     if (t) if (Q1(a)) {
-      if (I1(t)) return c.applePay = !0, void i(c);
+      if (M1(t)) return c.applePay = !0, void i(c);
       (function(d, h) {
         return new Promise(function(u, k) {
           var m = document.createElement("script");
@@ -1690,15 +1690,15 @@ function Ee(t, e, n) {
         if (n && n !== 1077497 && window && !Array.isArray(window.webpackJsonp)) throw new Error("Incorrect data type for 'webpackJsonp', expected array, got ".concat(d1(window.webpackJsonp), ". Switching to fallback apple pay button"));
         (function(d, h) {
           var u = h.styles, k = h.theme, m = document.createElement("style"), C = function(w) {
-            var L = w.height, M = w.width, V = w.borderRadius, f = w.padding;
+            var L = w.height, I = w.width, V = w.borderRadius, f = w.padding;
             return `
   apple-pay-button {
-    --apple-pay-button-width: `.concat(M, `;
+    --apple-pay-button-width: `.concat(I, `;
     --apple-pay-button-height: `).concat(L, `;
     --apple-pay-button-border-radius: `).concat(V, `;
     --apple-pay-button-padding: `).concat(f, `;
     --apple-pay-button-box-sizing: border-box;
-    width: `).concat(M, `;
+    width: `).concat(I, `;
   }
 `);
           }(u);
@@ -1709,14 +1709,14 @@ function Ee(t, e, n) {
       }).catch(function() {
         (function(d, h) {
           var u = h.styles, k = h.theme, m = document.createElement("style"), C = function(L) {
-            var M = L.height, V = L.width, f = L.borderRadius, F = L.padding, q = L.type, K = L.locale;
+            var I = L.height, V = L.width, f = L.borderRadius, F = L.padding, q = L.type, K = L.locale;
             return `
   @supports (-webkit-appearance: -apple-pay-button) { 
     .apple-pay-button {
         display: inline-block;
         -webkit-appearance: -apple-pay-button;
         width: `.concat(V, `;
-        height: `).concat(M, `;
+        height: `).concat(I, `;
         border-radius: `).concat(f, `;
         padding: `).concat(F, `;
         -apple-pay-button-type: `).concat(q, `;
@@ -1839,7 +1839,7 @@ function bn(t) {
 }
 var P1 = [{ value: "key", required: !0, types: ["string"] }, { value: "amount", required: !0, or: ["plan", "planCode"], types: ["string", "number"] }, { value: "currency", required: !1, types: ["string"] }, { value: "email", required: !0, or: ["customerCode"], types: ["string"] }, { value: "label", required: !1, types: ["string"] }, { value: "firstName", required: !1, types: ["string"] }, { value: "lastName", required: !1, types: ["string"] }, { value: "reference", required: !1, types: ["string"] }, { value: "phone", required: !1, types: ["string"] }, { value: "customerCode", required: !1, override: "email", types: ["string"] }, { value: "channels", required: !1, types: ["array"] }, { value: "paymentRequest", required: !1, types: ["string", "number"] }, { value: "paymentPage", required: !1, types: ["string"] }, { value: "hash", required: !1, types: ["string"] }, { value: "container", required: !1, types: ["string"] }, { value: "metadata", required: !1, types: ["object"] }, { value: "subaccountCode", required: !1, types: ["string"] }, { value: "bearer", required: !1, types: ["string"] }, { value: "transactionCharge", required: !1, types: ["string", "number"] }, { value: "planCode", required: !1, override: "amount", types: ["string"] }, { value: "subscriptionCount", required: !1, types: ["number"] }, { value: "planInterval", required: !1, types: ["string"] }, { value: "subscriptionLimit", required: !1, types: ["number"] }, { value: "subscriptionStartDate", required: !1, types: ["string"] }, { value: "accessCode", required: !1, types: ["string"] }, { value: "onError", required: !1, types: ["function"] }, { value: "onLoad", required: !1, types: ["function"] }, { value: "onSuccess", required: !1, types: ["function"] }, { value: "onCancel", required: !1, types: ["function"] }, { value: "callback", required: !1, types: ["function"] }, { value: "onClose", required: !1, types: ["function"] }, { value: "onBankTransferConfirmationPending", required: !1, types: ["function"] }, { value: "firstname", required: !1, types: ["string"] }, { value: "lastname", required: !1, types: ["string"] }, { value: "customer_code", required: !1, types: ["string"] }, { value: "payment_request", required: !1, types: ["string", "number"] }, { value: "subaccount", required: !1, types: ["string"] }, { value: "transaction_charge", required: !1, types: ["number", "string"] }, { value: "plan", required: !1, types: ["string"] }, { value: "quantity", required: !1, types: ["number"] }, { value: "interval", required: !1, types: ["string"] }, { value: "invoice_limit", required: !1, types: ["number", "string"] }, { value: "start_date", required: !1, types: ["string"] }, { value: "payment_page", required: !1, types: ["number", "string"] }, { value: "order_id", required: !1, types: ["number"] }, { value: "ref", required: !1, types: ["string"] }, { value: "card", required: !1, types: ["string"] }, { value: "bank", required: !1, types: ["string"] }, { value: "split", required: !1, types: ["object"] }, { value: "split_code", required: !1, types: ["string"] }, { value: "transaction_type", required: !1, types: ["string"] }, { value: "subscription", required: !1, types: ["number"] }, { value: "language", required: !1, types: ["string"] }, { value: "connect_account", required: !1, types: ["string"] }, { value: "connect_split", required: !1, types: ["array"] }];
 function gn(t) {
-  var e, n = D({}, t);
+  var e, n = H({}, t);
   return n.metadata = t.metadata || {}, n.metadata.referrer = (e = window.location.href) && e.length > 500 ? e.split("?")[0] : e, n.metadata = JSON.stringify(n.metadata), n.mode = "popup", t.split && typeof t.split != "string" && (n.split = JSON.stringify(n.split)), n.card !== void 0 && ["false", !1].indexOf(n.card) > -1 && (n.channels = ["bank"], delete n.card), n.bank !== void 0 && ["false", !1].indexOf(n.bank) > -1 && (n.channels = ["card"], delete n.bank), [{ to: "firstname", from: "firstName" }, { to: "lastname", from: "lastName" }, { to: "customer_code", from: "customerCode" }, { to: "payment_request", from: "paymentRequest" }, { to: "subaccount", from: "subaccountCode" }, { to: "transaction_charge", from: "transactionCharge" }, { to: "plan", from: "planCode" }, { to: "quantity", from: "subscriptionCount" }, { to: "interval", from: "planInterval" }, { to: "invoice_limit", from: "subscriptionLimit" }, { to: "start_date", from: "subscriptionStartDate" }, { to: "ref", from: "reference" }].forEach(function(r) {
     n[r.from] && (n[r.to] = n[r.from], delete n[r.from]);
   }), Object.values(t).forEach(function(r, a) {
@@ -1895,8 +1895,8 @@ var kn = ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhon
   } catch {
   }
 } }, xn = ["language", "connect_account"], Pn = { requestInline: function() {
-  var t = this, e = this.urlParameters, n = e.language, r = e.connect_account, a = B1(e, xn), o = D({ "Content-Type": "application/json" }, n && { "Accept-Language": n });
-  return (this.accessCode ? fetch(new URL("transaction/verify_access_code/".concat(this.accessCode), $.paystackApiUrl).toString(), { headers: o }) : fetch(new URL("/checkout/request_inline", $.paystackApiUrl).toString(), { method: "POST", body: JSON.stringify(a), headers: D(D({}, o), r && { "x-connect-account": r }) })).then(function(s) {
+  var t = this, e = this.urlParameters, n = e.language, r = e.connect_account, a = B1(e, xn), o = H({ "Content-Type": "application/json" }, n && { "Accept-Language": n });
+  return (this.accessCode ? fetch(new URL("transaction/verify_access_code/".concat(this.accessCode), $.paystackApiUrl).toString(), { headers: o }) : fetch(new URL("/checkout/request_inline", $.paystackApiUrl).toString(), { method: "POST", body: JSON.stringify(a), headers: H(H({}, o), r && { "x-connect-account": r }) })).then(function(s) {
     return s.json();
   }).then(function(s) {
     if (s.status === !1) throw new Error(s.message);
@@ -1962,7 +1962,7 @@ var kn = ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhon
 function Pe(t, e, n) {
   _1('"'.concat(t, '" has been deprecated, please use "').concat(e, '". ').concat(n));
 }
-var S, Tn = ["preload", "inlineTransaction"], Mn = ["container", "styles", "onElementsMount"];
+var S, Tn = ["preload", "inlineTransaction"], In = ["container", "styles", "onElementsMount"];
 function Y1(t, e) {
   if (!t.length) return null;
   var n = t.filter(function(r) {
@@ -1975,11 +1975,11 @@ function Te(t) {
   var e = t.checkoutIframe, n = t.urlParameters;
   e && n && e.contentWindow.postMessage({ type: "inline:url", path: "newTransaction", params: n }, "*");
 }
-var In = "trackCheckoutClosed", Me = "trackPaymentError", Vn = "trackPaymentAttempt", An = "trackPaymentCompletion";
+var Mn = "trackCheckoutClosed", Ie = "trackPaymentError", Vn = "trackPaymentAttempt", An = "trackPaymentCompletion";
 function F1(t) {
   throw _1(t), new Error(t);
 }
-var Ie, Ve, it = function() {
+var Me, Ve, it = function() {
   function t(e) {
     var n, r;
     Ze(this, t), this.id = function() {
@@ -2198,7 +2198,7 @@ var Ie, Ve, it = function() {
           u.classList.add("pre-checkout-modal"), u.id = "pre-checkout-modal-".concat(i), u.style.zIndex = mn() + 1;
           var k = document.createElement("div");
           k.classList.add("pre-checkout-modal__content"), u.appendChild(k);
-          var m = l || {}, C = m.merchant_logo, g = m.merchant_name, w = m.email, L = m.amount, M = m.currency, V = m.label, f = new Intl.NumberFormat("en", { style: "currency", currency: M, currencyDisplay: "code", maximumFractionDigits: 2, minimumFractionDigits: 0 }).format(L / 100), F = document.createElement("div");
+          var m = l || {}, C = m.merchant_logo, g = m.merchant_name, w = m.email, L = m.amount, I = m.currency, V = m.label, f = new Intl.NumberFormat("en", { style: "currency", currency: I, currencyDisplay: "code", maximumFractionDigits: 2, minimumFractionDigits: 0 }).format(L / 100), F = document.createElement("div");
           F.classList.add("payment-info"), F.innerHTML = '<img class="merchant-logo" src="'.concat(C, '" alt="').concat(g, ` Logo">
     <div class="customer-info">
       <div class="customer-email">`).concat(V || w, `</div>
@@ -2250,7 +2250,7 @@ var Ie, Ve, it = function() {
       return i.querySelector("#apple-pay-close-button");
     }(this.preCheckoutModal);
     c.onclick = function() {
-      n.sendAnalyticsEventToCheckout(In), n.closePreCheckoutModalAndCancelTransaction();
+      n.sendAnalyticsEventToCheckout(Mn), n.closePreCheckoutModalAndCancelTransaction();
     };
   } }, { key: "closePreCheckoutModal", value: function(e) {
     var n;
@@ -2268,17 +2268,17 @@ var Ie, Ve, it = function() {
   } }, { key: "closePreCheckoutModalAndCancelTransaction", value: function() {
     this.preCheckoutModal && (this.cancelTransaction(), this.checkoutIframe && this.checkoutIframe.contentWindow && this.checkoutIframe.contentWindow.postMessage("close", "*"), this.closePreCheckoutModal());
   } }, { key: "newTransaction", value: function(e) {
-    var n, r = e.preload, a = e.inlineTransaction, o = B1(e, Tn), s = this.paymentRequestContainer && I1(this.paymentRequestContainer);
+    var n, r = e.preload, a = e.inlineTransaction, o = B1(e, Tn), s = this.paymentRequestContainer && M1(this.paymentRequestContainer);
     this.activeTransaction() && !s && this.activeTransaction().cancel();
     var c = Y1(this.transactions, a ? a.parameters : o), i = c || a || new U1(o);
     return c ? (i.isActive = !0, n = { accessCode: i.accessCode }) : (n = i.accessCode ? { accessCode: i.accessCode } : i.urlParameters, this.transactions.push(i)), this.isDeprecatedApi || this.open(n, r), i;
   } }, { key: "preloadTransaction", value: function(e) {
     var n = this;
-    return this.newTransaction(D(D({}, e), {}, { preload: !0 })), function() {
+    return this.newTransaction(H(H({}, e), {}, { preload: !0 })), function() {
       return n.animateCheckoutIn();
     };
   } }, { key: "paymentRequest", value: function(e) {
-    var n = e.container, r = e.styles, a = e.onElementsMount, o = B1(e, Mn);
+    var n = e.container, r = e.styles, a = e.onElementsMount, o = B1(e, In);
     return S = this, new Promise(function(s, c) {
       var i = document.querySelector("#".concat(e.loadPaystackCheckoutButton));
       if (_e()) {
@@ -2311,7 +2311,7 @@ var Ie, Ve, it = function() {
     });
   } }, { key: "registerApplePayEventListener", value: function() {
     var e = this;
-    I1(this.paymentRequestContainer).onclick = function() {
+    M1(this.paymentRequestContainer).onclick = function() {
       return e.startApplePay();
     };
   } }, { key: "registerPaymentRequestEventListeners", value: function() {
@@ -2323,11 +2323,11 @@ var Ie, Ve, it = function() {
       var l = { channel: "apple_pay", paymentMethod: c, currency: i.currency, amount: i.amount }, d = { channel: "apple_pay", currency: i.currency, amount: i.amount, timeSpent: i.getTimeSpent() };
       try {
         i.logAttempt(c), this.sendAnalyticsEventToCheckout(Vn, l);
-        var h = (e = { currency: i.response.currency, amount: i.response.amount, merchantName: i.response.merchant_name, interval: i.response.plan_details && i.response.plan_details.interval }, n = e.currency, r = e.amount, a = e.merchantName, o = e.interval, D({ countryCode: "NG", currencyCode: n, merchantCapabilities: ["supports3DS", "supportsCredit", "supportsDebit"], supportedNetworks: ["visa", "masterCard"], requiredBillingContactFields: ["postalAddress", "name", "phone", "email"], total: { label: "".concat(a, " - Paystack"), type: "final", amount: String(ke(r)) } }, typeof o == "string" && o.trim() !== "" && { lineItems: [{ label: hn(o), amount: String(ke(r)) }] })), u = new window.ApplePaySession($.applePayVersion, h);
+        var h = (e = { currency: i.response.currency, amount: i.response.amount, merchantName: i.response.merchant_name, interval: i.response.plan_details && i.response.plan_details.interval }, n = e.currency, r = e.amount, a = e.merchantName, o = e.interval, H({ countryCode: "NG", currencyCode: n, merchantCapabilities: ["supports3DS", "supportsCredit", "supportsDebit"], supportedNetworks: ["visa", "masterCard"], requiredBillingContactFields: ["postalAddress", "name", "phone", "email"], total: { label: "".concat(a, " - Paystack"), type: "final", amount: String(ke(r)) } }, typeof o == "string" && o.trim() !== "" && { lineItems: [{ label: hn(o), amount: String(ke(r)) }] })), u = new window.ApplePaySession($.applePayVersion, h);
         u.onvalidatemerchant = function(k) {
           var m = function(C) {
-            var g = C.transactionId, w = C.validationURL, L = C.merchantName, M = C.domainName, V = M === void 0 ? window && window.location && window.location.hostname : M, f = "".concat($.paymentBaseUrl).concat($.applePayValidateSessionPath), F = Se({ transaction: g, sessionUrl: w, displayName: L, domainName: V });
-            return fetch(f, D(D({}, we), {}, { body: F })).then(function(q) {
+            var g = C.transactionId, w = C.validationURL, L = C.merchantName, I = C.domainName, V = I === void 0 ? window && window.location && window.location.hostname : I, f = "".concat($.paymentBaseUrl).concat($.applePayValidateSessionPath), F = Se({ transaction: g, sessionUrl: w, displayName: L, domainName: V });
+            return fetch(f, H(H({}, we), {}, { body: F })).then(function(q) {
               return q.json();
             });
           }({ validationURL: k.validationURL, transactionId: i.id, merchantName: i.response.merchant_name });
@@ -2340,15 +2340,15 @@ var Ie, Ve, it = function() {
           S.preCheckoutModal || i.onCancel();
         }, u.onpaymentauthorized = function(k) {
           var m = k.payment, C = function(g) {
-            var w = g.transactionId, L = g.payment, M = "".concat($.paymentBaseUrl).concat($.applePayChargePath), V = Se({ transaction: w, paymentObject: JSON.stringify(L) });
-            return fetch(M, D(D({}, we), {}, { body: V })).then(function(f) {
+            var w = g.transactionId, L = g.payment, I = "".concat($.paymentBaseUrl).concat($.applePayChargePath), V = Se({ transaction: w, paymentObject: JSON.stringify(L) });
+            return fetch(I, H(H({}, we), {}, { body: V })).then(function(f) {
               return f.json();
             });
           }({ transactionId: i.id, payment: m });
           C.then(function(g) {
-            i.logAPIResponse(g, c), g.status === "success" ? (u.completePayment(u.STATUS_SUCCESS), i.onSuccess(g), s.sendAnalyticsEventToCheckout(An, d)) : (u.completePayment(u.STATUS_FAILURE), i.onSetupError(g), s.sendAnalyticsEventToCheckout(Me, { channel: "apple_pay", message: g && g.message || "Transaction attempt failed" })), S.closePreCheckoutModal(g.status);
+            i.logAPIResponse(g, c), g.status === "success" ? (u.completePayment(u.STATUS_SUCCESS), i.onSuccess(g), s.sendAnalyticsEventToCheckout(An, d)) : (u.completePayment(u.STATUS_FAILURE), i.onSetupError(g), s.sendAnalyticsEventToCheckout(Ie, { channel: "apple_pay", message: g && g.message || "Transaction attempt failed" })), S.closePreCheckoutModal(g.status);
           }).catch(function(g) {
-            u.completePayment(u.STATUS_FAILURE), i.onSetupError(g), s.sendAnalyticsEventToCheckout(Me, { channel: "apple_pay", message: g && g.message || "Error occurred" }), S.closePreCheckoutModal("failed");
+            u.completePayment(u.STATUS_FAILURE), i.onSetupError(g), s.sendAnalyticsEventToCheckout(Ie, { channel: "apple_pay", message: g && g.message || "Error occurred" }), S.closePreCheckoutModal("failed");
           });
         }, u.begin();
       } catch (k) {
@@ -2386,7 +2386,7 @@ var Ie, Ve, it = function() {
           case "close":
             this.close();
             var i = c && c.status;
-            i && a.setStatus(i), !(this.paymentRequestContainer && I1(this.paymentRequestContainer) && !this.preCheckoutModal) && (a.isActive = !1), a.onCancel();
+            i && a.setStatus(i), !(this.paymentRequestContainer && M1(this.paymentRequestContainer) && !this.preCheckoutModal) && (a.isActive = !1), a.onCancel();
             break;
           case "transfer:pending":
             this.close();
@@ -2475,8 +2475,8 @@ var Ie, Ve, it = function() {
     return r;
   } }]), t;
 }();
-if (Ie = be().length > 0, Ve = h1() && h1().parentElement.tagName === "FORM", Ie && Ve) {
-  var D1, p1 = function() {
+if (Me = be().length > 0, Ve = h1() && h1().parentElement.tagName === "FORM", Me && Ve) {
+  var H1, p1 = function() {
     var t = {}, e = h1();
     return be().forEach(function(n) {
       var r = e.getAttribute(n), a = n.split("data-")[1].replace(/-([a-z])/g, function(o) {
@@ -2485,7 +2485,7 @@ if (Ie = be().length > 0, Ve = h1() && h1().parentElement.tagName === "FORM", Ie
       t[a] = r;
     }), function(n) {
       if (n.buttonId && !document.getElementById(n.buttonId)) throw new Error("Please make sure the buttonId is an element available in the DOM");
-      var r = D({}, n);
+      var r = H({}, n);
       r.buttonText = n.buttonText || "Pay", r.buttonVariant = "normal", r.buttonWordmarkVariant = "normal";
       var a = ["normal", "light"];
       return n.buttonVariant && a.indexOf(n.buttonVariant) > -1 && (r.buttonVariant = n.buttonVariant), n.buttonWordmarkVariant && a.indexOf(n.buttonWordmarkVariant) > -1 && (r.buttonWordmarkVariant = n.buttonWordmarkVariant), r;
@@ -2553,7 +2553,7 @@ if (Ie = be().length > 0, Ve = h1() && h1().parentElement.tagName === "FORM", Ie
     }
     return e;
   }({ inlineId: S.id, amount: p1.amount / 100, currency: p1.currency, id: p1.buttonId, text: p1.buttonText, variant: p1.buttonVariant, wordmarkVariant: p1.buttonWordmarkVariant, parent: h1() }).addEventListener("click", function(t) {
-    t.preventDefault(), D1 ? S.resumeTransaction(D1.accessCode) : D1 = S.newTransaction(D(D({}, p1), {}, { onSuccess: function(e) {
+    t.preventDefault(), H1 ? S.resumeTransaction(H1.accessCode) : H1 = S.newTransaction(H(H({}, p1), {}, { onSuccess: function(e) {
       var n, r, a, o, s, c;
       n = { type: "hidden", name: "reference", value: e.reference, parent: Ae }, r = n.type, a = n.value, o = n.name, s = n.parent, (c = document.createElement("input")).type = r, c.value = a, c.name = o, s.appendChild(c), Ae.submit();
     } }));
@@ -2565,11 +2565,11 @@ var On = function(t) {
 };
 function st(t) {
   function e(n) {
-    var r = n.config, a = n.onSuccess, o = n.onClose, s = U(U({}, t), r), c = s.publicKey, i = s.firstname, l = s.lastname, d = s.phone, h = s.email, u = s.amount, k = s.reference, m = s.metadata, C = s.currency, g = C === void 0 ? "NGN" : C, w = s.channels, L = s.label, M = s.plan, V = s.quantity, f = s.subaccount, F = s.transaction_charge, q = s.bearer, K = s.split, t1 = s.split_code, B = s.connect_account, n1 = s.connect_split, X = s.onBankTransferConfirmationPending, l1 = U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U({ onSuccess: a || function() {
+    var r = n.config, a = n.onSuccess, o = n.onClose, s = U(U({}, t), r), c = s.publicKey, i = s.firstname, l = s.lastname, d = s.phone, h = s.email, u = s.amount, k = s.reference, m = s.metadata, C = s.currency, g = C === void 0 ? "NGN" : C, w = s.channels, L = s.label, I = s.plan, V = s.quantity, f = s.subaccount, F = s.transaction_charge, q = s.bearer, K = s.split, t1 = s.split_code, B = s.connect_account, n1 = s.connect_split, X = s.onBankTransferConfirmationPending, l1 = U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U({ onSuccess: a || function() {
       return null;
     }, onCancel: o || function() {
       return null;
-    }, key: c, email: h, amount: u }, i && { firstname: i }), l && { lastname: l }), d && { phone: d }), k && { ref: k }), g && { currency: g }), w && { channels: w }), m && { metadata: m }), L && { label: L }), X && { onBankTransferConfirmationPending: X }), f && { subaccount: f }), F && { transaction_charge: F }), q && { bearer: q }), K && { split: K }), t1 && { split_code: t1 }), M && { plan: M }), V && { quantity: V }), n1 && { connect_split: n1 }), B && { connect_account: B });
+    }, key: c, email: h, amount: u }, i && { firstname: i }), l && { lastname: l }), d && { phone: d }), k && { ref: k }), g && { currency: g }), w && { channels: w }), m && { metadata: m }), L && { label: L }), X && { onBankTransferConfirmationPending: X }), f && { subaccount: f }), F && { transaction_charge: F }), q && { bearer: q }), K && { split: K }), t1 && { split_code: t1 }), I && { plan: I }), V && { quantity: V }), n1 && { connect_split: n1 }), B && { connect_account: B });
     On(l1);
   }
   return e;
@@ -2586,7 +2586,7 @@ var ct = ht({
     return null;
   }
 }), jn = function(t) {
-  var e = t.children, n = t.onSuccess, r = t.onClose, a = He(t, ["children", "onSuccess", "onClose"]), o = st(a);
+  var e = t.children, n = t.onSuccess, r = t.onClose, a = De(t, ["children", "onSuccess", "onClose"]), o = st(a);
   return W.createElement(ct.Provider, { value: { config: a, initializePayment: o, onSuccess: n, onClose: r } }, e);
 }, Ln = function(t) {
   var e = t.children, n = t.ref, r = yt(ct), a = r.config, o = r.initializePayment, s = r.onSuccess, c = r.onClose, i = function() {
@@ -2595,7 +2595,7 @@ var ct = ht({
   return e({ initializePayment: i, ref: n });
 };
 mt(function(t, e) {
-  var n = t.children, r = t.onSuccess, a = t.onClose, o = He(t, ["children", "onSuccess", "onClose"]), s = r || function() {
+  var n = t.children, r = t.onSuccess, a = t.onClose, o = De(t, ["children", "onSuccess", "onClose"]), s = r || function() {
     return null;
   }, c = a || function() {
     return null;
@@ -2615,10 +2615,10 @@ const Rn = "_checkoutModal_1rie5_1", Nn = "_backdrop_1rie5_14", Wn = "_errorMess
   checkoutTop: qn,
   checkoutTopFirst: Un,
   checkoutTopSpan: Yn
-}, Fn = "_buttonBase_oq4y8_10", Dn = "_buttonDefault_oq4y8_37", Hn = "_buttonOutlined_oq4y8_46", Zn = "_buttonText_oq4y8_58", Bn = "_buttonFull_oq4y8_67", Jn = "_buttonDisabled_oq4y8_71", f1 = {
+}, Fn = "_buttonBase_oq4y8_10", Hn = "_buttonDefault_oq4y8_37", Dn = "_buttonOutlined_oq4y8_46", Zn = "_buttonText_oq4y8_58", Bn = "_buttonFull_oq4y8_67", Jn = "_buttonDisabled_oq4y8_71", f1 = {
   buttonBase: Fn,
-  buttonDefault: Dn,
-  buttonOutlined: Hn,
+  buttonDefault: Hn,
+  buttonOutlined: Dn,
   buttonText: Zn,
   buttonFull: Bn,
   buttonDisabled: Jn
@@ -2782,7 +2782,7 @@ const Kn = "_spinner_1uybp_1", Xn = {
   payload: a,
   signature: o
 }) => {
-  const [s, c] = b1(!1), i = "https://dev.trymima.com/v1", l = {
+  const [s, c] = b1(!1), i = "https://api.trymima.com/v1", l = {
     product: "/invoices/new/checkout",
     bookings: "/invoices/accept-booking-invoice"
   }, [d, h] = b1(""), [u, k] = b1({}), [m, C] = b1("");
@@ -2790,7 +2790,7 @@ const Kn = "_spinner_1uybp_1", Xn = {
     if (!t || a?.order?.items && a?.order?.items?.length < 1)
       return;
     const q = i + l.product;
-    console.log("signature", o), console.log("payload", a), (async () => {
+    (async () => {
       c(!0);
       try {
         const B = await (await fetch(q, {
@@ -2818,7 +2818,7 @@ const Kn = "_spinner_1uybp_1", Xn = {
     o
   ]);
   const g = Ct(() => {
-    const q = "pk_test_c089002666ab7778df8fe31313c5bba3d6f69914", K = {
+    const q = "pk_live_8f9d0f43221de55a2139081d8a530fd65a15e960", K = {
       custom_fields: [
         {
           display_name: "business",
@@ -2862,14 +2862,14 @@ const Kn = "_spinner_1uybp_1", Xn = {
     r?.(), e();
   }, L = () => {
     n?.(), e();
-  }, M = st(g);
+  }, I = st(g);
   ee(() => {
-    u?.currencyCode === "NGN" && M({
+    u?.currencyCode === "NGN" && I({
       onSuccess: L,
       onClose: w
     });
   }, [u]);
-  const f = on("pk_test_51MZRkkCxdM6WOQdWKpad49vDaWdY0xINxv5Rkipm2RZJ0jkYDtD17mpPlWTDdceDJXKDpEeqXeS8Y7GMxu38Lub300QAKMidAd"), F = () => {
+  const f = on("pk_live_51R3rfgDWL23lDLO0wx0psgHwZdtra8Hpt62NV4jhjHNEL2Vy1tX6GDtmG6x4JhPNcLjBz3O9FJLIOWuDVhECKdUB00Br6kqrtR"), F = () => {
     h("");
   };
   if (!t) return null;
