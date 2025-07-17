@@ -1,7 +1,7 @@
 import type { CurrencyCode } from "./currency";
 
 export interface OrderItem {
-  name: string;
+  item: string;
   quantity: number;
   unitPrice: number;
 }
@@ -24,40 +24,6 @@ export type CustomerInfo = {
 
 export type CheckoutType = "PRODUCT" | "BOOKING";
 
-export type InvoicePayload = {
-  customer: CustomerInfo;
-  publicKey?: string;
-  invoice: {
-    orders: OrderItem[];
-    orderId: string;
-    shippingFee?: number;
-    currencyCode: CurrencyCode;
-  };
-};
-
-export type BookingPayload = {
-  fullname: string;
-  email: string;
-  mobile?: string;
-  street?: string;
-  country?: string;
-  postCode?: string;
-  state?: string;
-  business: string;
-  currencyCode: CurrencyCode;
-  bookings: {
-    style: string;
-    variant?: string;
-    sessionDateTime: string;
-  }[];
-};
-
-export type CheckoutData = {
-  payload: InvoicePayload | BookingPayload;
-  type: CheckoutType;
-  mimaKey: string;
-};
-
 export type InvoiceResponse = {
   business: {
     _id: string;
@@ -76,17 +42,25 @@ export type InvoiceResponse = {
   statusCode?: number;
 };
 
-export type CheckoutProps = {
-  customer: CustomerInfo;
-  mimaKey: string;
-  orders: OrderItem[];
-  currency: CurrencyCode;
+export interface OrderProps {
+  items: OrderItem[];
+  currencyCode: CurrencyCode;
+  shipping?: number;
   orderId: string;
-  shippingFee?: number;
-  bookings?: BookingInfo[];
-  checkoutFor?: CheckoutType;
+}
+
+export interface CheckoutPayload {
+  customer: CustomerInfo;
+  publicKey: string;
+  order: OrderProps;
+  callBackUrl?: string;
+}
+
+export type CheckoutProps = {
+  payload: CheckoutPayload;
   onSuccess?: () => void;
   onClose?: () => void;
+  signature: string;
 };
 
 export type MimaButtonProps = CheckoutProps & {

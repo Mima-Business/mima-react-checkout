@@ -1,14 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import type {
-  BookingInfo,
-  CheckoutType,
-  CurrencyCode,
-  CustomerInfo,
-  InvoiceResponse,
-  OrderItem,
-} from "../types";
+import type { CheckoutPayload, InvoiceResponse } from "../types";
 import { usePaystackPayment } from "react-paystack";
 import StripeCheckoutForm from "./StripeCheckoutForm";
 import Spinner from "./Spinner";
@@ -20,14 +13,8 @@ type Props = {
   onClose?: () => void;
   isOpen: boolean;
   closeCheckout: () => void;
-  customer: CustomerInfo;
-  mimaKey: string;
-  orderId: string;
-  orders?: OrderItem[];
-  currency: CurrencyCode;
-  bookings?: BookingInfo[];
-  checkoutFor?: CheckoutType;
-  shippingFee?: number;
+  payload: CheckoutPayload;
+  signature: string;
 };
 
 export const CheckoutPortal = ({
@@ -35,76 +22,15 @@ export const CheckoutPortal = ({
   closeCheckout,
   onSuccess,
   onClose,
-  customer,
-  mimaKey,
-  orders,
-  currency,
-  shippingFee,
-  bookings,
-  checkoutFor = "PRODUCT",
-  orderId,
+  payload,
+  signature,
 }: Props) => {
   const [isLoading, setIsLoading] = useState(false);
-
-  const remapOrders = (orders: OrderItem[]) => {
-    const mappedOrders = orders?.map(({ name, ...rest }) => {
-      return {
-        item: name,
-        ...rest,
-      };
-    });
-
-    return mappedOrders;
-  };
-
-  const remapBookings = (bookings: BookingInfo[]) => {
-    const mappedBookings = bookings?.map(({ id, ...rest }) => {
-      return {
-        style: id,
-        ...rest,
-      };
-    });
-
-    return mappedBookings;
-  };
-  const productPayload = useMemo(
-    () => ({
-      customer,
-      publicKey: mimaKey,
-      invoice: {
-        orders: remapOrders(orders as OrderItem[]),
-        orderId,
-        currencyCode: currency,
-        shipping: shippingFee ?? 0,
-      },
-    }),
-    [customer, mimaKey, orders, currency, shippingFee, orderId]
-  );
-
-  const bookingPayload = useMemo(
-    () => ({
-      fullname: customer?.fullname,
-      email: customer?.email,
-      mobile: customer?.mobile,
-      street: customer?.street,
-      country: customer?.country,
-      postCode: customer?.postCode,
-      state: customer?.state,
-      publicKey: mimaKey,
-      currencyCode: currency,
-      bookings: remapBookings(bookings as BookingInfo[]),
-    }),
-    [customer, mimaKey, bookings, currency]
-  );
-
-  const body = useMemo(() => {
-    return checkoutFor === "PRODUCT" ? productPayload : bookingPayload;
-  }, [checkoutFor, productPayload, bookingPayload]);
 
   const baseUrl = import.meta.env.VITE_BASE_API_URL;
 
   const urls = {
-    product: "/invoices/checkout",
+    product: "/invoices/new/checkout",
     bookings: "/invoices/accept-booking-invoice",
   };
 
@@ -113,26 +39,21 @@ export const CheckoutPortal = ({
   const [error, setError] = useState("");
 
   useEffect(() => {
-    if (
-      !isOpen ||
-      (orders && orders?.length < 1) ||
-      (bookings && bookings.length < 1)
-    )
+    if (!isOpen || (payload?.order?.items && payload?.order?.items?.length < 1))
       return;
 
-    let fullUrl = baseUrl + urls.product;
-
-    if (checkoutFor === "BOOKING") {
-      fullUrl = baseUrl + urls.bookings;
-    }
+    const fullUrl = baseUrl + urls.product;
 
     const fetchSession = async () => {
       setIsLoading(true);
       try {
         const res = await fetch(fullUrl, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(body),
+          headers: {
+            "Content-Type": "application/json",
+            "x-mima-signature": signature,
+          },
+          body: JSON.stringify(payload),
         });
 
         const data = (await res.json()) as InvoiceResponse;
@@ -157,14 +78,11 @@ export const CheckoutPortal = ({
   }, [
     isOpen,
     closeCheckout,
-    orders,
-    bookings,
     urls.product,
     urls.bookings,
-    checkoutFor,
-    body,
-    currency,
     baseUrl,
+    payload,
+    signature,
   ]);
 
   const paystackConfig = useMemo(() => {
