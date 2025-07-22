@@ -1,7 +1,7 @@
 {
   "name": "mima-react-checkout",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Official React Package for Mima payment APIs",
   "type": "module",
   "main": "dist/index.cjs",

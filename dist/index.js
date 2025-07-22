@@ -1,5 +1,5 @@
 (function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode("*{line-height:1.2}h1,h2,h3,h4,h5,h6,p{all:unset;line-height:1.4;display:block}h1,h2,h3,h4,h5,h6{font-weight:600}._checkoutModal_1rie5_1{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9999;display:flex;justify-content:center;align-items:center;font-family:inherit}._backdrop_1rie5_14{position:absolute;width:100%;height:100%;background-color:#0006;top:0;left:0;z-index:-1}._loading_1rie5_24{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 8px #0003}._errorMessage_1rie5_31{background-color:#fff;color:#d32f2f;font-weight:500;padding:20px;border-radius:10px;border:1px solid #d32f2f;text-align:center}@keyframes _modalFadeIn_1rie5_1{0%{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}._modalContent_1rie5_52{background-color:#fff;padding:30px 20px;border-radius:12px;position:relative;z-index:10000;animation:_modalFadeIn_1rie5_1 .25s ease-out}._checkoutForm_1rie5_61{display:flex;flex-direction:column;gap:10px;width:500px;max-width:100%}@media (max-width: 520px){._checkoutForm_1rie5_61{width:100%}._modalContent_1rie5_52{padding:20px 12px;max-width:98%}}._checkoutTop_1rie5_80{display:flex;flex-direction:column;font-size:20px}._checkoutTopFirst_1rie5_86{font-size:14px;color:#464646}._checkoutTopSpan_1rie5_91{color:#136e13;font-weight:600}:root{--primary-normal: #1f68d6;--primary-hover: #003c97;--grey-200: #e5e7eb;--dark-700: #414651;--dark-900: #1f2937}._buttonBase_oq4y8_10{height:40px;padding:8px 12px;border-radius:6px;cursor:pointer;width:fit-content;display:flex;justify-content:center;align-items:center;gap:8px;white-space:nowrap;outline:none;border:none}._buttonBase_oq4y8_10:disabled{background-color:#ccc;cursor:not-allowed}._buttonBase_oq4y8_10:disabled:hover{background-color:#ccc}._buttonDefault_oq4y8_37{background-color:var(--primary-normal);color:#fff}._buttonDefault_oq4y8_37:hover{background-color:var(--primary-hover)}._buttonOutlined_oq4y8_46{background-color:transparent;border:1px solid var(--grey-200);color:var(--dark-700)}._buttonOutlined_oq4y8_46:hover{border-color:var(--dark-700);color:var(--dark-900);background-color:var(--grey-200)}._buttonText_oq4y8_58{background-color:transparent;color:var(--primary-normal)}._buttonText_oq4y8_58:hover{color:var(--primary-hover)}._buttonFull_oq4y8_67{width:100%}._buttonDisabled_oq4y8_71{opacity:.6;pointer-events:none}._spinner_1uybp_1{border:2px solid rgba(0,0,0,.1);border-top:2px solid white;border-radius:50%;width:15px;height:15px;animation:_spin_1uybp_1 .6s linear infinite}@keyframes _spin_1uybp_1{to{transform:rotate(360deg)}}._container_1apau_1{display:flex;flex-direction:column;gap:10px;width:fit-content}._label_1apau_8{display:flex;align-items:center;cursor:pointer;gap:5px}._labelText_1apau_15{font-weight:500}._logo_1apau_19{height:25px;width:auto;object-fit:contain;display:block}._mima_1apau_26{display:flex;align-items:center;justify-content:center;margin-top:10px;gap:10px;text-decoration:none;color:#1f2937}")),document.head.appendChild(o)}}catch(e){console.error("vite-plugin-css-injected-by-js",e)}})();
-import { jsx as z, jsxs as i1, Fragment as ft } from "react/jsx-runtime";
+import { jsx as q, jsxs as i1, Fragment as ft } from "react/jsx-runtime";
 import W, { createContext as ht, forwardRef as mt, useContext as yt, useState as b1, useEffect as ee, useMemo as Ct } from "react";
 import { createRoot as vt } from "react-dom/client";
 function bt(t) {
@@ -18,67 +18,67 @@ var te;
 function gt() {
   if (te) return R;
   te = 1;
-  var t = typeof Symbol == "function" && Symbol.for, e = t ? Symbol.for("react.element") : 60103, n = t ? Symbol.for("react.portal") : 60106, r = t ? Symbol.for("react.fragment") : 60107, a = t ? Symbol.for("react.strict_mode") : 60108, o = t ? Symbol.for("react.profiler") : 60114, s = t ? Symbol.for("react.provider") : 60109, c = t ? Symbol.for("react.context") : 60110, i = t ? Symbol.for("react.async_mode") : 60111, l = t ? Symbol.for("react.concurrent_mode") : 60111, d = t ? Symbol.for("react.forward_ref") : 60112, h = t ? Symbol.for("react.suspense") : 60113, u = t ? Symbol.for("react.suspense_list") : 60120, k = t ? Symbol.for("react.memo") : 60115, m = t ? Symbol.for("react.lazy") : 60116, C = t ? Symbol.for("react.block") : 60121, g = t ? Symbol.for("react.fundamental") : 60117, w = t ? Symbol.for("react.responder") : 60118, L = t ? Symbol.for("react.scope") : 60119;
-  function I(f) {
-    if (typeof f == "object" && f !== null) {
-      var F = f.$$typeof;
-      switch (F) {
+  var t = typeof Symbol == "function" && Symbol.for, e = t ? Symbol.for("react.element") : 60103, n = t ? Symbol.for("react.portal") : 60106, r = t ? Symbol.for("react.fragment") : 60107, a = t ? Symbol.for("react.strict_mode") : 60108, o = t ? Symbol.for("react.profiler") : 60114, s = t ? Symbol.for("react.provider") : 60109, c = t ? Symbol.for("react.context") : 60110, i = t ? Symbol.for("react.async_mode") : 60111, l = t ? Symbol.for("react.concurrent_mode") : 60111, p = t ? Symbol.for("react.forward_ref") : 60112, d = t ? Symbol.for("react.suspense") : 60113, f = t ? Symbol.for("react.suspense_list") : 60120, C = t ? Symbol.for("react.memo") : 60115, m = t ? Symbol.for("react.lazy") : 60116, b = t ? Symbol.for("react.block") : 60121, k = t ? Symbol.for("react.fundamental") : 60117, w = t ? Symbol.for("react.responder") : 60118, A = t ? Symbol.for("react.scope") : 60119;
+  function T(h) {
+    if (typeof h == "object" && h !== null) {
+      var z = h.$$typeof;
+      switch (z) {
         case e:
-          switch (f = f.type, f) {
+          switch (h = h.type, h) {
             case i:
             case l:
             case r:
             case o:
             case a:
-            case h:
-              return f;
+            case d:
+              return h;
             default:
-              switch (f = f && f.$$typeof, f) {
+              switch (h = h && h.$$typeof, h) {
                 case c:
-                case d:
+                case p:
                 case m:
-                case k:
+                case C:
                 case s:
-                  return f;
+                  return h;
                 default:
-                  return F;
+                  return z;
               }
           }
         case n:
-          return F;
+          return z;
       }
     }
   }
-  function V(f) {
-    return I(f) === l;
+  function V(h) {
+    return T(h) === l;
   }
-  return R.AsyncMode = i, R.ConcurrentMode = l, R.ContextConsumer = c, R.ContextProvider = s, R.Element = e, R.ForwardRef = d, R.Fragment = r, R.Lazy = m, R.Memo = k, R.Portal = n, R.Profiler = o, R.StrictMode = a, R.Suspense = h, R.isAsyncMode = function(f) {
-    return V(f) || I(f) === i;
-  }, R.isConcurrentMode = V, R.isContextConsumer = function(f) {
-    return I(f) === c;
-  }, R.isContextProvider = function(f) {
-    return I(f) === s;
-  }, R.isElement = function(f) {
-    return typeof f == "object" && f !== null && f.$$typeof === e;
-  }, R.isForwardRef = function(f) {
-    return I(f) === d;
-  }, R.isFragment = function(f) {
-    return I(f) === r;
-  }, R.isLazy = function(f) {
-    return I(f) === m;
-  }, R.isMemo = function(f) {
-    return I(f) === k;
-  }, R.isPortal = function(f) {
-    return I(f) === n;
-  }, R.isProfiler = function(f) {
-    return I(f) === o;
-  }, R.isStrictMode = function(f) {
-    return I(f) === a;
-  }, R.isSuspense = function(f) {
-    return I(f) === h;
-  }, R.isValidElementType = function(f) {
-    return typeof f == "string" || typeof f == "function" || f === r || f === l || f === o || f === a || f === h || f === u || typeof f == "object" && f !== null && (f.$$typeof === m || f.$$typeof === k || f.$$typeof === s || f.$$typeof === c || f.$$typeof === d || f.$$typeof === g || f.$$typeof === w || f.$$typeof === L || f.$$typeof === C);
-  }, R.typeOf = I, R;
+  return R.AsyncMode = i, R.ConcurrentMode = l, R.ContextConsumer = c, R.ContextProvider = s, R.Element = e, R.ForwardRef = p, R.Fragment = r, R.Lazy = m, R.Memo = C, R.Portal = n, R.Profiler = o, R.StrictMode = a, R.Suspense = d, R.isAsyncMode = function(h) {
+    return V(h) || T(h) === i;
+  }, R.isConcurrentMode = V, R.isContextConsumer = function(h) {
+    return T(h) === c;
+  }, R.isContextProvider = function(h) {
+    return T(h) === s;
+  }, R.isElement = function(h) {
+    return typeof h == "object" && h !== null && h.$$typeof === e;
+  }, R.isForwardRef = function(h) {
+    return T(h) === p;
+  }, R.isFragment = function(h) {
+    return T(h) === r;
+  }, R.isLazy = function(h) {
+    return T(h) === m;
+  }, R.isMemo = function(h) {
+    return T(h) === C;
+  }, R.isPortal = function(h) {
+    return T(h) === n;
+  }, R.isProfiler = function(h) {
+    return T(h) === o;
+  }, R.isStrictMode = function(h) {
+    return T(h) === a;
+  }, R.isSuspense = function(h) {
+    return T(h) === d;
+  }, R.isValidElementType = function(h) {
+    return typeof h == "string" || typeof h == "function" || h === r || h === l || h === o || h === a || h === d || h === f || typeof h == "object" && h !== null && (h.$$typeof === m || h.$$typeof === C || h.$$typeof === s || h.$$typeof === c || h.$$typeof === p || h.$$typeof === k || h.$$typeof === w || h.$$typeof === A || h.$$typeof === b);
+  }, R.typeOf = T, R;
 }
 var N = {};
 /** @license React v16.13.1
@@ -92,32 +92,32 @@ var N = {};
 var ne;
 function kt() {
   return ne || (ne = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = typeof Symbol == "function" && Symbol.for, e = t ? Symbol.for("react.element") : 60103, n = t ? Symbol.for("react.portal") : 60106, r = t ? Symbol.for("react.fragment") : 60107, a = t ? Symbol.for("react.strict_mode") : 60108, o = t ? Symbol.for("react.profiler") : 60114, s = t ? Symbol.for("react.provider") : 60109, c = t ? Symbol.for("react.context") : 60110, i = t ? Symbol.for("react.async_mode") : 60111, l = t ? Symbol.for("react.concurrent_mode") : 60111, d = t ? Symbol.for("react.forward_ref") : 60112, h = t ? Symbol.for("react.suspense") : 60113, u = t ? Symbol.for("react.suspense_list") : 60120, k = t ? Symbol.for("react.memo") : 60115, m = t ? Symbol.for("react.lazy") : 60116, C = t ? Symbol.for("react.block") : 60121, g = t ? Symbol.for("react.fundamental") : 60117, w = t ? Symbol.for("react.responder") : 60118, L = t ? Symbol.for("react.scope") : 60119;
-    function I(b) {
-      return typeof b == "string" || typeof b == "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-      b === r || b === l || b === o || b === a || b === h || b === u || typeof b == "object" && b !== null && (b.$$typeof === m || b.$$typeof === k || b.$$typeof === s || b.$$typeof === c || b.$$typeof === d || b.$$typeof === g || b.$$typeof === w || b.$$typeof === L || b.$$typeof === C);
+    var t = typeof Symbol == "function" && Symbol.for, e = t ? Symbol.for("react.element") : 60103, n = t ? Symbol.for("react.portal") : 60106, r = t ? Symbol.for("react.fragment") : 60107, a = t ? Symbol.for("react.strict_mode") : 60108, o = t ? Symbol.for("react.profiler") : 60114, s = t ? Symbol.for("react.provider") : 60109, c = t ? Symbol.for("react.context") : 60110, i = t ? Symbol.for("react.async_mode") : 60111, l = t ? Symbol.for("react.concurrent_mode") : 60111, p = t ? Symbol.for("react.forward_ref") : 60112, d = t ? Symbol.for("react.suspense") : 60113, f = t ? Symbol.for("react.suspense_list") : 60120, C = t ? Symbol.for("react.memo") : 60115, m = t ? Symbol.for("react.lazy") : 60116, b = t ? Symbol.for("react.block") : 60121, k = t ? Symbol.for("react.fundamental") : 60117, w = t ? Symbol.for("react.responder") : 60118, A = t ? Symbol.for("react.scope") : 60119;
+    function T(g) {
+      return typeof g == "string" || typeof g == "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+      g === r || g === l || g === o || g === a || g === d || g === f || typeof g == "object" && g !== null && (g.$$typeof === m || g.$$typeof === C || g.$$typeof === s || g.$$typeof === c || g.$$typeof === p || g.$$typeof === k || g.$$typeof === w || g.$$typeof === A || g.$$typeof === b);
     }
-    function V(b) {
-      if (typeof b == "object" && b !== null) {
-        var a1 = b.$$typeof;
+    function V(g) {
+      if (typeof g == "object" && g !== null) {
+        var a1 = g.$$typeof;
         switch (a1) {
           case e:
-            var g1 = b.type;
+            var g1 = g.type;
             switch (g1) {
               case i:
               case l:
               case r:
               case o:
               case a:
-              case h:
+              case d:
                 return g1;
               default:
                 var $1 = g1 && g1.$$typeof;
                 switch ($1) {
                   case c:
-                  case d:
+                  case p:
                   case m:
-                  case k:
+                  case C:
                   case s:
                     return $1;
                   default:
@@ -129,47 +129,47 @@ function kt() {
         }
       }
     }
-    var f = i, F = l, q = c, K = s, t1 = e, B = d, n1 = r, X = m, l1 = k, o1 = n, J = o, r1 = a, Q = h, c1 = !1;
-    function u1(b) {
-      return c1 || (c1 = !0, console.warn("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.")), p(b) || V(b) === i;
+    var h = i, z = l, D = c, Q = s, r1 = e, X = p, B = r, _ = m, l1 = C, o1 = n, J = o, n1 = a, K = d, c1 = !1;
+    function u1(g) {
+      return c1 || (c1 = !0, console.warn("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.")), u(g) || V(g) === i;
     }
-    function p(b) {
-      return V(b) === l;
+    function u(g) {
+      return V(g) === l;
     }
-    function y(b) {
-      return V(b) === c;
+    function y(g) {
+      return V(g) === c;
     }
-    function P(b) {
-      return V(b) === s;
+    function P(g) {
+      return V(g) === s;
     }
-    function x(b) {
-      return typeof b == "object" && b !== null && b.$$typeof === e;
+    function x(g) {
+      return typeof g == "object" && g !== null && g.$$typeof === e;
     }
-    function E(b) {
-      return V(b) === d;
+    function E(g) {
+      return V(g) === p;
     }
-    function A(b) {
-      return V(b) === r;
+    function O(g) {
+      return V(g) === r;
     }
-    function T(b) {
-      return V(b) === m;
+    function M(g) {
+      return V(g) === m;
     }
-    function M(b) {
-      return V(b) === k;
+    function I(g) {
+      return V(g) === C;
     }
-    function O(b) {
-      return V(b) === n;
+    function j(g) {
+      return V(g) === n;
     }
-    function G(b) {
-      return V(b) === o;
+    function G(g) {
+      return V(g) === o;
     }
-    function j(b) {
-      return V(b) === a;
+    function L(g) {
+      return V(g) === a;
     }
-    function _(b) {
-      return V(b) === h;
+    function $(g) {
+      return V(g) === d;
     }
-    N.AsyncMode = f, N.ConcurrentMode = F, N.ContextConsumer = q, N.ContextProvider = K, N.Element = t1, N.ForwardRef = B, N.Fragment = n1, N.Lazy = X, N.Memo = l1, N.Portal = o1, N.Profiler = J, N.StrictMode = r1, N.Suspense = Q, N.isAsyncMode = u1, N.isConcurrentMode = p, N.isContextConsumer = y, N.isContextProvider = P, N.isElement = x, N.isForwardRef = E, N.isFragment = A, N.isLazy = T, N.isMemo = M, N.isPortal = O, N.isProfiler = G, N.isStrictMode = j, N.isSuspense = _, N.isValidElementType = I, N.typeOf = V;
+    N.AsyncMode = h, N.ConcurrentMode = z, N.ContextConsumer = D, N.ContextProvider = Q, N.Element = r1, N.ForwardRef = X, N.Fragment = B, N.Lazy = _, N.Memo = l1, N.Portal = o1, N.Profiler = J, N.StrictMode = n1, N.Suspense = K, N.isAsyncMode = u1, N.isConcurrentMode = u, N.isContextConsumer = y, N.isContextProvider = P, N.isElement = x, N.isForwardRef = E, N.isFragment = O, N.isLazy = M, N.isMemo = I, N.isPortal = j, N.isProfiler = G, N.isStrictMode = L, N.isSuspense = $, N.isValidElementType = T, N.typeOf = V;
   }()), N;
 }
 var re;
@@ -200,28 +200,28 @@ function wt() {
         return !1;
       for (var s = {}, c = 0; c < 10; c++)
         s["_" + String.fromCharCode(c)] = c;
-      var i = Object.getOwnPropertyNames(s).map(function(d) {
-        return s[d];
+      var i = Object.getOwnPropertyNames(s).map(function(p) {
+        return s[p];
       });
       if (i.join("") !== "0123456789")
         return !1;
       var l = {};
-      return "abcdefghijklmnopqrst".split("").forEach(function(d) {
-        l[d] = d;
+      return "abcdefghijklmnopqrst".split("").forEach(function(p) {
+        l[p] = p;
       }), Object.keys(Object.assign({}, l)).join("") === "abcdefghijklmnopqrst";
     } catch {
       return !1;
     }
   }
   return O1 = a() ? Object.assign : function(o, s) {
-    for (var c, i = r(o), l, d = 1; d < arguments.length; d++) {
-      c = Object(arguments[d]);
-      for (var h in c)
-        e.call(c, h) && (i[h] = c[h]);
+    for (var c, i = r(o), l, p = 1; p < arguments.length; p++) {
+      c = Object(arguments[p]);
+      for (var d in c)
+        e.call(c, d) && (i[d] = c[d]);
       if (t) {
         l = t(c);
-        for (var u = 0; u < l.length; u++)
-          n.call(c, l[u]) && (i[l[u]] = c[l[u]]);
+        for (var f = 0; f < l.length; f++)
+          n.call(c, l[f]) && (i[l[f]] = c[l[f]]);
       }
     }
     return i;
@@ -257,27 +257,27 @@ function St() {
   }
   function a(o, s, c, i, l) {
     if (process.env.NODE_ENV !== "production") {
-      for (var d in o)
-        if (r(o, d)) {
-          var h;
+      for (var p in o)
+        if (r(o, p)) {
+          var d;
           try {
-            if (typeof o[d] != "function") {
-              var u = Error(
-                (i || "React class") + ": " + c + " type `" + d + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof o[d] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`."
+            if (typeof o[p] != "function") {
+              var f = Error(
+                (i || "React class") + ": " + c + " type `" + p + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof o[p] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`."
               );
-              throw u.name = "Invariant Violation", u;
+              throw f.name = "Invariant Violation", f;
             }
-            h = o[d](s, d, i, c, null, e);
+            d = o[p](s, p, i, c, null, e);
           } catch (m) {
-            h = m;
+            d = m;
           }
-          if (h && !(h instanceof Error) && t(
-            (i || "React class") + ": type specification of " + c + " `" + d + "` is invalid; the type checker function must return `null` or an `Error` but returned a " + typeof h + ". You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument)."
-          ), h instanceof Error && !(h.message in n)) {
-            n[h.message] = !0;
-            var k = l ? l() : "";
+          if (d && !(d instanceof Error) && t(
+            (i || "React class") + ": type specification of " + c + " `" + p + "` is invalid; the type checker function must return `null` or an `Error` but returned a " + typeof d + ". You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument)."
+          ), d instanceof Error && !(d.message in n)) {
+            n[d.message] = !0;
+            var C = l ? l() : "";
             t(
-              "Failed " + c + " type: " + h.message + (k ?? "")
+              "Failed " + c + " type: " + d.message + (C ?? "")
             );
           }
         }
@@ -305,13 +305,13 @@ function Et() {
     return null;
   }
   return N1 = function(c, i) {
-    var l = typeof Symbol == "function" && Symbol.iterator, d = "@@iterator";
-    function h(p) {
-      var y = p && (l && p[l] || p[d]);
+    var l = typeof Symbol == "function" && Symbol.iterator, p = "@@iterator";
+    function d(u) {
+      var y = u && (l && u[l] || u[p]);
       if (typeof y == "function")
         return y;
     }
-    var u = "<<anonymous>>", k = {
+    var f = "<<anonymous>>", C = {
       array: w("array"),
       bigint: w("bigint"),
       bool: w("boolean"),
@@ -320,239 +320,239 @@ function Et() {
       object: w("object"),
       string: w("string"),
       symbol: w("symbol"),
-      any: L(),
-      arrayOf: I,
+      any: A(),
+      arrayOf: T,
       element: V(),
-      elementType: f(),
-      instanceOf: F,
-      node: B(),
-      objectOf: K,
-      oneOf: q,
-      oneOfType: t1,
-      shape: X,
+      elementType: h(),
+      instanceOf: z,
+      node: X(),
+      objectOf: Q,
+      oneOf: D,
+      oneOfType: r1,
+      shape: _,
       exact: l1
     };
-    function m(p, y) {
-      return p === y ? p !== 0 || 1 / p === 1 / y : p !== p && y !== y;
+    function m(u, y) {
+      return u === y ? u !== 0 || 1 / u === 1 / y : u !== u && y !== y;
     }
-    function C(p, y) {
-      this.message = p, this.data = y && typeof y == "object" ? y : {}, this.stack = "";
+    function b(u, y) {
+      this.message = u, this.data = y && typeof y == "object" ? y : {}, this.stack = "";
     }
-    C.prototype = Error.prototype;
-    function g(p) {
+    b.prototype = Error.prototype;
+    function k(u) {
       if (process.env.NODE_ENV !== "production")
         var y = {}, P = 0;
-      function x(A, T, M, O, G, j, _) {
-        if (O = O || u, j = j || M, _ !== n) {
+      function x(O, M, I, j, G, L, $) {
+        if (j = j || f, L = L || I, $ !== n) {
           if (i) {
-            var b = new Error(
+            var g = new Error(
               "Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types"
             );
-            throw b.name = "Invariant Violation", b;
+            throw g.name = "Invariant Violation", g;
           } else if (process.env.NODE_ENV !== "production" && typeof console < "u") {
-            var a1 = O + ":" + M;
+            var a1 = j + ":" + I;
             !y[a1] && // Avoid spamming the console because they are often not actionable except for lib authors
             P < 3 && (o(
-              "You are manually calling a React.PropTypes validation function for the `" + j + "` prop on `" + O + "`. This is deprecated and will throw in the standalone `prop-types` package. You may be seeing this warning due to a third-party PropTypes library. See https://fb.me/react-warning-dont-call-proptypes for details."
+              "You are manually calling a React.PropTypes validation function for the `" + L + "` prop on `" + j + "`. This is deprecated and will throw in the standalone `prop-types` package. You may be seeing this warning due to a third-party PropTypes library. See https://fb.me/react-warning-dont-call-proptypes for details."
             ), y[a1] = !0, P++);
           }
         }
-        return T[M] == null ? A ? T[M] === null ? new C("The " + G + " `" + j + "` is marked as required " + ("in `" + O + "`, but its value is `null`.")) : new C("The " + G + " `" + j + "` is marked as required in " + ("`" + O + "`, but its value is `undefined`.")) : null : p(T, M, O, G, j);
+        return M[I] == null ? O ? M[I] === null ? new b("The " + G + " `" + L + "` is marked as required " + ("in `" + j + "`, but its value is `null`.")) : new b("The " + G + " `" + L + "` is marked as required in " + ("`" + j + "`, but its value is `undefined`.")) : null : u(M, I, j, G, L);
       }
       var E = x.bind(null, !1);
       return E.isRequired = x.bind(null, !0), E;
     }
-    function w(p) {
-      function y(P, x, E, A, T, M) {
-        var O = P[x], G = r1(O);
-        if (G !== p) {
-          var j = Q(O);
-          return new C(
-            "Invalid " + A + " `" + T + "` of type " + ("`" + j + "` supplied to `" + E + "`, expected ") + ("`" + p + "`."),
-            { expectedType: p }
+    function w(u) {
+      function y(P, x, E, O, M, I) {
+        var j = P[x], G = n1(j);
+        if (G !== u) {
+          var L = K(j);
+          return new b(
+            "Invalid " + O + " `" + M + "` of type " + ("`" + L + "` supplied to `" + E + "`, expected ") + ("`" + u + "`."),
+            { expectedType: u }
           );
         }
         return null;
       }
-      return g(y);
+      return k(y);
     }
-    function L() {
-      return g(s);
+    function A() {
+      return k(s);
     }
-    function I(p) {
-      function y(P, x, E, A, T) {
-        if (typeof p != "function")
-          return new C("Property `" + T + "` of component `" + E + "` has invalid PropType notation inside arrayOf.");
-        var M = P[x];
-        if (!Array.isArray(M)) {
-          var O = r1(M);
-          return new C("Invalid " + A + " `" + T + "` of type " + ("`" + O + "` supplied to `" + E + "`, expected an array."));
+    function T(u) {
+      function y(P, x, E, O, M) {
+        if (typeof u != "function")
+          return new b("Property `" + M + "` of component `" + E + "` has invalid PropType notation inside arrayOf.");
+        var I = P[x];
+        if (!Array.isArray(I)) {
+          var j = n1(I);
+          return new b("Invalid " + O + " `" + M + "` of type " + ("`" + j + "` supplied to `" + E + "`, expected an array."));
         }
-        for (var G = 0; G < M.length; G++) {
-          var j = p(M, G, E, A, T + "[" + G + "]", n);
-          if (j instanceof Error)
-            return j;
+        for (var G = 0; G < I.length; G++) {
+          var L = u(I, G, E, O, M + "[" + G + "]", n);
+          if (L instanceof Error)
+            return L;
         }
         return null;
       }
-      return g(y);
+      return k(y);
     }
     function V() {
-      function p(y, P, x, E, A) {
-        var T = y[P];
-        if (!c(T)) {
-          var M = r1(T);
-          return new C("Invalid " + E + " `" + A + "` of type " + ("`" + M + "` supplied to `" + x + "`, expected a single ReactElement."));
+      function u(y, P, x, E, O) {
+        var M = y[P];
+        if (!c(M)) {
+          var I = n1(M);
+          return new b("Invalid " + E + " `" + O + "` of type " + ("`" + I + "` supplied to `" + x + "`, expected a single ReactElement."));
         }
         return null;
       }
-      return g(p);
+      return k(u);
     }
-    function f() {
-      function p(y, P, x, E, A) {
-        var T = y[P];
-        if (!t.isValidElementType(T)) {
-          var M = r1(T);
-          return new C("Invalid " + E + " `" + A + "` of type " + ("`" + M + "` supplied to `" + x + "`, expected a single ReactElement type."));
+    function h() {
+      function u(y, P, x, E, O) {
+        var M = y[P];
+        if (!t.isValidElementType(M)) {
+          var I = n1(M);
+          return new b("Invalid " + E + " `" + O + "` of type " + ("`" + I + "` supplied to `" + x + "`, expected a single ReactElement type."));
         }
         return null;
       }
-      return g(p);
+      return k(u);
     }
-    function F(p) {
-      function y(P, x, E, A, T) {
-        if (!(P[x] instanceof p)) {
-          var M = p.name || u, O = u1(P[x]);
-          return new C("Invalid " + A + " `" + T + "` of type " + ("`" + O + "` supplied to `" + E + "`, expected ") + ("instance of `" + M + "`."));
+    function z(u) {
+      function y(P, x, E, O, M) {
+        if (!(P[x] instanceof u)) {
+          var I = u.name || f, j = u1(P[x]);
+          return new b("Invalid " + O + " `" + M + "` of type " + ("`" + j + "` supplied to `" + E + "`, expected ") + ("instance of `" + I + "`."));
         }
         return null;
       }
-      return g(y);
+      return k(y);
     }
-    function q(p) {
-      if (!Array.isArray(p))
+    function D(u) {
+      if (!Array.isArray(u))
         return process.env.NODE_ENV !== "production" && (arguments.length > 1 ? o(
           "Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z])."
         ) : o("Invalid argument supplied to oneOf, expected an array.")), s;
-      function y(P, x, E, A, T) {
-        for (var M = P[x], O = 0; O < p.length; O++)
-          if (m(M, p[O]))
+      function y(P, x, E, O, M) {
+        for (var I = P[x], j = 0; j < u.length; j++)
+          if (m(I, u[j]))
             return null;
-        var G = JSON.stringify(p, function(_, b) {
-          var a1 = Q(b);
-          return a1 === "symbol" ? String(b) : b;
+        var G = JSON.stringify(u, function($, g) {
+          var a1 = K(g);
+          return a1 === "symbol" ? String(g) : g;
         });
-        return new C("Invalid " + A + " `" + T + "` of value `" + String(M) + "` " + ("supplied to `" + E + "`, expected one of " + G + "."));
+        return new b("Invalid " + O + " `" + M + "` of value `" + String(I) + "` " + ("supplied to `" + E + "`, expected one of " + G + "."));
       }
-      return g(y);
+      return k(y);
     }
-    function K(p) {
-      function y(P, x, E, A, T) {
-        if (typeof p != "function")
-          return new C("Property `" + T + "` of component `" + E + "` has invalid PropType notation inside objectOf.");
-        var M = P[x], O = r1(M);
-        if (O !== "object")
-          return new C("Invalid " + A + " `" + T + "` of type " + ("`" + O + "` supplied to `" + E + "`, expected an object."));
-        for (var G in M)
-          if (r(M, G)) {
-            var j = p(M, G, E, A, T + "." + G, n);
-            if (j instanceof Error)
-              return j;
+    function Q(u) {
+      function y(P, x, E, O, M) {
+        if (typeof u != "function")
+          return new b("Property `" + M + "` of component `" + E + "` has invalid PropType notation inside objectOf.");
+        var I = P[x], j = n1(I);
+        if (j !== "object")
+          return new b("Invalid " + O + " `" + M + "` of type " + ("`" + j + "` supplied to `" + E + "`, expected an object."));
+        for (var G in I)
+          if (r(I, G)) {
+            var L = u(I, G, E, O, M + "." + G, n);
+            if (L instanceof Error)
+              return L;
           }
         return null;
       }
-      return g(y);
+      return k(y);
     }
-    function t1(p) {
-      if (!Array.isArray(p))
+    function r1(u) {
+      if (!Array.isArray(u))
         return process.env.NODE_ENV !== "production" && o("Invalid argument supplied to oneOfType, expected an instance of array."), s;
-      for (var y = 0; y < p.length; y++) {
-        var P = p[y];
+      for (var y = 0; y < u.length; y++) {
+        var P = u[y];
         if (typeof P != "function")
           return o(
             "Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + c1(P) + " at index " + y + "."
           ), s;
       }
-      function x(E, A, T, M, O) {
-        for (var G = [], j = 0; j < p.length; j++) {
-          var _ = p[j], b = _(E, A, T, M, O, n);
-          if (b == null)
+      function x(E, O, M, I, j) {
+        for (var G = [], L = 0; L < u.length; L++) {
+          var $ = u[L], g = $(E, O, M, I, j, n);
+          if (g == null)
             return null;
-          b.data && r(b.data, "expectedType") && G.push(b.data.expectedType);
+          g.data && r(g.data, "expectedType") && G.push(g.data.expectedType);
         }
         var a1 = G.length > 0 ? ", expected one of type [" + G.join(", ") + "]" : "";
-        return new C("Invalid " + M + " `" + O + "` supplied to " + ("`" + T + "`" + a1 + "."));
+        return new b("Invalid " + I + " `" + j + "` supplied to " + ("`" + M + "`" + a1 + "."));
       }
-      return g(x);
+      return k(x);
     }
-    function B() {
-      function p(y, P, x, E, A) {
-        return o1(y[P]) ? null : new C("Invalid " + E + " `" + A + "` supplied to " + ("`" + x + "`, expected a ReactNode."));
+    function X() {
+      function u(y, P, x, E, O) {
+        return o1(y[P]) ? null : new b("Invalid " + E + " `" + O + "` supplied to " + ("`" + x + "`, expected a ReactNode."));
       }
-      return g(p);
+      return k(u);
     }
-    function n1(p, y, P, x, E) {
-      return new C(
-        (p || "React class") + ": " + y + " type `" + P + "." + x + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + E + "`."
+    function B(u, y, P, x, E) {
+      return new b(
+        (u || "React class") + ": " + y + " type `" + P + "." + x + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + E + "`."
       );
     }
-    function X(p) {
-      function y(P, x, E, A, T) {
-        var M = P[x], O = r1(M);
-        if (O !== "object")
-          return new C("Invalid " + A + " `" + T + "` of type `" + O + "` " + ("supplied to `" + E + "`, expected `object`."));
-        for (var G in p) {
-          var j = p[G];
-          if (typeof j != "function")
-            return n1(E, A, T, G, Q(j));
-          var _ = j(M, G, E, A, T + "." + G, n);
-          if (_)
-            return _;
+    function _(u) {
+      function y(P, x, E, O, M) {
+        var I = P[x], j = n1(I);
+        if (j !== "object")
+          return new b("Invalid " + O + " `" + M + "` of type `" + j + "` " + ("supplied to `" + E + "`, expected `object`."));
+        for (var G in u) {
+          var L = u[G];
+          if (typeof L != "function")
+            return B(E, O, M, G, K(L));
+          var $ = L(I, G, E, O, M + "." + G, n);
+          if ($)
+            return $;
         }
         return null;
       }
-      return g(y);
+      return k(y);
     }
-    function l1(p) {
-      function y(P, x, E, A, T) {
-        var M = P[x], O = r1(M);
-        if (O !== "object")
-          return new C("Invalid " + A + " `" + T + "` of type `" + O + "` " + ("supplied to `" + E + "`, expected `object`."));
-        var G = e({}, P[x], p);
-        for (var j in G) {
-          var _ = p[j];
-          if (r(p, j) && typeof _ != "function")
-            return n1(E, A, T, j, Q(_));
-          if (!_)
-            return new C(
-              "Invalid " + A + " `" + T + "` key `" + j + "` supplied to `" + E + "`.\nBad object: " + JSON.stringify(P[x], null, "  ") + `
-Valid keys: ` + JSON.stringify(Object.keys(p), null, "  ")
+    function l1(u) {
+      function y(P, x, E, O, M) {
+        var I = P[x], j = n1(I);
+        if (j !== "object")
+          return new b("Invalid " + O + " `" + M + "` of type `" + j + "` " + ("supplied to `" + E + "`, expected `object`."));
+        var G = e({}, P[x], u);
+        for (var L in G) {
+          var $ = u[L];
+          if (r(u, L) && typeof $ != "function")
+            return B(E, O, M, L, K($));
+          if (!$)
+            return new b(
+              "Invalid " + O + " `" + M + "` key `" + L + "` supplied to `" + E + "`.\nBad object: " + JSON.stringify(P[x], null, "  ") + `
+Valid keys: ` + JSON.stringify(Object.keys(u), null, "  ")
             );
-          var b = _(M, j, E, A, T + "." + j, n);
-          if (b)
-            return b;
+          var g = $(I, L, E, O, M + "." + L, n);
+          if (g)
+            return g;
         }
         return null;
       }
-      return g(y);
+      return k(y);
     }
-    function o1(p) {
-      switch (typeof p) {
+    function o1(u) {
+      switch (typeof u) {
         case "number":
         case "string":
         case "undefined":
           return !0;
         case "boolean":
-          return !p;
+          return !u;
         case "object":
-          if (Array.isArray(p))
-            return p.every(o1);
-          if (p === null || c(p))
+          if (Array.isArray(u))
+            return u.every(o1);
+          if (u === null || c(u))
             return !0;
-          var y = h(p);
+          var y = d(u);
           if (y) {
-            var P = y.call(p), x;
-            if (y !== p.entries) {
+            var P = y.call(u), x;
+            if (y !== u.entries) {
               for (; !(x = P.next()).done; )
                 if (!o1(x.value))
                   return !1;
@@ -569,27 +569,27 @@ Valid keys: ` + JSON.stringify(Object.keys(p), null, "  ")
           return !1;
       }
     }
-    function J(p, y) {
-      return p === "symbol" ? !0 : y ? y["@@toStringTag"] === "Symbol" || typeof Symbol == "function" && y instanceof Symbol : !1;
+    function J(u, y) {
+      return u === "symbol" ? !0 : y ? y["@@toStringTag"] === "Symbol" || typeof Symbol == "function" && y instanceof Symbol : !1;
     }
-    function r1(p) {
-      var y = typeof p;
-      return Array.isArray(p) ? "array" : p instanceof RegExp ? "object" : J(y, p) ? "symbol" : y;
+    function n1(u) {
+      var y = typeof u;
+      return Array.isArray(u) ? "array" : u instanceof RegExp ? "object" : J(y, u) ? "symbol" : y;
     }
-    function Q(p) {
-      if (typeof p > "u" || p === null)
-        return "" + p;
-      var y = r1(p);
+    function K(u) {
+      if (typeof u > "u" || u === null)
+        return "" + u;
+      var y = n1(u);
       if (y === "object") {
-        if (p instanceof Date)
+        if (u instanceof Date)
           return "date";
-        if (p instanceof RegExp)
+        if (u instanceof RegExp)
           return "regexp";
       }
       return y;
     }
-    function c1(p) {
-      var y = Q(p);
+    function c1(u) {
+      var y = K(u);
       switch (y) {
         case "array":
         case "object":
@@ -602,10 +602,10 @@ Valid keys: ` + JSON.stringify(Object.keys(p), null, "  ")
           return y;
       }
     }
-    function u1(p) {
-      return !p.constructor || !p.constructor.name ? u : p.constructor.name;
+    function u1(u) {
+      return !u.constructor || !u.constructor.name ? f : u.constructor.name;
     }
-    return k.checkPropTypes = a, k.resetWarningCache = a.resetWarningCache, k.PropTypes = k, k;
+    return C.checkPropTypes = a, C.resetWarningCache = a.resetWarningCache, C.PropTypes = C, C;
   }, N1;
 }
 var W1, le;
@@ -618,12 +618,12 @@ function xt() {
   function n() {
   }
   return n.resetWarningCache = e, W1 = function() {
-    function r(s, c, i, l, d, h) {
-      if (h !== t) {
-        var u = new Error(
+    function r(s, c, i, l, p, d) {
+      if (d !== t) {
+        var f = new Error(
           "Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types"
         );
-        throw u.name = "Invariant Violation", u;
+        throw f.name = "Invariant Violation", f;
       }
     }
     r.isRequired = r;
@@ -689,13 +689,13 @@ function de(t) {
   }
   return t;
 }
-function I1(t) {
+function M1(t) {
   "@babel/helpers - typeof";
-  return typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? I1 = function(e) {
+  return typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? M1 = function(e) {
     return typeof e;
-  } : I1 = function(e) {
+  } : M1 = function(e) {
     return e && typeof Symbol == "function" && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e;
-  }, I1(t);
+  }, M1(t);
 }
 function Le(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
@@ -705,16 +705,16 @@ function Le(t, e, n) {
     writable: !0
   }) : t[e] = n, t;
 }
-function It(t, e) {
+function Mt(t, e) {
   if (t == null) return {};
   var n = {}, r = Object.keys(t), a, o;
   for (o = 0; o < r.length; o++)
     a = r[o], !(e.indexOf(a) >= 0) && (n[a] = t[a]);
   return n;
 }
-function Mt(t, e) {
+function It(t, e) {
   if (t == null) return {};
-  var n = It(t, e), r, a;
+  var n = Mt(t, e), r, a;
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(t);
     for (a = 0; a < o.length; a++)
@@ -764,7 +764,7 @@ function jt() {
   throw new TypeError(`Invalid attempt to destructure non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`);
 }
-var e1 = function(e, n, r) {
+var t1 = function(e, n, r) {
   var a = !!r, o = W.useRef(r);
   W.useEffect(function() {
     o.current = r;
@@ -779,13 +779,13 @@ var e1 = function(e, n, r) {
       e.off(n, s);
     };
   }, [a, n, e, o]);
-}, D1 = function(e) {
+}, H1 = function(e) {
   var n = W.useRef(e);
   return W.useEffect(function() {
     n.current = e;
   }, [e]), n.current;
 }, y1 = function(e) {
-  return e !== null && I1(e) === "object";
+  return e !== null && M1(e) === "object";
 }, Lt = function(e) {
   return y1(e) && typeof e.then == "function";
 }, Rt = function(e) {
@@ -800,17 +800,17 @@ var e1 = function(e, n, r) {
   if (!o && !r) return e === n;
   var c = Object.keys(e), i = Object.keys(n);
   if (c.length !== i.length) return !1;
-  for (var l = {}, d = 0; d < c.length; d += 1)
-    l[c[d]] = !0;
-  for (var h = 0; h < i.length; h += 1)
-    l[i[h]] = !0;
-  var u = Object.keys(l);
-  if (u.length !== c.length)
+  for (var l = {}, p = 0; p < c.length; p += 1)
+    l[c[p]] = !0;
+  for (var d = 0; d < i.length; d += 1)
+    l[i[d]] = !0;
+  var f = Object.keys(l);
+  if (f.length !== c.length)
     return !1;
-  var k = e, m = n, C = function(w) {
-    return t(k[w], m[w]);
+  var C = e, m = n, b = function(w) {
+    return t(C[w], m[w]);
   };
-  return u.every(C);
+  return f.every(b);
 }, Ne = function(e, n, r) {
   return y1(e) ? Object.keys(e).reduce(function(a, o) {
     var s = !y1(n) || !Nt(e[o], n[o]);
@@ -852,7 +852,7 @@ var Ge = function(e, n) {
   if (!e)
     throw new Error("Could not find Elements context; You need to wrap the part of your app that ".concat(n, " in an <Elements> provider."));
   return e;
-}, ze = function(e) {
+}, qe = function(e) {
   var n = e.stripe, r = e.options, a = e.children, o = W.useMemo(function() {
     return Wt(n);
   }, [n]), s = W.useState(function() {
@@ -862,50 +862,50 @@ var Ge = function(e, n) {
     };
   }), c = Re(s, 2), i = c[0], l = c[1];
   W.useEffect(function() {
-    var u = !0, k = function(C) {
-      l(function(g) {
-        return g.stripe ? g : {
-          stripe: C,
-          elements: C.elements(r)
+    var f = !0, C = function(b) {
+      l(function(k) {
+        return k.stripe ? k : {
+          stripe: b,
+          elements: b.elements(r)
         };
       });
     };
     return o.tag === "async" && !i.stripe ? o.stripePromise.then(function(m) {
-      m && u && k(m);
-    }) : o.tag === "sync" && !i.stripe && k(o.stripe), function() {
-      u = !1;
+      m && f && C(m);
+    }) : o.tag === "sync" && !i.stripe && C(o.stripe), function() {
+      f = !1;
     };
   }, [o, i, r]);
-  var d = D1(n);
+  var p = H1(n);
   W.useEffect(function() {
-    d !== null && d !== n && console.warn("Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.");
-  }, [d, n]);
-  var h = D1(r);
+    p !== null && p !== n && console.warn("Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.");
+  }, [p, n]);
+  var d = H1(r);
   return W.useEffect(function() {
     if (i.elements) {
-      var u = Ne(r, h, ["clientSecret", "fonts"]);
-      u && i.elements.update(u);
+      var f = Ne(r, d, ["clientSecret", "fonts"]);
+      f && i.elements.update(f);
     }
-  }, [r, h, i.elements]), W.useEffect(function() {
+  }, [r, d, i.elements]), W.useEffect(function() {
     Gt(i.stripe);
   }, [i.stripe]), /* @__PURE__ */ W.createElement(A1.Provider, {
     value: i
   }, a);
 };
-ze.propTypes = {
+qe.propTypes = {
   stripe: Y.any,
   options: Y.object
 };
-var zt = function(e) {
+var qt = function(e) {
   var n = W.useContext(A1);
   return Ge(n, e);
-}, qt = function() {
-  var e = zt("calls useElements()"), n = e.elements;
+}, zt = function() {
+  var e = qt("calls useElements()"), n = e.elements;
   return n;
 };
 Y.func.isRequired;
-var qe = /* @__PURE__ */ W.createContext(null);
-qe.displayName = "CheckoutSdkContext";
+var ze = /* @__PURE__ */ W.createContext(null);
+ze.displayName = "CheckoutSdkContext";
 var Ut = function(e, n) {
   if (!e)
     throw new Error("Could not find CheckoutProvider context; You need to wrap the part of your app that ".concat(n, " in an <CheckoutProvider> provider."));
@@ -917,77 +917,77 @@ Y.any, Y.shape({
   elementsOptions: Y.object
 }).isRequired;
 var Z1 = function(e) {
-  var n = W.useContext(qe), r = W.useContext(A1);
+  var n = W.useContext(ze), r = W.useContext(A1);
   if (n && r)
     throw new Error("You cannot wrap the part of your app that ".concat(e, " in both <CheckoutProvider> and <Elements> providers."));
   return n ? Ut(n, e) : Ge(r, e);
-}, Ft = ["mode"], Ht = function(e) {
+}, Ft = ["mode"], Dt = function(e) {
   return e.charAt(0).toUpperCase() + e.slice(1);
-}, D = function(e, n) {
-  var r = "".concat(Ht(e), "Element"), a = function(i) {
-    var l = i.id, d = i.className, h = i.options, u = h === void 0 ? {} : h, k = i.onBlur, m = i.onFocus, C = i.onReady, g = i.onChange, w = i.onEscape, L = i.onClick, I = i.onLoadError, V = i.onLoaderStart, f = i.onNetworksChange, F = i.onConfirm, q = i.onCancel, K = i.onShippingAddressChange, t1 = i.onShippingRateChange, B = Z1("mounts <".concat(r, ">")), n1 = "elements" in B ? B.elements : null, X = "checkoutSdk" in B ? B.checkoutSdk : null, l1 = W.useState(null), o1 = Re(l1, 2), J = o1[0], r1 = o1[1], Q = W.useRef(null), c1 = W.useRef(null);
-    e1(J, "blur", k), e1(J, "focus", m), e1(J, "escape", w), e1(J, "click", L), e1(J, "loaderror", I), e1(J, "loaderstart", V), e1(J, "networkschange", f), e1(J, "confirm", F), e1(J, "cancel", q), e1(J, "shippingaddresschange", K), e1(J, "shippingratechange", t1), e1(J, "change", g);
+}, H = function(e, n) {
+  var r = "".concat(Dt(e), "Element"), a = function(i) {
+    var l = i.id, p = i.className, d = i.options, f = d === void 0 ? {} : d, C = i.onBlur, m = i.onFocus, b = i.onReady, k = i.onChange, w = i.onEscape, A = i.onClick, T = i.onLoadError, V = i.onLoaderStart, h = i.onNetworksChange, z = i.onConfirm, D = i.onCancel, Q = i.onShippingAddressChange, r1 = i.onShippingRateChange, X = Z1("mounts <".concat(r, ">")), B = "elements" in X ? X.elements : null, _ = "checkoutSdk" in X ? X.checkoutSdk : null, l1 = W.useState(null), o1 = Re(l1, 2), J = o1[0], n1 = o1[1], K = W.useRef(null), c1 = W.useRef(null);
+    t1(J, "blur", C), t1(J, "focus", m), t1(J, "escape", w), t1(J, "click", A), t1(J, "loaderror", T), t1(J, "loaderstart", V), t1(J, "networkschange", h), t1(J, "confirm", z), t1(J, "cancel", D), t1(J, "shippingaddresschange", Q), t1(J, "shippingratechange", r1), t1(J, "change", k);
     var u1;
-    C && (e === "expressCheckout" ? u1 = C : u1 = function() {
-      C(J);
-    }), e1(J, "ready", u1), W.useLayoutEffect(function() {
-      if (Q.current === null && c1.current !== null && (n1 || X)) {
+    b && (e === "expressCheckout" ? u1 = b : u1 = function() {
+      b(J);
+    }), t1(J, "ready", u1), W.useLayoutEffect(function() {
+      if (K.current === null && c1.current !== null && (B || _)) {
         var y = null;
-        if (X)
+        if (_)
           switch (e) {
             case "payment":
-              y = X.createPaymentElement(u);
+              y = _.createPaymentElement(f);
               break;
             case "address":
-              if ("mode" in u) {
-                var P = u.mode, x = Mt(u, Ft);
+              if ("mode" in f) {
+                var P = f.mode, x = It(f, Ft);
                 if (P === "shipping")
-                  y = X.createShippingAddressElement(x);
+                  y = _.createShippingAddressElement(x);
                 else if (P === "billing")
-                  y = X.createBillingAddressElement(x);
+                  y = _.createBillingAddressElement(x);
                 else
                   throw new Error("Invalid options.mode. mode must be 'billing' or 'shipping'.");
               } else
                 throw new Error("You must supply options.mode. mode must be 'billing' or 'shipping'.");
               break;
             case "expressCheckout":
-              y = X.createExpressCheckoutElement(u);
+              y = _.createExpressCheckoutElement(f);
               break;
             case "currencySelector":
-              y = X.createCurrencySelectorElement();
+              y = _.createCurrencySelectorElement();
               break;
             default:
               throw new Error("Invalid Element type ".concat(r, ". You must use either the <PaymentElement />, <AddressElement options={{mode: 'shipping'}} />, <AddressElement options={{mode: 'billing'}} />, or <ExpressCheckoutElement />."));
           }
-        else n1 && (y = n1.create(e, u));
-        Q.current = y, r1(y), y && y.mount(c1.current);
+        else B && (y = B.create(e, f));
+        K.current = y, n1(y), y && y.mount(c1.current);
       }
-    }, [n1, X, u]);
-    var p = D1(u);
+    }, [B, _, f]);
+    var u = H1(f);
     return W.useEffect(function() {
-      if (Q.current) {
-        var y = Ne(u, p, ["paymentRequest"]);
-        y && "update" in Q.current && Q.current.update(y);
+      if (K.current) {
+        var y = Ne(f, u, ["paymentRequest"]);
+        y && "update" in K.current && K.current.update(y);
       }
-    }, [u, p]), W.useLayoutEffect(function() {
+    }, [f, u]), W.useLayoutEffect(function() {
       return function() {
-        if (Q.current && typeof Q.current.destroy == "function")
+        if (K.current && typeof K.current.destroy == "function")
           try {
-            Q.current.destroy(), Q.current = null;
+            K.current.destroy(), K.current = null;
           } catch {
           }
       };
     }, []), /* @__PURE__ */ W.createElement("div", {
       id: l,
-      className: d,
+      className: p,
       ref: c1
     });
   }, o = function(i) {
     Z1("mounts <".concat(r, ">"));
-    var l = i.id, d = i.className;
+    var l = i.id, p = i.className;
     return /* @__PURE__ */ W.createElement("div", {
       id: l,
-      className: d
+      className: p
     });
   }, s = n ? o : a;
   return s.propTypes = {
@@ -1008,32 +1008,32 @@ var Z1 = function(e) {
     onShippingRateChange: Y.func,
     options: Y.object
   }, s.displayName = r, s.__elementType = e, s;
-}, Z = typeof window > "u", Dt = /* @__PURE__ */ W.createContext(null);
-Dt.displayName = "EmbeddedCheckoutProviderContext";
+}, Z = typeof window > "u", Ht = /* @__PURE__ */ W.createContext(null);
+Ht.displayName = "EmbeddedCheckoutProviderContext";
 var Zt = function() {
   var e = Z1("calls useStripe()"), n = e.stripe;
   return n;
 };
-D("auBankAccount", Z);
-D("card", Z);
-D("cardNumber", Z);
-D("cardExpiry", Z);
-D("cardCvc", Z);
-D("fpxBank", Z);
-D("iban", Z);
-D("idealBank", Z);
-D("p24Bank", Z);
-D("epsBank", Z);
-var Bt = D("payment", Z);
-D("expressCheckout", Z);
-D("currencySelector", Z);
-D("paymentRequestButton", Z);
-D("linkAuthentication", Z);
-D("address", Z);
-D("shippingAddress", Z);
-D("paymentMethodMessaging", Z);
-D("affirmMessage", Z);
-D("afterpayClearpayMessage", Z);
+H("auBankAccount", Z);
+H("card", Z);
+H("cardNumber", Z);
+H("cardExpiry", Z);
+H("cardCvc", Z);
+H("fpxBank", Z);
+H("iban", Z);
+H("idealBank", Z);
+H("p24Bank", Z);
+H("epsBank", Z);
+var Bt = H("payment", Z);
+H("expressCheckout", Z);
+H("currencySelector", Z);
+H("paymentRequestButton", Z);
+H("linkAuthentication", Z);
+H("address", Z);
+H("shippingAddress", Z);
+H("paymentMethodMessaging", Z);
+H("affirmMessage", Z);
+H("afterpayClearpayMessage", Z);
 var Ue = "basil", Jt = function(e) {
   return e === 3 ? "v3" : e;
 }, Ye = "https://js.stripe.com", Qt = "".concat(Ye, "/").concat(Ue, "/stripe.js"), Kt = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/, Xt = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
@@ -1104,13 +1104,13 @@ var _t = function(e) {
   o && s !== c && console.warn("Stripe.js@".concat(s, " was loaded on the page, but @stripe/stripe-js@").concat("7.4.0", " expected Stripe.js@").concat(c, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
   var i = e.apply(void 0, n);
   return en(i, r), i;
-}, v1, Fe = !1, He = function() {
+}, v1, Fe = !1, De = function() {
   return v1 || (v1 = rn(null).catch(function(e) {
     return v1 = null, Promise.reject(e);
   }), v1);
 };
 Promise.resolve().then(function() {
-  return He();
+  return De();
 }).catch(function(t) {
   Fe || console.warn(t);
 });
@@ -1119,7 +1119,7 @@ var on = function() {
     n[r] = arguments[r];
   Fe = !0;
   var a = Date.now();
-  return He().then(function(o) {
+  return De().then(function(o) {
     return an(o, n, a);
   });
 }, U = function() {
@@ -1131,7 +1131,7 @@ var on = function() {
     return e;
   }, U.apply(this, arguments);
 };
-function De(t, e) {
+function He(t, e) {
   var n = {};
   for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && e.indexOf(r) < 0 && (n[r] = t[r]);
   if (t != null && typeof Object.getOwnPropertySymbols == "function")
@@ -1149,7 +1149,7 @@ function Ce(t, e) {
   }
   return n;
 }
-function H(t) {
+function F(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = arguments[e] != null ? arguments[e] : {};
     e % 2 ? Ce(Object(n), !0).forEach(function(r) {
@@ -1186,9 +1186,9 @@ function B1(t, e) {
   if (t == null) return {};
   var n, r, a = function(s, c) {
     if (s == null) return {};
-    var i, l, d = {}, h = Object.keys(s);
-    for (l = 0; l < h.length; l++) i = h[l], c.indexOf(i) >= 0 || (d[i] = s[i]);
-    return d;
+    var i, l, p = {}, d = Object.keys(s);
+    for (l = 0; l < d.length; l++) i = d[l], c.indexOf(i) >= 0 || (p[i] = s[i]);
+    return p;
   }(t, e);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(t);
@@ -1205,8 +1205,8 @@ function sn(t, e) {
       var o, s, c = [], i = !0, l = !1;
       try {
         for (a = a.call(n); !(i = (o = a.next()).done) && (c.push(o.value), !r || c.length !== r); i = !0) ;
-      } catch (d) {
-        l = !0, s = d;
+      } catch (p) {
+        l = !0, s = p;
       } finally {
         try {
           i || a.return == null || a.return();
@@ -1247,8 +1247,8 @@ var X1 = { cookieTestUrl: "https://legacy-staging.paystack.co/test-iframe/start.
 MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALhZs/7hP0g0+hrqTq0hFyGVxgco0NMx\r
 ZD8nPS6ihxap0yNFjzdyUuZED6P4/aK9Ezl5ajEI9pcx5/1BrEE+F3kCAwEAAQ==\r
 -----END PUBLIC KEY-----`, applePayVersion: 6, applePayValidateSessionPath: "applepay/validate-session/", applePayChargePath: "applepay/charge" };
-H(H({}, X1), {}, { checkoutUrl: "http://localhost:8081/", paymentBaseUrl: "https://legacy-staging.paystack.co/", paystackApiUrl: "https://studio-api.paystack.co/", siteUrl: "https://paystack.com", pusherKey: "1c7b262ee18455815893", pusherUrl: "http://localhost:8081/static/vendor/pusher.min.js" });
-var ln = H(H({}, X1), {}, { checkoutUrl: "https://checkout-studio.paystack.com/", paymentBaseUrl: "https://legacy-staging.paystack.co/", paystackApiUrl: "https://studio-api.paystack.co/", siteUrl: "https://beta.paystack.com", pusherKey: "1c7b262ee18455815893", pusherUrl: "https://checkout-studio.paystack.com/static/vendor/pusher.min.js" }), $ = { production: H(H({}, X1), {}, { checkoutUrl: "https://checkout.paystack.com/", paymentBaseUrl: "https://standard.paystack.co/", paystackApiUrl: "https://api.paystack.co/", siteUrl: "https://paystack.com", pusherKey: "8e4b9b7ca3418bd5cdc8", pusherUrl: "https://checkout.paystack.com/static/vendor/pusher.min.js" }) }.production || ln;
+F(F({}, X1), {}, { checkoutUrl: "http://localhost:8081/", paymentBaseUrl: "https://legacy-staging.paystack.co/", paystackApiUrl: "https://studio-api.paystack.co/", siteUrl: "https://paystack.com", pusherKey: "1c7b262ee18455815893", pusherUrl: "http://localhost:8081/static/vendor/pusher.min.js" });
+var ln = F(F({}, X1), {}, { checkoutUrl: "https://checkout-studio.paystack.com/", paymentBaseUrl: "https://legacy-staging.paystack.co/", paystackApiUrl: "https://studio-api.paystack.co/", siteUrl: "https://beta.paystack.com", pusherKey: "1c7b262ee18455815893", pusherUrl: "https://checkout-studio.paystack.com/static/vendor/pusher.min.js" }), e1 = { production: F(F({}, X1), {}, { checkoutUrl: "https://checkout.paystack.com/", paymentBaseUrl: "https://standard.paystack.co/", paystackApiUrl: "https://api.paystack.co/", siteUrl: "https://paystack.com", pusherKey: "8e4b9b7ca3418bd5cdc8", pusherUrl: "https://checkout.paystack.com/static/vendor/pusher.min.js" }) }.production || ln;
 function Ke(t, e) {
   var n = [];
   return Object.keys(t).forEach(function(r) {
@@ -1324,7 +1324,7 @@ var Xe = `
 </svg>
 `, G1 = { height: "50px", width: "auto", borderRadius: "3px", padding: "10px", locale: "en", type: "pay" }, ge = function(t) {
   return t && d1(t) === "object" ? Object.keys(G1).reduce(function(e, n) {
-    return H(H({}, e), {}, Je({}, n, t[n] || G1[n]));
+    return F(F({}, e), {}, Je({}, n, t[n] || G1[n]));
   }, {}) : G1;
 }, fn = `
   .pre-checkout-modal {
@@ -1647,7 +1647,7 @@ var hn = function(t) {
   return { biannually: "BIANNUAL PLAN", annually: "ANNUAL PLAN" }[t] || "".concat(t.toUpperCase(), " PLAN");
 }, _e = function() {
   try {
-    return window.location && window.location.protocol === "https:" && window.ApplePaySession && window.ApplePaySession.supportsVersion($.applePayVersion);
+    return window.location && window.location.protocol === "https:" && window.ApplePaySession && window.ApplePaySession.supportsVersion(e1.applePayVersion);
   } catch {
     return !1;
   }
@@ -1662,11 +1662,11 @@ function mn() {
     !Number.isNaN(r) && r > t && (t = r);
   }), t;
 }
-function z1(t) {
+function q1(t) {
   var e = document.createElement("iframe");
   return e.setAttribute("frameBorder", "0"), e.setAttribute("allowtransparency", "true"), e.id = t, e.style.display = "none", e;
 }
-function M1(t) {
+function I1(t) {
   return t.querySelector("apple-pay-button") || t.querySelector("#apple-pay-button");
 }
 function x1(t) {
@@ -1676,51 +1676,51 @@ function Ee(t, e, n) {
   var r = e.channels, a = r === void 0 ? [] : r, o = e.styles, s = o === void 0 ? {} : o, c = { applePay: !1 };
   return new Promise(function(i, l) {
     if (t) if (Q1(a)) {
-      if (M1(t)) return c.applePay = !0, void i(c);
-      (function(d, h) {
-        return new Promise(function(u, k) {
+      if (I1(t)) return c.applePay = !0, void i(c);
+      (function(p, d) {
+        return new Promise(function(f, C) {
           var m = document.createElement("script");
-          m.src = d, m.addEventListener("load", function() {
-            u(!0);
+          m.src = p, m.addEventListener("load", function() {
+            f(!0);
           }), m.addEventListener("error", function() {
-            m.remove(), k(!1);
-          }), h ? h.appendChild(m) : document.head.appendChild(m);
+            m.remove(), C(!1);
+          }), d ? d.appendChild(m) : document.head.appendChild(m);
         });
       })("https://applepay.cdn-apple.com/jsapi/v1.1.0/apple-pay-sdk.js", t).then(function() {
         if (n && n !== 1077497 && window && !Array.isArray(window.webpackJsonp)) throw new Error("Incorrect data type for 'webpackJsonp', expected array, got ".concat(d1(window.webpackJsonp), ". Switching to fallback apple pay button"));
-        (function(d, h) {
-          var u = h.styles, k = h.theme, m = document.createElement("style"), C = function(w) {
-            var L = w.height, I = w.width, V = w.borderRadius, f = w.padding;
+        (function(p, d) {
+          var f = d.styles, C = d.theme, m = document.createElement("style"), b = function(w) {
+            var A = w.height, T = w.width, V = w.borderRadius, h = w.padding;
             return `
   apple-pay-button {
-    --apple-pay-button-width: `.concat(I, `;
-    --apple-pay-button-height: `).concat(L, `;
+    --apple-pay-button-width: `.concat(T, `;
+    --apple-pay-button-height: `).concat(A, `;
     --apple-pay-button-border-radius: `).concat(V, `;
-    --apple-pay-button-padding: `).concat(f, `;
+    --apple-pay-button-padding: `).concat(h, `;
     --apple-pay-button-box-sizing: border-box;
-    width: `).concat(I, `;
+    width: `).concat(T, `;
   }
 `);
-          }(u);
-          m.type = "text/css", m.styleSheet ? m.styleSheet.cssText = C : m.appendChild(document.createTextNode(C)), d.appendChild(m);
-          var g = document.createElement("apple-pay-button");
-          g.setAttribute("buttonstyle", k === "light" ? "white" : "black"), g.setAttribute("type", u.type), g.setAttribute("locale", u.locale), d.appendChild(g);
+          }(f);
+          m.type = "text/css", m.styleSheet ? m.styleSheet.cssText = b : m.appendChild(document.createTextNode(b)), p.appendChild(m);
+          var k = document.createElement("apple-pay-button");
+          k.setAttribute("buttonstyle", C === "light" ? "white" : "black"), k.setAttribute("type", f.type), k.setAttribute("locale", f.locale), p.appendChild(k);
         })(t, { styles: ge(s.applePay), theme: s.theme }), c.applePay = !0, i(c);
       }).catch(function() {
-        (function(d, h) {
-          var u = h.styles, k = h.theme, m = document.createElement("style"), C = function(L) {
-            var I = L.height, V = L.width, f = L.borderRadius, F = L.padding, q = L.type, K = L.locale;
+        (function(p, d) {
+          var f = d.styles, C = d.theme, m = document.createElement("style"), b = function(A) {
+            var T = A.height, V = A.width, h = A.borderRadius, z = A.padding, D = A.type, Q = A.locale;
             return `
   @supports (-webkit-appearance: -apple-pay-button) { 
     .apple-pay-button {
         display: inline-block;
         -webkit-appearance: -apple-pay-button;
         width: `.concat(V, `;
-        height: `).concat(I, `;
-        border-radius: `).concat(f, `;
-        padding: `).concat(F, `;
-        -apple-pay-button-type: `).concat(q, `;
-        -webkit-locale: `).concat(K, `;
+        height: `).concat(T, `;
+        border-radius: `).concat(h, `;
+        padding: `).concat(z, `;
+        -apple-pay-button-type: `).concat(D, `;
+        -webkit-locale: `).concat(Q, `;
     }
     .apple-pay-button-black {
         -apple-pay-button-style: black;
@@ -1761,12 +1761,12 @@ function Ee(t, e, n) {
     }
   }
 `);
-          }(u);
-          m.type = "text/css", m.styleSheet ? m.styleSheet.cssText = C : m.appendChild(document.createTextNode(C)), d.appendChild(m);
-          var g = document.createElement("button");
-          g.classList.add("apple-pay-button", k === "light" ? "apple-pay-button-white" : "apple-pay-button-black"), g.id = "apple-pay-button";
+          }(f);
+          m.type = "text/css", m.styleSheet ? m.styleSheet.cssText = b : m.appendChild(document.createTextNode(b)), p.appendChild(m);
+          var k = document.createElement("button");
+          k.classList.add("apple-pay-button", C === "light" ? "apple-pay-button-white" : "apple-pay-button-black"), k.id = "apple-pay-button";
           var w = document.createElement("span");
-          w.classList.add("logo"), g.appendChild(w), d.appendChild(g);
+          w.classList.add("logo"), k.appendChild(w), p.appendChild(k);
         })(t, { styles: ge(s.applePay), theme: s.theme }), c.applePay = !0, i(c);
       });
     } else l("No wallet payment method is available on this device");
@@ -1788,7 +1788,7 @@ function rt() {
   var t = document.createElement("div");
   return t.id = $e, t;
 }
-function q1(t) {
+function z1(t) {
   return t.querySelector("#".concat($e));
 }
 function Cn() {
@@ -1839,7 +1839,7 @@ function bn(t) {
 }
 var P1 = [{ value: "key", required: !0, types: ["string"] }, { value: "amount", required: !0, or: ["plan", "planCode"], types: ["string", "number"] }, { value: "currency", required: !1, types: ["string"] }, { value: "email", required: !0, or: ["customerCode"], types: ["string"] }, { value: "label", required: !1, types: ["string"] }, { value: "firstName", required: !1, types: ["string"] }, { value: "lastName", required: !1, types: ["string"] }, { value: "reference", required: !1, types: ["string"] }, { value: "phone", required: !1, types: ["string"] }, { value: "customerCode", required: !1, override: "email", types: ["string"] }, { value: "channels", required: !1, types: ["array"] }, { value: "paymentRequest", required: !1, types: ["string", "number"] }, { value: "paymentPage", required: !1, types: ["string"] }, { value: "hash", required: !1, types: ["string"] }, { value: "container", required: !1, types: ["string"] }, { value: "metadata", required: !1, types: ["object"] }, { value: "subaccountCode", required: !1, types: ["string"] }, { value: "bearer", required: !1, types: ["string"] }, { value: "transactionCharge", required: !1, types: ["string", "number"] }, { value: "planCode", required: !1, override: "amount", types: ["string"] }, { value: "subscriptionCount", required: !1, types: ["number"] }, { value: "planInterval", required: !1, types: ["string"] }, { value: "subscriptionLimit", required: !1, types: ["number"] }, { value: "subscriptionStartDate", required: !1, types: ["string"] }, { value: "accessCode", required: !1, types: ["string"] }, { value: "onError", required: !1, types: ["function"] }, { value: "onLoad", required: !1, types: ["function"] }, { value: "onSuccess", required: !1, types: ["function"] }, { value: "onCancel", required: !1, types: ["function"] }, { value: "callback", required: !1, types: ["function"] }, { value: "onClose", required: !1, types: ["function"] }, { value: "onBankTransferConfirmationPending", required: !1, types: ["function"] }, { value: "firstname", required: !1, types: ["string"] }, { value: "lastname", required: !1, types: ["string"] }, { value: "customer_code", required: !1, types: ["string"] }, { value: "payment_request", required: !1, types: ["string", "number"] }, { value: "subaccount", required: !1, types: ["string"] }, { value: "transaction_charge", required: !1, types: ["number", "string"] }, { value: "plan", required: !1, types: ["string"] }, { value: "quantity", required: !1, types: ["number"] }, { value: "interval", required: !1, types: ["string"] }, { value: "invoice_limit", required: !1, types: ["number", "string"] }, { value: "start_date", required: !1, types: ["string"] }, { value: "payment_page", required: !1, types: ["number", "string"] }, { value: "order_id", required: !1, types: ["number"] }, { value: "ref", required: !1, types: ["string"] }, { value: "card", required: !1, types: ["string"] }, { value: "bank", required: !1, types: ["string"] }, { value: "split", required: !1, types: ["object"] }, { value: "split_code", required: !1, types: ["string"] }, { value: "transaction_type", required: !1, types: ["string"] }, { value: "subscription", required: !1, types: ["number"] }, { value: "language", required: !1, types: ["string"] }, { value: "connect_account", required: !1, types: ["string"] }, { value: "connect_split", required: !1, types: ["array"] }];
 function gn(t) {
-  var e, n = H({}, t);
+  var e, n = F({}, t);
   return n.metadata = t.metadata || {}, n.metadata.referrer = (e = window.location.href) && e.length > 500 ? e.split("?")[0] : e, n.metadata = JSON.stringify(n.metadata), n.mode = "popup", t.split && typeof t.split != "string" && (n.split = JSON.stringify(n.split)), n.card !== void 0 && ["false", !1].indexOf(n.card) > -1 && (n.channels = ["bank"], delete n.card), n.bank !== void 0 && ["false", !1].indexOf(n.bank) > -1 && (n.channels = ["card"], delete n.bank), [{ to: "firstname", from: "firstName" }, { to: "lastname", from: "lastName" }, { to: "customer_code", from: "customerCode" }, { to: "payment_request", from: "paymentRequest" }, { to: "subaccount", from: "subaccountCode" }, { to: "transaction_charge", from: "transactionCharge" }, { to: "plan", from: "planCode" }, { to: "quantity", from: "subscriptionCount" }, { to: "interval", from: "planInterval" }, { to: "invoice_limit", from: "subscriptionLimit" }, { to: "start_date", from: "subscriptionStartDate" }, { to: "ref", from: "reference" }].forEach(function(r) {
     n[r.from] && (n[r.to] = n[r.from], delete n[r.from]);
   }), Object.values(t).forEach(function(r, a) {
@@ -1853,10 +1853,10 @@ var kn = ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhon
   var t = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}, e = t.platform, n = t.userAgent, r = n === void 0 ? window && window.navigator && window.navigator.userAgent : n, a = e || at;
   return kn.includes(a) || r.includes("Mac") && "ontouchend" in document;
 }, wn = function(t, e, n) {
-  var r = "".concat($.paystackApiUrl, "transaction/update_log/").concat(t), a = { Authorization: "Bearer ".concat(e) };
+  var r = "".concat(e1.paystackApiUrl, "transaction/update_log/").concat(t), a = { Authorization: "Bearer ".concat(e) };
   return fetch(r, { method: "POST", body: JSON.stringify({ payload: JSON.stringify(n) }), headers: a });
 }, Sn = function(t, e) {
-  var n = "".concat($.paystackApiUrl, "transaction/set_ip/").concat(t), r = { Authorization: "Bearer ".concat(e) };
+  var n = "".concat(e1.paystackApiUrl, "transaction/set_ip/").concat(t), r = { Authorization: "Bearer ".concat(e) };
   return fetch(n, { method: "POST", headers: r });
 }, En = { initializeLog: function(t) {
   var e = t || {}, n = e.attempts, r = e.authentication, a = e.errors, o = e.history;
@@ -1895,8 +1895,8 @@ var kn = ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhon
   } catch {
   }
 } }, xn = ["language", "connect_account"], Pn = { requestInline: function() {
-  var t = this, e = this.urlParameters, n = e.language, r = e.connect_account, a = B1(e, xn), o = H({ "Content-Type": "application/json" }, n && { "Accept-Language": n });
-  return (this.accessCode ? fetch(new URL("transaction/verify_access_code/".concat(this.accessCode), $.paystackApiUrl).toString(), { headers: o }) : fetch(new URL("/checkout/request_inline", $.paystackApiUrl).toString(), { method: "POST", body: JSON.stringify(a), headers: H(H({}, o), r && { "x-connect-account": r }) })).then(function(s) {
+  var t = this, e = this.urlParameters, n = e.language, r = e.connect_account, a = B1(e, xn), o = F({ "Content-Type": "application/json" }, n && { "Accept-Language": n });
+  return (this.accessCode ? fetch(new URL("transaction/verify_access_code/".concat(this.accessCode), e1.paystackApiUrl).toString(), { headers: o }) : fetch(new URL("/checkout/request_inline", e1.paystackApiUrl).toString(), { method: "POST", body: JSON.stringify(a), headers: F(F({}, o), r && { "x-connect-account": r }) })).then(function(s) {
     return s.json();
   }).then(function(s) {
     if (s.status === !1) throw new Error(s.message);
@@ -1905,36 +1905,36 @@ var kn = ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhon
 } }, U1 = function() {
   function t(e) {
     Ze(this, t), function(l) {
-      function d(m, C) {
-        this.message = m, this.issues = C || [];
+      function p(m, b) {
+        this.message = m, this.issues = b || [];
       }
-      if (!l || d1(l) !== "object") throw new d("Transaction parameters should be a non-empty object");
-      var h = l;
-      if ("accessCode" in h) return { accessCode: h.accessCode };
-      Object.keys(h).forEach(function(m) {
-        P1.find(function(C) {
-          return C.value === m;
-        }) !== void 0 || delete h[m];
+      if (!l || d1(l) !== "object") throw new p("Transaction parameters should be a non-empty object");
+      var d = l;
+      if ("accessCode" in d) return { accessCode: d.accessCode };
+      Object.keys(d).forEach(function(m) {
+        P1.find(function(b) {
+          return b.value === m;
+        }) !== void 0 || delete d[m];
       });
-      var u = Object.keys(h), k = [];
+      var f = Object.keys(d), C = [];
       if (P1.filter(function(m) {
         return m.required;
       }).forEach(function(m) {
-        var C = !h[m.value], g = m.or ? m.or.some(function(w) {
-          return h[w];
+        var b = !d[m.value], k = m.or ? m.or.some(function(w) {
+          return d[w];
         }) : null;
-        C && !g && k.push({ message: "Required parameter missing: ".concat(m.value) });
-      }), u.forEach(function(m) {
-        var C = h[m], g = P1.find(function(L) {
-          return L.value === m;
-        }), w = d1(C);
-        w === "object" && Array.isArray(C) && (w = "array"), g.types.indexOf(w) <= -1 && k.push({ message: "Invalid parameter type: ".concat(m), validTypes: g.types });
-      }), u.forEach(function(m) {
-        var C = P1.find(function(g) {
-          return g.value === m;
+        b && !k && C.push({ message: "Required parameter missing: ".concat(m.value) });
+      }), f.forEach(function(m) {
+        var b = d[m], k = P1.find(function(A) {
+          return A.value === m;
+        }), w = d1(b);
+        w === "object" && Array.isArray(b) && (w = "array"), k.types.indexOf(w) <= -1 && C.push({ message: "Invalid parameter type: ".concat(m), validTypes: k.types });
+      }), f.forEach(function(m) {
+        var b = P1.find(function(k) {
+          return k.value === m;
         });
-        C.override && delete h[C.override];
-      }), k.length) throw new d("Invalid transaction parameters", k);
+        b.override && delete d[b.override];
+      }), C.length) throw new p("Invalid transaction parameters", C);
     }(e), this.parameters = e, this.urlParameters = gn(e), this.id = null, this.status = null, this.accessCode = e.accessCode || null, this.authorizationUrl = null, this.errors = [], this.response = null, this.isActive = !0;
     var n = e.onError, r = e.onLoad, a = e.onSuccess, o = e.onCancel, s = e.callback, c = e.onClose, i = e.onBankTransferConfirmationPending;
     this.callbacks = { onError: n, onLoad: r, onSuccess: a, onCancel: o, onBankTransferConfirmationPending: i }, this.deprecatedCallbacks = { callback: s, onClose: c }, Object.assign(this, Pn);
@@ -1943,7 +1943,7 @@ var kn = ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhon
     this.logError(e), this.callbacks.onError && this.callbacks.onError(e);
   } }, { key: "onLoad", value: function(e) {
     var n = e.id, r = e.customer, a = e.accessCode;
-    Object.assign(this, { id: n, customer: r, accessCode: a }), this.authorizationUrl = "".concat($.checkoutUrl).concat(a), this.callbacks.onLoad && this.callbacks.onLoad({ id: n, customer: r, accessCode: a });
+    Object.assign(this, { id: n, customer: r, accessCode: a }), this.authorizationUrl = "".concat(e1.checkoutUrl).concat(a), this.callbacks.onLoad && this.callbacks.onLoad({ id: n, customer: r, accessCode: a });
   } }, { key: "onSuccess", value: function(e) {
     this.isActive = !1, this.response = e, this.status = e.status, this.callbacks.onSuccess && this.callbacks.onSuccess(e), this.deprecatedCallbacks.callback && this.deprecatedCallbacks.callback(e);
   } }, { key: "setStatus", value: function(e) {
@@ -1962,7 +1962,7 @@ var kn = ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhon
 function Pe(t, e, n) {
   _1('"'.concat(t, '" has been deprecated, please use "').concat(e, '". ').concat(n));
 }
-var S, Tn = ["preload", "inlineTransaction"], In = ["container", "styles", "onElementsMount"];
+var S, Tn = ["preload", "inlineTransaction"], Mn = ["container", "styles", "onElementsMount"];
 function Y1(t, e) {
   if (!t.length) return null;
   var n = t.filter(function(r) {
@@ -1975,18 +1975,18 @@ function Te(t) {
   var e = t.checkoutIframe, n = t.urlParameters;
   e && n && e.contentWindow.postMessage({ type: "inline:url", path: "newTransaction", params: n }, "*");
 }
-var Mn = "trackCheckoutClosed", Ie = "trackPaymentError", Vn = "trackPaymentAttempt", An = "trackPaymentCompletion";
+var In = "trackCheckoutClosed", Me = "trackPaymentError", Vn = "trackPaymentAttempt", An = "trackPaymentCompletion";
 function F1(t) {
   throw _1(t), new Error(t);
 }
-var Me, Ve, it = function() {
+var Ie, Ve, it = function() {
   function t(e) {
     var n, r;
     Ze(this, t), this.id = function() {
       for (var a = "", o = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789", s = 0; s < 5; s += 1) a += o.charAt(Math.floor(Math.random() * o.length));
       return a;
     }(), this.transactions = [], this.isOpen = !1, this.isLoaded = !1, this.isDeprecatedApi = e && e.isDeprecatedApi, e && e.isEmbed ? this.isEmbed = !0 : e && e.isPaymentRequest && (e.container && x1(e.container) || F1("A container is required to mount the payment request button"), this.paymentRequestContainer = x1(e.container), this.paymentRequestTransaction = null), this.preCheckoutModal = null, this.backgroundIframe = function(a) {
-      var o = z1("inline-background-".concat(a));
+      var o = q1("inline-background-".concat(a));
       o.style.cssText = `
   z-index: 999999999999999;
   background: transparent;
@@ -2149,7 +2149,7 @@ var Me, Ve, it = function() {
 
   </html>
 `), s.close(), o;
-    }(this.id), this.checkoutIframe = (n = this.id, (r = z1("inline-checkout-".concat(n))).src = "".concat($.checkoutUrl, "popup"), r.style.cssText = `
+    }(this.id), this.checkoutIframe = (n = this.id, (r = q1("inline-checkout-".concat(n))).src = "".concat(e1.checkoutUrl, "popup"), r.style.cssText = `
   z-index: 999999999999999;
   background: transparent;
   border: 0px none transparent;
@@ -2171,7 +2171,7 @@ var Me, Ve, it = function() {
   return Be(t, [{ key: "registerListeners", value: function() {
     var e = this;
     window.addEventListener("message", function(n) {
-      var r = "".concat(n.origin, "/") === $.checkoutUrl, a = e.checkoutIframe && e.checkoutIframe.contentWindow === n.source, o = e.isEmbed;
+      var r = "".concat(n.origin, "/") === e1.checkoutUrl, a = e.checkoutIframe && e.checkoutIframe.contentWindow === n.source, o = e.isEmbed;
       r || a ? e.respondToEvent(n) : o && e.respondToEmbedEvents(n);
     });
   } }, { key: "sendAnalyticsEventToCheckout", value: function(e, n) {
@@ -2182,36 +2182,36 @@ var Me, Ve, it = function() {
     return new Promise(function(r, a) {
       n.requestInline().then(function(o) {
         var s = function() {
-          var i = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}, l = i.platform, d = i.userAgent, h = d === void 0 ? window && window.navigator && window.navigator.userAgent : d, u = l || at, k = h && !!h.match(/Version\/[\d.]+.*Safari/), m = u && /(Mac)/i.test(u);
-          return ot() || m && k;
+          var i = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}, l = i.platform, p = i.userAgent, d = p === void 0 ? window && window.navigator && window.navigator.userAgent : p, f = l || at, C = d && !!d.match(/Version\/[\d.]+.*Safari/), m = f && /(Mac)/i.test(f);
+          return ot() || m && C;
         }() && Q1(o.channels), c = function() {
-          var i = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}, l = !!i.custom_filters && i.custom_filters.recurring, d = i.plan_details, h = l || d, u = !!i.link_config && i.link_config.enabled && i.link_config.has_payment_instruments;
-          return !h && u;
+          var i = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}, l = !!i.custom_filters && i.custom_filters.recurring, p = i.plan_details, d = l || p, f = !!i.link_config && i.link_config.enabled && i.link_config.has_payment_instruments;
+          return !d && f;
         }(o);
         c || s ? (S.preloadTransaction({ inlineTransaction: n }), S.preCheckoutModal = function(i, l) {
-          var d = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {}, h = document.querySelector("#pre-checkout-modal-".concat(i));
-          if (h) {
-            if (xe(h) && q1(h)) return h;
-            h.remove();
+          var p = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {}, d = document.querySelector("#pre-checkout-modal-".concat(i));
+          if (d) {
+            if (xe(d) && z1(d)) return d;
+            d.remove();
           }
-          var u = document.createElement("div");
-          u.classList.add("pre-checkout-modal"), u.id = "pre-checkout-modal-".concat(i), u.style.zIndex = mn() + 1;
-          var k = document.createElement("div");
-          k.classList.add("pre-checkout-modal__content"), u.appendChild(k);
-          var m = l || {}, C = m.merchant_logo, g = m.merchant_name, w = m.email, L = m.amount, I = m.currency, V = m.label, f = new Intl.NumberFormat("en", { style: "currency", currency: I, currencyDisplay: "code", maximumFractionDigits: 2, minimumFractionDigits: 0 }).format(L / 100), F = document.createElement("div");
-          F.classList.add("payment-info"), F.innerHTML = '<img class="merchant-logo" src="'.concat(C, '" alt="').concat(g, ` Logo">
+          var f = document.createElement("div");
+          f.classList.add("pre-checkout-modal"), f.id = "pre-checkout-modal-".concat(i), f.style.zIndex = mn() + 1;
+          var C = document.createElement("div");
+          C.classList.add("pre-checkout-modal__content"), f.appendChild(C);
+          var m = l || {}, b = m.merchant_logo, k = m.merchant_name, w = m.email, A = m.amount, T = m.currency, V = m.label, h = new Intl.NumberFormat("en", { style: "currency", currency: T, currencyDisplay: "code", maximumFractionDigits: 2, minimumFractionDigits: 0 }).format(A / 100), z = document.createElement("div");
+          z.classList.add("payment-info"), z.innerHTML = '<img class="merchant-logo" src="'.concat(b, '" alt="').concat(k, ` Logo">
     <div class="customer-info">
       <div class="customer-email">`).concat(V || w, `</div>
-      <div class="transaction-amount">Pay <span class="amount">`).concat(f, `</span></div>
-    </div>`), k.appendChild(F), k.innerHTML += pn;
-          var q = document.createElement("div");
-          q.classList.add("modal-wrapper"), d.canPayWithVault ? vn(q, { canPayWithApplePay: d.canPayWithApplePay }) : bn(q), q.innerHTML = q.innerHTML + Xe + un, k.appendChild(q);
-          var K = document.createElement("style");
-          return K.textContent = fn, document.body.appendChild(K), document.body.appendChild(u), u;
-        }(S.id, o, { canPayWithVault: c, canPayWithApplePay: s }), s ? (S.paymentRequestContainer = q1(S.preCheckoutModal), Ee(S.paymentRequestContainer, { channels: o.channels, styles: { applePay: { width: "100%", type: "pay", height: "42px", padding: "15px", borderRadius: "5px" } } }, o.merchant_id).then(function() {
+      <div class="transaction-amount">Pay <span class="amount">`).concat(h, `</span></div>
+    </div>`), C.appendChild(z), C.innerHTML += pn;
+          var D = document.createElement("div");
+          D.classList.add("modal-wrapper"), p.canPayWithVault ? vn(D, { canPayWithApplePay: p.canPayWithApplePay }) : bn(D), D.innerHTML = D.innerHTML + Xe + un, C.appendChild(D);
+          var Q = document.createElement("style");
+          return Q.textContent = fn, document.body.appendChild(Q), document.body.appendChild(f), f;
+        }(S.id, o, { canPayWithVault: c, canPayWithApplePay: s }), s ? (S.paymentRequestContainer = z1(S.preCheckoutModal), Ee(S.paymentRequestContainer, { channels: o.channels, styles: { applePay: { width: "100%", type: "pay", height: "42px", padding: "15px", borderRadius: "5px" } } }, o.merchant_id).then(function() {
           S.registerPaymentRequestEventListeners(), S.openPreCheckoutModal();
         }).catch(function() {
-          c ? (q1(S.preCheckoutModal).remove(), S.openPreCheckoutModal()) : (S.closePreCheckoutModal(), S.animateCheckoutIn());
+          c ? (z1(S.preCheckoutModal).remove(), S.openPreCheckoutModal()) : (S.closePreCheckoutModal(), S.animateCheckoutIn());
         }).finally(function() {
           r(n);
         })) : (S.openPreCheckoutModal(), r(n))) : (S.newTransaction({ inlineTransaction: n }), r(n));
@@ -2250,7 +2250,7 @@ var Me, Ve, it = function() {
       return i.querySelector("#apple-pay-close-button");
     }(this.preCheckoutModal);
     c.onclick = function() {
-      n.sendAnalyticsEventToCheckout(Mn), n.closePreCheckoutModalAndCancelTransaction();
+      n.sendAnalyticsEventToCheckout(In), n.closePreCheckoutModalAndCancelTransaction();
     };
   } }, { key: "closePreCheckoutModal", value: function(e) {
     var n;
@@ -2268,50 +2268,50 @@ var Me, Ve, it = function() {
   } }, { key: "closePreCheckoutModalAndCancelTransaction", value: function() {
     this.preCheckoutModal && (this.cancelTransaction(), this.checkoutIframe && this.checkoutIframe.contentWindow && this.checkoutIframe.contentWindow.postMessage("close", "*"), this.closePreCheckoutModal());
   } }, { key: "newTransaction", value: function(e) {
-    var n, r = e.preload, a = e.inlineTransaction, o = B1(e, Tn), s = this.paymentRequestContainer && M1(this.paymentRequestContainer);
+    var n, r = e.preload, a = e.inlineTransaction, o = B1(e, Tn), s = this.paymentRequestContainer && I1(this.paymentRequestContainer);
     this.activeTransaction() && !s && this.activeTransaction().cancel();
     var c = Y1(this.transactions, a ? a.parameters : o), i = c || a || new U1(o);
     return c ? (i.isActive = !0, n = { accessCode: i.accessCode }) : (n = i.accessCode ? { accessCode: i.accessCode } : i.urlParameters, this.transactions.push(i)), this.isDeprecatedApi || this.open(n, r), i;
   } }, { key: "preloadTransaction", value: function(e) {
     var n = this;
-    return this.newTransaction(H(H({}, e), {}, { preload: !0 })), function() {
+    return this.newTransaction(F(F({}, e), {}, { preload: !0 })), function() {
       return n.animateCheckoutIn();
     };
   } }, { key: "paymentRequest", value: function(e) {
-    var n = e.container, r = e.styles, a = e.onElementsMount, o = B1(e, In);
+    var n = e.container, r = e.styles, a = e.onElementsMount, o = B1(e, Mn);
     return S = this, new Promise(function(s, c) {
       var i = document.querySelector("#".concat(e.loadPaystackCheckoutButton));
       if (_e()) {
         S.activeTransaction() && S.activeTransaction().cancel(), n && x1(n) || F1("A container is required to mount the payment request button"), S.paymentRequestContainer = x1(n);
-        var l = Y1(S.transactions, o), d = l || new U1(o);
-        d.requestInline().then(function(k) {
-          Ee(S.paymentRequestContainer, { channels: k.channels, styles: r }, k.merchant_id).then(function(m) {
+        var l = Y1(S.transactions, o), p = l || new U1(o);
+        p.requestInline().then(function(C) {
+          Ee(S.paymentRequestContainer, { channels: C.channels, styles: r }, C.merchant_id).then(function(m) {
             a && a(m);
           }).catch(function() {
             a && a(null);
           }).finally(function() {
-            if (l ? d.isActive = !0 : S.transactions.push(d), S.registerPaymentRequestEventListeners(), i) {
-              var m = S.preloadTransaction({ inlineTransaction: d });
+            if (l ? p.isActive = !0 : S.transactions.push(p), S.registerPaymentRequestEventListeners(), i) {
+              var m = S.preloadTransaction({ inlineTransaction: p });
               i.onclick = m;
             }
-            s(d);
+            s(p);
           });
-        }).catch(function(k) {
-          d.onSetupError({ status: !1, message: k.message }), c(k);
+        }).catch(function(C) {
+          p.onSetupError({ status: !1, message: C.message }), c(C);
         });
       } else {
         if (e && e.loadPaystackCheckoutButton) if (i) {
-          var h = S.preloadTransaction(o);
-          i.onclick = h;
+          var d = S.preloadTransaction(o);
+          i.onclick = d;
         } else _1("This device does not support any payment request wallet options. Please consult our documentation at https://developers.paystack.co/docs/paystack-inline to see how to load alternative payment options using 'loadPaystackCheckoutButton'");
         a && a(null);
-        var u = S.activeTransaction();
-        s(u);
+        var f = S.activeTransaction();
+        s(f);
       }
     });
   } }, { key: "registerApplePayEventListener", value: function() {
     var e = this;
-    M1(this.paymentRequestContainer).onclick = function() {
+    I1(this.paymentRequestContainer).onclick = function() {
       return e.startApplePay();
     };
   } }, { key: "registerPaymentRequestEventListeners", value: function() {
@@ -2320,39 +2320,39 @@ var Me, Ve, it = function() {
   } }, { key: "startApplePay", value: function() {
     var e, n, r, a, o, s = this, c = "apple pay", i = this.activeTransaction();
     if (i) {
-      var l = { channel: "apple_pay", paymentMethod: c, currency: i.currency, amount: i.amount }, d = { channel: "apple_pay", currency: i.currency, amount: i.amount, timeSpent: i.getTimeSpent() };
+      var l = { channel: "apple_pay", paymentMethod: c, currency: i.currency, amount: i.amount }, p = { channel: "apple_pay", currency: i.currency, amount: i.amount, timeSpent: i.getTimeSpent() };
       try {
         i.logAttempt(c), this.sendAnalyticsEventToCheckout(Vn, l);
-        var h = (e = { currency: i.response.currency, amount: i.response.amount, merchantName: i.response.merchant_name, interval: i.response.plan_details && i.response.plan_details.interval }, n = e.currency, r = e.amount, a = e.merchantName, o = e.interval, H({ countryCode: "NG", currencyCode: n, merchantCapabilities: ["supports3DS", "supportsCredit", "supportsDebit"], supportedNetworks: ["visa", "masterCard"], requiredBillingContactFields: ["postalAddress", "name", "phone", "email"], total: { label: "".concat(a, " - Paystack"), type: "final", amount: String(ke(r)) } }, typeof o == "string" && o.trim() !== "" && { lineItems: [{ label: hn(o), amount: String(ke(r)) }] })), u = new window.ApplePaySession($.applePayVersion, h);
-        u.onvalidatemerchant = function(k) {
-          var m = function(C) {
-            var g = C.transactionId, w = C.validationURL, L = C.merchantName, I = C.domainName, V = I === void 0 ? window && window.location && window.location.hostname : I, f = "".concat($.paymentBaseUrl).concat($.applePayValidateSessionPath), F = Se({ transaction: g, sessionUrl: w, displayName: L, domainName: V });
-            return fetch(f, H(H({}, we), {}, { body: F })).then(function(q) {
-              return q.json();
+        var d = (e = { currency: i.response.currency, amount: i.response.amount, merchantName: i.response.merchant_name, interval: i.response.plan_details && i.response.plan_details.interval }, n = e.currency, r = e.amount, a = e.merchantName, o = e.interval, F({ countryCode: "NG", currencyCode: n, merchantCapabilities: ["supports3DS", "supportsCredit", "supportsDebit"], supportedNetworks: ["visa", "masterCard"], requiredBillingContactFields: ["postalAddress", "name", "phone", "email"], total: { label: "".concat(a, " - Paystack"), type: "final", amount: String(ke(r)) } }, typeof o == "string" && o.trim() !== "" && { lineItems: [{ label: hn(o), amount: String(ke(r)) }] })), f = new window.ApplePaySession(e1.applePayVersion, d);
+        f.onvalidatemerchant = function(C) {
+          var m = function(b) {
+            var k = b.transactionId, w = b.validationURL, A = b.merchantName, T = b.domainName, V = T === void 0 ? window && window.location && window.location.hostname : T, h = "".concat(e1.paymentBaseUrl).concat(e1.applePayValidateSessionPath), z = Se({ transaction: k, sessionUrl: w, displayName: A, domainName: V });
+            return fetch(h, F(F({}, we), {}, { body: z })).then(function(D) {
+              return D.json();
             });
-          }({ validationURL: k.validationURL, transactionId: i.id, merchantName: i.response.merchant_name });
-          m.then(function(C) {
-            C.status !== "success" ? i.onSetupError(C) : u.completeMerchantValidation(C.data), i.logValidationResponse(C.message);
-          }).catch(function(C) {
-            i.onSetupError(C);
+          }({ validationURL: C.validationURL, transactionId: i.id, merchantName: i.response.merchant_name });
+          m.then(function(b) {
+            b.status !== "success" ? i.onSetupError(b) : f.completeMerchantValidation(b.data), i.logValidationResponse(b.message);
+          }).catch(function(b) {
+            i.onSetupError(b);
           });
-        }, u.oncancel = function() {
+        }, f.oncancel = function() {
           S.preCheckoutModal || i.onCancel();
-        }, u.onpaymentauthorized = function(k) {
-          var m = k.payment, C = function(g) {
-            var w = g.transactionId, L = g.payment, I = "".concat($.paymentBaseUrl).concat($.applePayChargePath), V = Se({ transaction: w, paymentObject: JSON.stringify(L) });
-            return fetch(I, H(H({}, we), {}, { body: V })).then(function(f) {
-              return f.json();
+        }, f.onpaymentauthorized = function(C) {
+          var m = C.payment, b = function(k) {
+            var w = k.transactionId, A = k.payment, T = "".concat(e1.paymentBaseUrl).concat(e1.applePayChargePath), V = Se({ transaction: w, paymentObject: JSON.stringify(A) });
+            return fetch(T, F(F({}, we), {}, { body: V })).then(function(h) {
+              return h.json();
             });
           }({ transactionId: i.id, payment: m });
-          C.then(function(g) {
-            i.logAPIResponse(g, c), g.status === "success" ? (u.completePayment(u.STATUS_SUCCESS), i.onSuccess(g), s.sendAnalyticsEventToCheckout(An, d)) : (u.completePayment(u.STATUS_FAILURE), i.onSetupError(g), s.sendAnalyticsEventToCheckout(Ie, { channel: "apple_pay", message: g && g.message || "Transaction attempt failed" })), S.closePreCheckoutModal(g.status);
-          }).catch(function(g) {
-            u.completePayment(u.STATUS_FAILURE), i.onSetupError(g), s.sendAnalyticsEventToCheckout(Ie, { channel: "apple_pay", message: g && g.message || "Error occurred" }), S.closePreCheckoutModal("failed");
+          b.then(function(k) {
+            i.logAPIResponse(k, c), k.status === "success" ? (f.completePayment(f.STATUS_SUCCESS), i.onSuccess(k), s.sendAnalyticsEventToCheckout(An, p)) : (f.completePayment(f.STATUS_FAILURE), i.onSetupError(k), s.sendAnalyticsEventToCheckout(Me, { channel: "apple_pay", message: k && k.message || "Transaction attempt failed" })), S.closePreCheckoutModal(k.status);
+          }).catch(function(k) {
+            f.completePayment(f.STATUS_FAILURE), i.onSetupError(k), s.sendAnalyticsEventToCheckout(Me, { channel: "apple_pay", message: k && k.message || "Error occurred" }), S.closePreCheckoutModal("failed");
           });
-        }, u.begin();
-      } catch (k) {
-        i.onSetupError(k);
+        }, f.begin();
+      } catch (C) {
+        i.onSetupError(C);
       }
     } else F1("Could not initiate apple pay transaction");
   } }, { key: "resumeTransaction", value: function(e) {
@@ -2386,7 +2386,7 @@ var Me, Ve, it = function() {
           case "close":
             this.close();
             var i = c && c.status;
-            i && a.setStatus(i), !(this.paymentRequestContainer && M1(this.paymentRequestContainer) && !this.preCheckoutModal) && (a.isActive = !1), a.onCancel();
+            i && a.setStatus(i), !(this.paymentRequestContainer && I1(this.paymentRequestContainer) && !this.preCheckoutModal) && (a.isActive = !1), a.onCancel();
             break;
           case "transfer:pending":
             this.close();
@@ -2440,8 +2440,8 @@ var Me, Ve, it = function() {
     S || (S = new t({ isDeprecatedApi: !0, isEmbed: n })), Pe("PaystackPop.setup()", "new PaystackPop()", "Please consult our documentation at https://developers.paystack.co/docs/paystack-inline");
     var r = S.newTransaction(e, "deprecated"), a = r.urlParameters;
     if (n) {
-      var o = "".concat($.siteUrl, "/assets/payment/production/inline.html?").concat(Ke(a)), s = function(c, i) {
-        var l = z1("embed-checkout-".concat(c));
+      var o = "".concat(e1.siteUrl, "/assets/payment/production/inline.html?").concat(Ke(a)), s = function(c, i) {
+        var l = q1("embed-checkout-".concat(c));
         return l.style.cssText = `
   background: transparent;
   background: rgba(0,0,0,0);
@@ -2475,8 +2475,8 @@ var Me, Ve, it = function() {
     return r;
   } }]), t;
 }();
-if (Me = be().length > 0, Ve = h1() && h1().parentElement.tagName === "FORM", Me && Ve) {
-  var H1, p1 = function() {
+if (Ie = be().length > 0, Ve = h1() && h1().parentElement.tagName === "FORM", Ie && Ve) {
+  var D1, p1 = function() {
     var t = {}, e = h1();
     return be().forEach(function(n) {
       var r = e.getAttribute(n), a = n.split("data-")[1].replace(/-([a-z])/g, function(o) {
@@ -2485,7 +2485,7 @@ if (Me = be().length > 0, Ve = h1() && h1().parentElement.tagName === "FORM", Me
       t[a] = r;
     }), function(n) {
       if (n.buttonId && !document.getElementById(n.buttonId)) throw new Error("Please make sure the buttonId is an element available in the DOM");
-      var r = H({}, n);
+      var r = F({}, n);
       r.buttonText = n.buttonText || "Pay", r.buttonVariant = "normal", r.buttonWordmarkVariant = "normal";
       var a = ["normal", "light"];
       return n.buttonVariant && a.indexOf(n.buttonVariant) > -1 && (r.buttonVariant = n.buttonVariant), n.buttonWordmarkVariant && a.indexOf(n.buttonWordmarkVariant) > -1 && (r.buttonWordmarkVariant = n.buttonWordmarkVariant), r;
@@ -2553,7 +2553,7 @@ if (Me = be().length > 0, Ve = h1() && h1().parentElement.tagName === "FORM", Me
     }
     return e;
   }({ inlineId: S.id, amount: p1.amount / 100, currency: p1.currency, id: p1.buttonId, text: p1.buttonText, variant: p1.buttonVariant, wordmarkVariant: p1.buttonWordmarkVariant, parent: h1() }).addEventListener("click", function(t) {
-    t.preventDefault(), H1 ? S.resumeTransaction(H1.accessCode) : H1 = S.newTransaction(H(H({}, p1), {}, { onSuccess: function(e) {
+    t.preventDefault(), D1 ? S.resumeTransaction(D1.accessCode) : D1 = S.newTransaction(F(F({}, p1), {}, { onSuccess: function(e) {
       var n, r, a, o, s, c;
       n = { type: "hidden", name: "reference", value: e.reference, parent: Ae }, r = n.type, a = n.value, o = n.name, s = n.parent, (c = document.createElement("input")).type = r, c.value = a, c.name = o, s.appendChild(c), Ae.submit();
     } }));
@@ -2565,11 +2565,11 @@ var On = function(t) {
 };
 function st(t) {
   function e(n) {
-    var r = n.config, a = n.onSuccess, o = n.onClose, s = U(U({}, t), r), c = s.publicKey, i = s.firstname, l = s.lastname, d = s.phone, h = s.email, u = s.amount, k = s.reference, m = s.metadata, C = s.currency, g = C === void 0 ? "NGN" : C, w = s.channels, L = s.label, I = s.plan, V = s.quantity, f = s.subaccount, F = s.transaction_charge, q = s.bearer, K = s.split, t1 = s.split_code, B = s.connect_account, n1 = s.connect_split, X = s.onBankTransferConfirmationPending, l1 = U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U({ onSuccess: a || function() {
+    var r = n.config, a = n.onSuccess, o = n.onClose, s = U(U({}, t), r), c = s.publicKey, i = s.firstname, l = s.lastname, p = s.phone, d = s.email, f = s.amount, C = s.reference, m = s.metadata, b = s.currency, k = b === void 0 ? "NGN" : b, w = s.channels, A = s.label, T = s.plan, V = s.quantity, h = s.subaccount, z = s.transaction_charge, D = s.bearer, Q = s.split, r1 = s.split_code, X = s.connect_account, B = s.connect_split, _ = s.onBankTransferConfirmationPending, l1 = U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U(U({ onSuccess: a || function() {
       return null;
     }, onCancel: o || function() {
       return null;
-    }, key: c, email: h, amount: u }, i && { firstname: i }), l && { lastname: l }), d && { phone: d }), k && { ref: k }), g && { currency: g }), w && { channels: w }), m && { metadata: m }), L && { label: L }), X && { onBankTransferConfirmationPending: X }), f && { subaccount: f }), F && { transaction_charge: F }), q && { bearer: q }), K && { split: K }), t1 && { split_code: t1 }), I && { plan: I }), V && { quantity: V }), n1 && { connect_split: n1 }), B && { connect_account: B });
+    }, key: c, email: d, amount: f }, i && { firstname: i }), l && { lastname: l }), p && { phone: p }), C && { ref: C }), k && { currency: k }), w && { channels: w }), m && { metadata: m }), A && { label: A }), _ && { onBankTransferConfirmationPending: _ }), h && { subaccount: h }), z && { transaction_charge: z }), D && { bearer: D }), Q && { split: Q }), r1 && { split_code: r1 }), T && { plan: T }), V && { quantity: V }), B && { connect_split: B }), X && { connect_account: X });
     On(l1);
   }
   return e;
@@ -2586,7 +2586,7 @@ var ct = ht({
     return null;
   }
 }), jn = function(t) {
-  var e = t.children, n = t.onSuccess, r = t.onClose, a = De(t, ["children", "onSuccess", "onClose"]), o = st(a);
+  var e = t.children, n = t.onSuccess, r = t.onClose, a = He(t, ["children", "onSuccess", "onClose"]), o = st(a);
   return W.createElement(ct.Provider, { value: { config: a, initializePayment: o, onSuccess: n, onClose: r } }, e);
 }, Ln = function(t) {
   var e = t.children, n = t.ref, r = yt(ct), a = r.config, o = r.initializePayment, s = r.onSuccess, c = r.onClose, i = function() {
@@ -2595,7 +2595,7 @@ var ct = ht({
   return e({ initializePayment: i, ref: n });
 };
 mt(function(t, e) {
-  var n = t.children, r = t.onSuccess, a = t.onClose, o = De(t, ["children", "onSuccess", "onClose"]), s = r || function() {
+  var n = t.children, r = t.onSuccess, a = t.onClose, o = He(t, ["children", "onSuccess", "onClose"]), s = r || function() {
     return null;
   }, c = a || function() {
     return null;
@@ -2606,19 +2606,19 @@ mt(function(t, e) {
     W.createElement(Ln, { ref: e }, n)
   );
 });
-const Rn = "_checkoutModal_1rie5_1", Nn = "_backdrop_1rie5_14", Wn = "_errorMessage_1rie5_31", Gn = "_modalContent_1rie5_52", zn = "_checkoutForm_1rie5_61", qn = "_checkoutTop_1rie5_80", Un = "_checkoutTopFirst_1rie5_86", Yn = "_checkoutTopSpan_1rie5_91", s1 = {
+const Rn = "_checkoutModal_1rie5_1", Nn = "_backdrop_1rie5_14", Wn = "_errorMessage_1rie5_31", Gn = "_modalContent_1rie5_52", qn = "_checkoutForm_1rie5_61", zn = "_checkoutTop_1rie5_80", Un = "_checkoutTopFirst_1rie5_86", Yn = "_checkoutTopSpan_1rie5_91", s1 = {
   checkoutModal: Rn,
   backdrop: Nn,
   errorMessage: Wn,
   modalContent: Gn,
-  checkoutForm: zn,
-  checkoutTop: qn,
+  checkoutForm: qn,
+  checkoutTop: zn,
   checkoutTopFirst: Un,
   checkoutTopSpan: Yn
-}, Fn = "_buttonBase_oq4y8_10", Hn = "_buttonDefault_oq4y8_37", Dn = "_buttonOutlined_oq4y8_46", Zn = "_buttonText_oq4y8_58", Bn = "_buttonFull_oq4y8_67", Jn = "_buttonDisabled_oq4y8_71", f1 = {
+}, Fn = "_buttonBase_oq4y8_10", Dn = "_buttonDefault_oq4y8_37", Hn = "_buttonOutlined_oq4y8_46", Zn = "_buttonText_oq4y8_58", Bn = "_buttonFull_oq4y8_67", Jn = "_buttonDisabled_oq4y8_71", f1 = {
   buttonBase: Fn,
-  buttonDefault: Hn,
-  buttonOutlined: Dn,
+  buttonDefault: Dn,
+  buttonOutlined: Hn,
   buttonText: Zn,
   buttonFull: Bn,
   buttonDisabled: Jn
@@ -2641,7 +2641,7 @@ const Kn = "_spinner_1uybp_1", Xn = {
 }, ut = ({
   color: t = "white",
   size: e = 15
-}) => /* @__PURE__ */ z(
+}) => /* @__PURE__ */ q(
   "div",
   {
     className: Xn.spinner,
@@ -2683,14 +2683,14 @@ const Kn = "_spinner_1uybp_1", Xn = {
     o && f1.buttonDisabled,
     a
   );
-  return /* @__PURE__ */ z(
+  return /* @__PURE__ */ q(
     "button",
     {
       type: e,
       onClick: r,
       disabled: s || o,
       className: l,
-      children: s ? /* @__PURE__ */ z(ut, { color: i, size: 15 }) : t
+      children: s ? /* @__PURE__ */ q(ut, { color: i, size: 15 }) : t
     }
   );
 }, pt = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAACACAYAAADXlBe3AAAACXBIWXMAAC4jAAAuIwF4pT92AAAFDGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMi0wNS0zMFQyMTowOTowMiswMTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjItMDUtMzFUMDk6MzErMDE6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDUtMzFUMDk6MzErMDE6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjRlNmM1YTctYWExZC0zMTQ4LTliY2Qt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", _n = "_container_1apau_1", $n = "_label_1apau_8", e2 = "_labelText_1apau_15", t2 = "_logo_1apau_19", n2 = "_mima_1apau_26", m1 = {
@@ -2707,8 +2707,8 @@ const Kn = "_spinner_1uybp_1", Xn = {
     target: "_blank",
     rel: "noopener noreferrer",
     children: [
-      /* @__PURE__ */ z("p", { children: "Powered by" }),
-      /* @__PURE__ */ z("img", { src: pt, className: m1.logo, alt: "mima Logo" })
+      /* @__PURE__ */ q("p", { children: "Powered by" }),
+      /* @__PURE__ */ q("img", { src: pt, className: m1.logo, alt: "mima Logo" })
     ]
   }
 ), a2 = ({
@@ -2718,15 +2718,15 @@ const Kn = "_spinner_1uybp_1", Xn = {
   currencyCode: r,
   transactionAmount: a
 }) => {
-  const o = Zt(), s = qt(), [c, i] = b1(!1), l = async (d) => {
-    if (d.preventDefault(), !o || !s) return;
+  const o = Zt(), s = zt(), [c, i] = b1(!1), l = async (p) => {
+    if (p.preventDefault(), !o || !s) return;
     i(!0);
-    const { error: h } = await o.confirmPayment({
+    const { error: d } = await o.confirmPayment({
       elements: s,
       redirect: "if_required"
     });
-    if (h) {
-      console.error(h.message), i(!1), e();
+    if (d) {
+      console.error(d.message), i(!1), e();
       return;
     }
     i(!1), t();
@@ -2742,9 +2742,9 @@ const Kn = "_spinner_1uybp_1", Xn = {
           a
         ] })
       ] }),
-      /* @__PURE__ */ z("p", { className: s1.checkoutTopFirst, children: "All transactions are secure and encrypted." })
+      /* @__PURE__ */ q("p", { className: s1.checkoutTopFirst, children: "All transactions are secure and encrypted." })
     ] }),
-    /* @__PURE__ */ z(Bt, {}),
+    /* @__PURE__ */ q(Bt, {}),
     /* @__PURE__ */ i1(
       "div",
       {
@@ -2755,7 +2755,7 @@ const Kn = "_spinner_1uybp_1", Xn = {
           width: "100%"
         },
         children: [
-          /* @__PURE__ */ z(
+          /* @__PURE__ */ q(
             V1,
             {
               title: "Go Back",
@@ -2765,35 +2765,36 @@ const Kn = "_spinner_1uybp_1", Xn = {
               fullWidth: !0
             }
           ),
-          /* @__PURE__ */ z(V1, { title: "Pay now", type: "submit", fullWidth: !0, loading: c })
+          /* @__PURE__ */ q(V1, { title: "Pay now", type: "submit", fullWidth: !0, loading: c })
         ]
       }
     ),
-    /* @__PURE__ */ z(r2, {})
+    /* @__PURE__ */ q(r2, {})
   ] });
 }, T1 = ({ children: t, onClose: e }) => /* @__PURE__ */ i1("div", { className: s1.checkoutModal, children: [
-  /* @__PURE__ */ z("div", { className: s1.backdrop, onClick: e }),
-  /* @__PURE__ */ z("div", { className: s1.modalContent, children: t })
+  /* @__PURE__ */ q("div", { className: s1.backdrop, onClick: e }),
+  /* @__PURE__ */ q("div", { className: s1.modalContent, children: t })
 ] }), o2 = ({
   isOpen: t,
   closeCheckout: e,
   onSuccess: n,
   onClose: r,
   payload: a,
-  signature: o
+  signature: o,
+  testMode: s = !1
 }) => {
-  const [s, c] = b1(!1), i = "https://api.trymima.com/v1", l = {
+  const [c, i] = b1(!1), l = s ? "https://dev.trymima.com/v1" : "https://api.trymima.com/v1", p = {
     product: "/invoices/new/checkout",
     bookings: "/invoices/accept-booking-invoice"
-  }, [d, h] = b1(""), [u, k] = b1({}), [m, C] = b1("");
+  }, [d, f] = b1(""), [C, m] = b1({}), [b, k] = b1("");
   ee(() => {
     if (!t || a?.order?.items && a?.order?.items?.length < 1)
       return;
-    const q = i + l.product;
+    const Q = l + p.product;
     (async () => {
-      c(!0);
+      i(!0);
       try {
-        const B = await (await fetch(q, {
+        const B = await (await fetch(Q, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -2801,44 +2802,44 @@ const Kn = "_spinner_1uybp_1", Xn = {
           },
           body: JSON.stringify(a)
         })).json();
-        k(B), B?.stripeSessionId && h(B?.stripeSessionId), B?.error && B?.message && C(B?.message);
-      } catch (t1) {
-        console.log("err", t1), C("Something went wrong. Please try again."), e();
+        m(B), B?.stripeSessionId && f(B?.stripeSessionId), B?.error && B?.message && k(B?.message);
+      } catch (X) {
+        console.log("err", X), k("Something went wrong. Please try again."), e();
       } finally {
-        c(!1);
+        i(!1);
       }
     })();
   }, [
     t,
     e,
-    l.product,
-    l.bookings,
-    i,
+    p.product,
+    p.bookings,
+    l,
     a,
     o
   ]);
-  const g = Ct(() => {
-    const q = "pk_live_8f9d0f43221de55a2139081d8a530fd65a15e960", K = {
+  const w = Ct(() => {
+    const Q = s ? "pk_test_c089002666ab7778df8fe31313c5bba3d6f69914" : "pk_live_8f9d0f43221de55a2139081d8a530fd65a15e960", r1 = {
       custom_fields: [
         {
           display_name: "business",
           variable_name: "business",
-          value: u?.business?._id
+          value: C?.business?._id
         },
         {
           display_name: "invoiceNumber",
           variable_name: "invoiceNumber",
-          value: `INV-${u?.number}`
+          value: `INV-${C?.number}`
         },
         {
           display_name: "customerName",
           variable_name: "customerName",
-          value: u?.customer?.fullname
+          value: C?.customer?.fullname
         },
         {
           display_name: "invoice",
           variable_name: "invoice",
-          value: u?._id
+          value: C?._id
         },
         {
           display_name: "type",
@@ -2853,46 +2854,46 @@ const Kn = "_spinner_1uybp_1", Xn = {
       //   type: "INVOICE",
     };
     return {
-      email: u?.customer?.email,
-      amount: u?.transactionAmount * 100,
-      metadata: K,
-      publicKey: q
+      email: C?.customer?.email,
+      amount: C?.transactionAmount * 100,
+      metadata: r1,
+      publicKey: Q
     };
-  }, [u]), w = () => {
+  }, [C, s]), A = () => {
     r?.(), e();
-  }, L = () => {
+  }, T = () => {
     n?.(), e();
-  }, I = st(g);
+  }, V = st(w);
   ee(() => {
-    u?.currencyCode === "NGN" && I({
-      onSuccess: L,
-      onClose: w
+    C?.currencyCode === "NGN" && V({
+      onSuccess: T,
+      onClose: A
     });
-  }, [u]);
-  const f = on("pk_live_51R3rfgDWL23lDLO0wx0psgHwZdtra8Hpt62NV4jhjHNEL2Vy1tX6GDtmG6x4JhPNcLjBz3O9FJLIOWuDVhECKdUB00Br6kqrtR"), F = () => {
-    h("");
+  }, [C]);
+  const z = on(s ? "pk_test_51MZRkkCxdM6WOQdWKpad49vDaWdY0xINxv5Rkipm2RZJ0jkYDtD17mpPlWTDdceDJXKDpEeqXeS8Y7GMxu38Lub300QAKMidAd" : "pk_live_51MZRkkCxdM6WOQdWPUtgMWcdORUTEPS4o4EL1CydZ8pcWBw1PTjkcenRZmcMFCaZaknuuAKq0488T8s9ywaOKZwS00euXJ5lap"), D = () => {
+    f("");
   };
   if (!t) return null;
-  if (!f && u?.currencyCode !== "NGN")
-    return /* @__PURE__ */ z(T1, { onClose: w, children: /* @__PURE__ */ z("div", { className: s1.errorMessage, children: "FX Payment is not available." }) });
-  if (m)
-    return /* @__PURE__ */ z(T1, { onClose: w, children: /* @__PURE__ */ z("div", { className: s1.errorMessage, children: m }) });
-  if (s)
-    return /* @__PURE__ */ z(T1, { onClose: w, children: /* @__PURE__ */ z(ut, { color: "#414651", size: 75 }) });
-  if (d && !s)
-    return /* @__PURE__ */ z(T1, { onClose: w, children: /* @__PURE__ */ z(
-      ze,
+  if (!z && C?.currencyCode !== "NGN")
+    return /* @__PURE__ */ q(T1, { onClose: A, children: /* @__PURE__ */ q("div", { className: s1.errorMessage, children: "FX Payment is not available." }) });
+  if (b)
+    return /* @__PURE__ */ q(T1, { onClose: A, children: /* @__PURE__ */ q("div", { className: s1.errorMessage, children: b }) });
+  if (c)
+    return /* @__PURE__ */ q(T1, { onClose: A, children: /* @__PURE__ */ q(ut, { color: "#414651", size: 75 }) });
+  if (d && !c)
+    return /* @__PURE__ */ q(T1, { onClose: A, children: /* @__PURE__ */ q(
+      qe,
       {
-        stripe: f,
+        stripe: z,
         options: { clientSecret: d },
-        children: /* @__PURE__ */ z(
+        children: /* @__PURE__ */ q(
           a2,
           {
-            onSuccess: L,
-            onClose: w,
-            goBack: F,
-            currencyCode: u?.currencyCode,
-            transactionAmount: u?.transactionAmount
+            onSuccess: T,
+            onClose: A,
+            goBack: D,
+            currencyCode: C?.currencyCode,
+            transactionAmount: C?.transactionAmount
           }
         )
       }
@@ -2901,12 +2902,12 @@ const Kn = "_spinner_1uybp_1", Xn = {
   const e = document.createElement("div");
   document.body.appendChild(e);
   const n = vt(e), r = () => {
-    n.render(/* @__PURE__ */ z(ft, {})), t.onClose?.();
+    n.render(/* @__PURE__ */ q(ft, {})), t.onClose?.();
   }, a = () => {
     t.onSuccess?.(), r();
   };
   n.render(
-    /* @__PURE__ */ z(
+    /* @__PURE__ */ q(
       o2,
       {
         ...t,
@@ -2933,11 +2934,11 @@ const Kn = "_spinner_1uybp_1", Xn = {
   };
   return /* @__PURE__ */ i1("div", { className: m1.container, children: [
     /* @__PURE__ */ i1("label", { className: m1.label, children: [
-      /* @__PURE__ */ z("input", { type: "radio", checked: t, onChange: e }),
-      /* @__PURE__ */ z("span", { className: m1.labelText, children: "Pay with Mima" })
+      /* @__PURE__ */ q("input", { type: "radio", checked: t, onChange: e }),
+      /* @__PURE__ */ q("span", { className: m1.labelText, children: "Pay with Mima" })
     ] }),
-    /* @__PURE__ */ z("img", { src: pt, className: m1.logo, alt: "Mima Logo" }),
-    t && /* @__PURE__ */ z(V1, { title: "Pay now", onClick: o, fullWidth: !0 })
+    /* @__PURE__ */ q("img", { src: pt, className: m1.logo, alt: "Mima Logo" }),
+    t && /* @__PURE__ */ q(V1, { title: "Pay now", onClick: o, fullWidth: !0 })
   ] });
 }, u2 = ({
   fullWidth: t = !0,
@@ -2946,7 +2947,7 @@ const Kn = "_spinner_1uybp_1", Xn = {
   onSuccess: r,
   onClose: a,
   ...o
-}) => /* @__PURE__ */ z(
+}) => /* @__PURE__ */ q(
   V1,
   {
     title: e,

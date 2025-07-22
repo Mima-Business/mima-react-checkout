@@ -15,6 +15,7 @@ type Props = {
   closeCheckout: () => void;
   payload: CheckoutPayload;
   signature: string;
+  testMode?: boolean;
 };
 
 export const CheckoutPortal = ({
@@ -24,10 +25,13 @@ export const CheckoutPortal = ({
   onClose,
   payload,
   signature,
+  testMode = false,
 }: Props) => {
   const [isLoading, setIsLoading] = useState(false);
 
-  const baseUrl = import.meta.env.VITE_BASE_API_URL;
+  const baseUrl = testMode
+    ? import.meta.env.VITE_TEST_BASE_API_URL
+    : import.meta.env.VITE_BASE_API_URL;
 
   const urls = {
     product: "/invoices/new/checkout",
@@ -86,7 +90,9 @@ export const CheckoutPortal = ({
   ]);
 
   const paystackConfig = useMemo(() => {
-    const publicKey = import.meta.env.VITE_PAYSTACK_PUBLIC_KEY;
+    const publicKey = testMode
+      ? import.meta.env.VITE_TEST_PAYSTACK_PUBLIC_KEY
+      : import.meta.env.VITE_PAYSTACK_PUBLIC_KEY;
 
     const metadata = {
       custom_fields: [
@@ -130,7 +136,7 @@ export const CheckoutPortal = ({
       publicKey,
     };
     return config;
-  }, [invoice]);
+  }, [invoice, testMode]);
 
   const handleClose = () => {
     onClose?.();
@@ -154,7 +160,9 @@ export const CheckoutPortal = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [invoice]);
 
-  const sPublicKey = import.meta.env.VITE_STRIPE_PUBLIC_KEY;
+  const sPublicKey = testMode
+    ? import.meta.env.VITE_TEST_STRIPE_PUBLIC_KEY
+    : import.meta.env.VITE_STRIPE_PUBLIC_KEY;
   const stripePromise = loadStripe(sPublicKey);
 
   const goBack = () => {

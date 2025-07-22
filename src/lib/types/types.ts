@@ -61,6 +61,7 @@ export type CheckoutProps = {
   onSuccess?: () => void;
   onClose?: () => void;
   signature: string;
+  testMode?: boolean;
 };
 
 export type MimaButtonProps = CheckoutProps & {

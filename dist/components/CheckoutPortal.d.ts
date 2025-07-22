@@ -6,6 +6,7 @@ type Props = {
     closeCheckout: () => void;
     payload: CheckoutPayload;
     signature: string;
+    testMode?: boolean;
 };
-export declare const CheckoutPortal: ({ isOpen, closeCheckout, onSuccess, onClose, payload, signature, }: Props) => import("react/jsx-runtime").JSX.Element | null | undefined;
+export declare const CheckoutPortal: ({ isOpen, closeCheckout, onSuccess, onClose, payload, signature, testMode, }: Props) => import("react/jsx-runtime").JSX.Element | null | undefined;
 export {};
