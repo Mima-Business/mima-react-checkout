@@ -243,6 +243,7 @@ Read about our parameters and how they can be used
 | signature | Yes               | A SHA-512 HMAC hash of the payload, generated using your Secret Key. This ensures the integrity and authenticity of the request. The payload must be JSON-stringified before hashing. |
 | onSuccess | No                | A function of your desired action once a payment is successful                                                                                                                        |
 | onClose   | No                | A function of your desired action once a payment is canceled                                                                                                                          |
+| testMode  | No                | A boolean value to enable test mode. If not included value defaults to false                                                                                                          |
 
 ### Payload Parameters
 
